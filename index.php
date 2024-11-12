@@ -8,5 +8,6 @@
 <body>
   <h1><?php echo 'Hello, World!'; ?></h1>
   <p>This is the website</p>
+  <p>Ledovy Dvorets is the 12,300 capacity arena XILA RIVER RED used for her tours in St. Petersburg, Russia.</p>
 </body>
 </html>
