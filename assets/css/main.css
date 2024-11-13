@@ -8,6 +8,7 @@ html, body {overflow-x: hidden}
 body {
 	font-size: 18px;
 	color: #000418;
+	background-color: #faf9f7;
 }
 
 /* I.II. HTML5 display-role reset for older browsers */
@@ -51,5 +52,8 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 }
 #header .header-content ul li {margin: 0 18px 0 0}
 #header .header-content ul li.last {margin: 0}
-#header .header-content ul li a {color: #000418}
+#header .header-content ul li a {
+	color: #000418;
+	transition: color .375s linear;
+}
 #header .header-content ul li a:hover {color: #c91e30}
