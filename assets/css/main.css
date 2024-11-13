@@ -50,10 +50,14 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 	padding: 0 51.75px;
 	max-width: 2023.5px;
 }
-#header .header-content ul li {margin: 0 18px 0 0}
-#header .header-content ul li.last {margin: 0}
-#header .header-content ul li a {
+#header .header-content .logo {
+	width: 301.521px;
+	height: 31.5px;
+}
+#header .header-content .navigation ul li {margin: 0 18px 0 0}
+#header .header-content .navigation ul li.last {margin: 0}
+#header .header-content .navigation ul li a {
 	color: #000418;
 	transition: color .375s linear;
 }
-#header .header-content ul li a:hover {color: #c91e30}
+#header .header-content .navigation ul li a:hover {color: #c91e30}
