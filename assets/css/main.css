@@ -65,6 +65,8 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 #header .header-content .navigation ul li {margin: 0 18px 0 0}
 #header .header-content .navigation ul li.last {margin: 0}
 #header .header-content .navigation ul li a {
+	letter-spacing: 1px;
+	font-size: 20.25px;
 	color: #000418;
 	transition: color .375s linear;
 }
