@@ -25,3 +25,21 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 }
 .menu {list-style-type: none}
 .menu li {display: inline-block}
+
+/* II. Site-specific CSS */
+/* II.I. Site-specific CSS: Header */
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 13.5px 0;
+	width: 100%;
+}
+#header .header-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0 51.75px;
+	max-width: 2023.5px;
+}
