@@ -49,6 +49,8 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 	left: 0;
 	padding: 13.5px 0;
 	width: 100%;
+	background-color: #faf9f7;
+	border: 1px solid rgba(0, 4, 24, .125);
 }
 #header .header-content {
 	display: flex;
