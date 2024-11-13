@@ -1,0 +1,16 @@
+/* I. CSS Essentials */
+/* I.I. CSS Essentials: Site basics */
+* {box-sizing: border-box}
+html, body {overflow-x: hidden}
+body {margin: 0}
+
+/* I.II. HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+
+/* I.III. Common CSS */
+a {text-decoration: none}
+.menu {list-style-type: none}
+.menu li {display: inline-block}
