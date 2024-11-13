@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 	padding: 0;
 }
 .menu li {display: inline-block}
+.mobile-only {display: none}
 
 /* II. Site-specific CSS */
 /* II.I. Site-specific CSS: Header */
@@ -68,3 +69,14 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 	transition: color .375s linear;
 }
 #header .header-content .navigation ul li a:hover {color: #c91e30}
+
+/* V. Responsive CSS */
+/* V.I. Equal or narrower than 767px */
+@media screen and (max-width: 767px) {
+	/* V.I.I. Common CSS */
+	.mobile-only {display: block}
+	.desktop-only {display: none}
+
+	/* V.I.II. Header */
+	#header .header-content .navigation ul li {display: block}
+}
