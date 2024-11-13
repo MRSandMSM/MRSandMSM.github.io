@@ -1,10 +1,13 @@
 /* I. CSS Essentials */
 /* I.I. CSS Essentials: Site basics */
-* {box-sizing: border-box}
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
 html, body {overflow-x: hidden}
 body {
-	margin: 0;
 	font-size: 18px;
+	color: #000418;
 }
 
 /* I.II. HTML5 display-role reset for older browsers */
@@ -23,7 +26,9 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 	text-indent: -9999px;
 	overflow: hidden;
 }
-.menu {list-style-type: none}
+.menu {
+	list-style-type: none;
+}
 .menu li {display: inline-block}
 
 /* II. Site-specific CSS */
@@ -43,3 +48,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 	padding: 0 51.75px;
 	max-width: 2023.5px;
 }
+#header .header-content ul li {margin: 0 0 18px 0}
+#header .header-content ul li.last {margin: 0}
+#header .header-content ul li a {color: #000418}
+#header .header-content ul li a:hover {color: #c91e30}
