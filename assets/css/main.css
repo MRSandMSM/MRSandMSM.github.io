@@ -2,7 +2,10 @@
 /* I.I. CSS Essentials: Site basics */
 * {box-sizing: border-box}
 html, body {overflow-x: hidden}
-body {margin: 0}
+body {
+	margin: 0;
+	font-size: 18px;
+}
 
 /* I.II. HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -12,5 +15,13 @@ footer, header, hgroup, main, menu, nav, section {
 
 /* I.III. Common CSS */
 a {text-decoration: none}
+h1, h2, h3, h4, h5, h6 {font-weight: normal}
+.replace {
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-indent: -9999px;
+	overflow: hidden;
+}
 .menu {list-style-type: none}
 .menu li {display: inline-block}
