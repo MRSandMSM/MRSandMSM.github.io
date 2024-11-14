@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 	padding: 0;
 }
 .menu li {display: inline-block}
-.mobile-only {display: none}
+.mobile-only {display: none !important}
 
 /* II. Site-specific CSS */
 /* II.I. Site-specific CSS: Header */
@@ -47,10 +47,10 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 	position: fixed;
 	top: 0;
 	left: 0;
+	border-bottom: 1px solid rgba(0, 4, 24, .125);
 	padding: 13.5px 0;
 	width: 100%;
 	background-color: #faf9f7;
-	border: 1px solid rgba(0, 4, 24, .125);
 }
 #header .header-content {
 	display: flex;
@@ -75,12 +75,46 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 }
 #header .header-content .navigation ul li a:hover {color: #c91e30}
 
+/* III.II. Main content */
+#page {margin-top: 59.16666793823242px}
+.secondary-nav, .secondary-nav:before {
+	position: fixed;
+	top: 59.16666793823242px;
+}
+.secondary-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 6.75px 51.75px;
+	width: 100%;
+	max-width: 2023.5px;
+}
+.secondary-nav:before {
+	content: "";
+	background-image: linear-gradient(to right, #1b2b64, #b32036);
+	left: 0;
+	height: 27.125px;
+}
+.secondary-nav h2, .secondary-nav a {color: #faf9f7}
+.secondary-nav h2 {
+	padding-top: 5.625px;
+	font-size: 22.5px;
+	color: #faf9f7;
+}
+
+/* IV. Page-specific CSS */
+/* IV.III. Discography */
+.discography #pageContent {
+	margin-top: 27.125px;
+}
+
 /* V. Responsive CSS */
 /* V.I. Equal or narrower than 767px */
 @media screen and (max-width: 767px) {
 	/* V.I.I. Common CSS */
-	.mobile-only {display: block}
-	.desktop-only {display: none}
+	.mobile-only {display: block !important}
+	.desktop-only {display: none !important}
 
 	/* V.I.II. Header */
 	#header .header-content .navigation ul li {display: block}
