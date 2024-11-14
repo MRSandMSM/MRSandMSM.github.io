@@ -47,7 +47,11 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 }
 .menu li {display: inline-block}
 .mobile-only {display: none !important}
-.clearfix
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: table;
+}
 
 /* II. Site-specific CSS */
 /* II.I. Site-specific CSS: Header */
@@ -119,6 +123,9 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 /* IV.III. Discography */
 .discography #pageContent {
 	margin-top: 44.4583px;
+}
+.discography #pageContent .content > * {
+	float: left;
 }
 .discography #pageContent .content .artwork {
 	width: 37.5%;
