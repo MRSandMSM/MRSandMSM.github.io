@@ -91,6 +91,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 .secondary-nav, .secondary-nav:before {
 	position: fixed;
 	top: 59.16666793823242px;
+	width: 100%;
 }
 .secondary-nav {
 	display: flex;
@@ -98,7 +99,6 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 	justify-content: space-between;
 	margin: 0 auto;
 	padding: 6.75px 51.75px;
-	width: 100%;
 	max-width: 2023.5px;
 }
 .secondary-nav:before {
