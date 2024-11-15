@@ -30,6 +30,8 @@ footer, header, hgroup, main, menu, nav, section {
 a {text-decoration: none}
 a:focus {outline: 1px dotted}
 h1, h2, h3, h4, h5, h6 {font-weight: normal}
+p {margin: 0 0 9px 0}
+p:last-child {margin: 0}
 .replace {
 	position: relative;
 	background-repeat: no-repeat;
@@ -139,21 +141,43 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 .discography #pageContent {
 	margin-top: 45px;
 }
-.discography #pageContent .fg {
-	max-width: 2023.5px
+.discography #pageContent .release-type,
+.discography #pageContent .release-type .release .fg .content .artwork .description .production {
+	list-style-type: none;
+	padding: 0;
+}
+.discography #pageContent .release-type .release {position: relative}
+.discography #pageContent .release-type .release .bg {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: .875;
+}
+.discography #pageContent .release-type .release .fg {
+	max-width: 2023.5px;
 	padding: 0 51.5px;
 	margin: 0 auto;
 }
-.discography #pageContent .fg .content > * {float: left}
-.discography #pageContent .fg .content .artwork {
+.discography #pageContent .release-type .release .fg .header {margin: 0 0 27px}
+.discography #pageContent .release-type .release .fg .header h2 {font-size: 36px}
+.discography #pageContent .release-type .release .fg .content > * {float: left}
+.discography #pageContent .release-type .release .fg .content .artwork {
 	width: 37.5%;
 	padding: 0 13.5px 0 0;
 }
-.discography #pageContent .fg .content .artwork img {
-	margin: 0 0 18px 0;
-	width: 100%;
+.discography #pageContent .release-type .release .fg .content .artwork img {width: 100%}
+.discography #pageContent .release-type .release .fg .content .artwork .description {
+	margin: 18px 0 0 0;
+	line-height: 1.5em;
 }
-.discography #pageContent .fg .content 
+.discography #pageContent .release-type .release .fg .content .artwork .description .liner {margin: 13.5px 0 0 0}
+.discography #pageContent .release-type .release .fg .content .artwork .description .production {padding: 13.5px 0 0 0}
+.discography #pageContent .release-type .release .fg .content .artwork .description .production:before {
+	content: "";
+	width: 54px;
+	height: 2.25px;
+	background-color: #000418;
+}
 
 /* V. Responsive CSS */
 /* V.I. Equal or narrower than 767px */
