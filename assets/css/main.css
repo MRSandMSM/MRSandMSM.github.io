@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 	font-size: 0;
 }
 .menu li, .menu li a {display: inline-block}
-.menu li.last {margin: 0}
+.menu li.last {margin: 0 !important}
 .mobile-only {display: none !important}
 .clearfix:after {
 	content: "";
@@ -117,11 +117,13 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 	letter-spacing: .5px;
 	font-weight: 300;
 	text-transform: uppercase;
+	line-height: 1em;
 	color: #faf9f7;
 }
 .secondary-nav .menu {
 	float: right;
 	margin: 4.5px 0;
+	line-height: 1em;
 }
 .secondary-nav .menu li {margin: 0 13.5px 0 0}
 .secondary-nav .menu li a {
