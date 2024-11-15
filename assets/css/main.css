@@ -159,7 +159,13 @@ p:last-child {margin: 0}
 	margin: 0 auto;
 }
 .discography #pageContent .release-type .release .fg .header {margin: 0 0 27px}
-.discography #pageContent .release-type .release .fg .header h2 {font-size: 36px}
+.discography #pageContent .release-type .release .fg .header h2 {
+	font-size: 36px;
+	line-height: 1em;
+}
+.discography #pageContent .release-type .release .fg .header h2 .replace {height: 36px}
+.discography #pageContent .release-type .release .fg .header h2 .date {font-size: 27px}
+.discography #pageContent .release-type .release .fg .header h2 .date:before {content: "/ "}
 .discography #pageContent .release-type .release .fg .content > * {float: left}
 .discography #pageContent .release-type .release .fg .content .artwork {
 	width: 37.5%;
@@ -170,10 +176,11 @@ p:last-child {margin: 0}
 	margin: 18px 0 0 0;
 	line-height: 1.5em;
 }
-.discography #pageContent .release-type .release .fg .content .artwork .description .liner {margin: 13.5px 0 0 0}
-.discography #pageContent .release-type .release .fg .content .artwork .description .production {padding: 13.5px 0 0 0}
+.discography #pageContent .release-type .release .fg .content .artwork .description .liner {margin: 0 0 13.5px 0}
 .discography #pageContent .release-type .release .fg .content .artwork .description .production:before {
 	content: "";
+	display: block;
+	margin: 0 0 13.5px 0;
 	width: 54px;
 	height: 2.25px;
 	background-color: #000418;
