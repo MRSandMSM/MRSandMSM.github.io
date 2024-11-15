@@ -28,6 +28,7 @@ footer, header, hgroup, main, menu, nav, section {
 
 /* I.III. Common CSS */
 a {text-decoration: none}
+a:focus {outline: 1px solid}
 h1, h2, h3, h4, h5, h6 {font-weight: normal}
 .replace {
 	position: relative;
@@ -91,50 +92,50 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 #header .header-content .navigation ul li a:hover {color: #c91e30}
 
 /* III.II. Main content */
-#page {margin-top: 59.16666793823242px}
-.secondary-nav, .secondary-nav:before {
-	position: fixed;
-	top: 59.16666793823242px;
-	width: 100%;
+#page {
+	margin-top: 59.16666793823242px;
+	overflow: hidden;
 }
 .secondary-nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin: 0 auto;
-	padding: 6.75px 51.75px;
-	max-width: 2023.5px;
-}
-.secondary-nav:before {
-	content: "";
-	background-image: linear-gradient(to right, #1b2b64, #b32036);
+	position: fixed;
+	top: 59.16666793823242px;
 	left: 0;
-	height: 44.4583px;
+	padding: 6.75px 51.75px;
+	width: 100%;
+	background-image: linear-gradient(to right, #1b2b64, #b32036);
+}
+.secondary-nav .clearfix {
+	max-width: 2023.5px;
+	margin: 0 auto;
 }
 .secondary-nav h2, .secondary-nav .menu li a {color: #faf9f7}
 .secondary-nav h2 {
-	padding-top: 5.625px;
+	padding: 5.625px 0 0 0;
 	font-family: "itc-avant-garde-gothic-pro", sans-serif;
 	font-size: 22.5px;
+	font-weight: 300;
+	text-transform: uppercase;
 	color: #faf9f7;
 }
-.secondary-nav .menu li {margin-right: 13.5px}
+.secondary-nav .menu li {margin: 0 13.5px 0 0}
+.secondary-nav .menu li.last {margin: 0}
 .secondary-nav .menu li a {
-	font-size: 20.25px;
+	font-size: 18px;
 	text-transform: uppercase;
 }
+.secondary-nav .menu li.is-active a {opacity: .5}
 
 /* IV. Page-specific CSS */
 /* IV.III. Discography */
 .discography #pageContent {
-	margin-top: 44.4583px;
+	margin-top: 45px;
 }
 .discography #pageContent .content > * {
 	float: left;
 }
 .discography #pageContent .content .artwork {
 	width: 37.5%;
-	padding-right: 13.5px;
+	padding: 0 13.5px 0 0;
 }
 .discography #pageContent .content .artwork img {
 	margin: 0 0 18px 0;
