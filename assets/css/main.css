@@ -37,13 +37,14 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 	text-indent: -9999px;
 	overflow: hidden;
 }
-.fill {
+.fill, .bg {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 }
+.bg {z-index: -1}
 .menu {
 	list-style-type: none;
 	padding: 0;
@@ -138,17 +139,21 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 .discography #pageContent {
 	margin-top: 45px;
 }
-.discography #pageContent .content > * {
-	float: left;
+.discography #pageContent .fg {
+	max-width: 2023.5px
+	padding: 0 51.5px;
+	margin: 0 auto;
 }
-.discography #pageContent .content .artwork {
+.discography #pageContent .fg .content > * {float: left}
+.discography #pageContent .fg .content .artwork {
 	width: 37.5%;
 	padding: 0 13.5px 0 0;
 }
-.discography #pageContent .content .artwork img {
+.discography #pageContent .fg .content .artwork img {
 	margin: 0 0 18px 0;
 	width: 100%;
 }
+.discography #pageContent .fg .content 
 
 /* V. Responsive CSS */
 /* V.I. Equal or narrower than 767px */
