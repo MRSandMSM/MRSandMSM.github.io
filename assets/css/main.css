@@ -28,7 +28,7 @@ footer, header, hgroup, main, menu, nav, section {
 
 /* I.III. Common CSS */
 a {text-decoration: none}
-a:focus {outline: 1px solid}
+a:focus {outline: 1px dotted}
 h1, h2, h3, h4, h5, h6 {font-weight: normal}
 .replace {
 	position: relative;
@@ -50,7 +50,8 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 	letter-spacing: .25px;
 	font-size: 0;
 }
-.menu li {display: inline-block}
+.menu li, .menu li a {display: inline-block}
+.menu li.last {margin: 0}
 .mobile-only {display: none !important}
 .clearfix:after {
 	content: "";
@@ -82,14 +83,13 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 	height: 31.5px;
 	background-image: url("/assets/img/ontheroof_logo-standard.png");
 }
-#header .header-content .navigation ul li {margin: 0 18px 0 0}
-#header .header-content .navigation ul li.last {margin: 0}
-#header .header-content .navigation ul li a {
+#header .header-content .navigation .menu li {margin: 0 18px 0 0}
+#header .header-content .navigation .menu li a {
 	font-size: 20.25px;
 	color: #000418;
 	transition: color .375s linear;
 }
-#header .header-content .navigation ul li a:hover {color: #c91e30}
+#header .header-content .navigation .menu li a:hover {color: #c91e30}
 
 /* III.II. Main content */
 #page {
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 	position: fixed;
 	top: 59.16666793823242px;
 	left: 0;
-	padding: 6.75px 51.75px;
+	padding: 9px 51.75px;
 	width: 100%;
 	background-image: linear-gradient(to right, #1b2b64, #b32036);
 }
@@ -110,16 +110,22 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 }
 .secondary-nav h2, .secondary-nav .menu li a {color: #faf9f7}
 .secondary-nav h2 {
+	float: left;
 	padding: 5.625px 0 0 0;
 	font-family: "itc-avant-garde-gothic-pro", sans-serif;
 	font-size: 22.5px;
+	letter-spacing: .5px;
 	font-weight: 300;
 	text-transform: uppercase;
 	color: #faf9f7;
 }
+.secondary-nav .menu {
+	float: right;
+	margin: 4.5px 0;
+}
 .secondary-nav .menu li {margin: 0 13.5px 0 0}
-.secondary-nav .menu li.last {margin: 0}
 .secondary-nav .menu li a {
+	font-family: "proxima-nova", sans-serif;
 	font-size: 18px;
 	text-transform: uppercase;
 }
