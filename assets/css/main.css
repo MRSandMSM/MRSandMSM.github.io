@@ -111,9 +111,9 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 .secondary-nav h2, .secondary-nav .menu li a {color: #faf9f7}
 .secondary-nav h2 {
 	float: left;
-	padding: 5.625px 0 0 0;
+	padding: 5.4px 0 0 0;
 	font-family: "itc-avant-garde-gothic-pro", sans-serif;
-	font-size: 22.5px;
+	font-size: 21.6px;
 	letter-spacing: .5px;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -123,13 +123,13 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal}
 .secondary-nav .menu {
 	float: right;
 	margin: 4.5px 0;
-	line-height: 1em;
 }
 .secondary-nav .menu li {margin: 0 13.5px 0 0}
 .secondary-nav .menu li a {
 	font-family: "proxima-nova", sans-serif;
 	font-size: 18px;
 	text-transform: uppercase;
+	line-height: 1em;
 }
 .secondary-nav .menu li.is-active a {opacity: .5}
 
