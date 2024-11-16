@@ -56,7 +56,7 @@ p:last-child {margin: 0}
 .menu li, .menu li a {display: inline-block}
 .menu li.last {margin: 0 -.25px 0 0 !important}
 .mobile-only {display: none !important}
-.clearfix:after {
+.clearfix:after, .section:after {
 	content: "";
 	clear: both;
 	display: table;
@@ -138,6 +138,30 @@ p:last-child {margin: 0}
 }
 .secondary-nav .menu li.is-active a {opacity: .5}
 
+/* III.III. Footer */
+#footer .footer-inner {
+	max-width: 2023.5px;
+	padding: 0 51.5px;
+}
+#footer .footer-inner #footerCopy {
+	border-top: 2.25px solid #000418;
+	padding: 0 13.5px;
+}
+#footer .footer-inner #footerCopy .menu {
+	float: right;
+	position: relative;
+	margin: 2.25px 0;
+}
+#footer .footer-inner #footerCopy .menu li {margin: 0 18px 0 0}
+#footer .footer-inner #footerCopy .menu li a, #footer .footer-inner #footerCopy p {line-height: 1em}
+#footer .footer-inner #footerCopy .menu li a {
+	color: #c91e30;
+	font-family: "proxima-nova", sans-serif;
+	font-size: 15.75px;
+}
+#footer .footer-inner #footerCopy ul li a:hover {color: #9d1725}
+#footer .footer-inner #footerCopy p {float: left}
+
 /* IV. Page-specific CSS */
 /* IV.III. Discography */
 .discography #pageContent {
@@ -196,6 +220,7 @@ p:last-child {margin: 0}
 	text-transform: uppercase;
 	color: #c91e30;
 }
+.discography #pageContent .release-type .release .fg .header a:hover {color: #9d1725}
 .discography #pageContent .release-type .release .fg .content > * {float: left}
 .discography #pageContent .release-type .release .fg .content .artwork {
 	width: 37.5%;
