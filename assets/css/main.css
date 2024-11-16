@@ -169,24 +169,32 @@ p:last-child {margin: 0}
 .discography #pageContent .release-type .release .fg .header a {line-height: 1em}
 .discography #pageContent .release-type .release .fg .header h2 {
 	float: left;
+	height: 1em;
 	font-size: 36px;
 }
-.discography #pageContent .release-type .release .fg .header h2 span {
-	display: inline-block;
-}
-.discography #pageContent .release-type .release#inTheSky .fg .header h2 span {
-	background-image: url("");
-	width: 298px;
-}
+.discography #pageContent .release-type .release .fg .header h2 span {display: inline-block}
 .discography #pageContent .release-type .release .fg .header h2 .title {
 	font-family: "itc-avant-garde-gothic-pro", sans-serif;
 }
+.discography #pageContent .release-type .release#inTheSky .fg .header h2 .title {
+	background-image: url("");
+	width: 298px;
+}
 .discography #pageContent .release-type .release .fg .header h2 .replace {height: 36px}
 .discography #pageContent .release-type .release .fg .header h2 .date {font-size: 27px}
-.discography #pageContent .release-type .release .fg .header h2 .date:before {content: " / "}
+.discography #pageContent .release-type .release .fg .header h2 .date:before {
+	content: " / ";
+	opacity: .75;
+}
 .discography #pageContent .release-type .release .fg .header a {
 	float: right;
-	font-size: 27px;
+	margin: 13.5px -1.125px 0 0;
+	font-family: "proxima-nova", sans-serif;
+	font-size: 22.5px;
+	letter-spacing: -1.125px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #c91e30;
 }
 .discography #pageContent .release-type .release .fg .content > * {float: left}
 .discography #pageContent .release-type .release .fg .content .artwork {
@@ -206,7 +214,7 @@ p:last-child {margin: 0}
 	margin: 0 0 13.5px 0;
 	width: 54px;
 	height: 2.25px;
-	background-color: #000418;
+	background-color: #052d6a;
 }
 .discography #pageContent .release-type .release .fg .content .artwork .description .production li {margin: 0 0 4.5px 0}
 .discography #pageContent .release-type .release .fg .content .artwork .description .production li.last-of-subsec {margin: 0 0 9px 0}
