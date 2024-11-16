@@ -165,9 +165,17 @@ p:last-child {margin: 0}
 	font-size: 36px;
 	line-height: 1em;
 }
+.discography #pageContent .release-type .release .fg .header h2 span {
+	display: inline-block;
+	font-family: "itc-avant-garde-gothic-pro", sans-serif;
+}
+.discography #pageContent .release-type .release#inTheSky .fg .header h2 span {
+	background-image: url("");
+	width: 298px;
+}
 .discography #pageContent .release-type .release .fg .header h2 .replace {height: 36px}
 .discography #pageContent .release-type .release .fg .header h2 .date {font-size: 27px}
-.discography #pageContent .release-type .release .fg .header h2 .date:before {content: "/ "}
+.discography #pageContent .release-type .release .fg .header h2 .date:before {content: " / "}
 .discography #pageContent .release-type .release .fg .content > * {float: left}
 .discography #pageContent .release-type .release .fg .content .artwork {
 	width: 37.5%;
