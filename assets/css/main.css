@@ -160,22 +160,34 @@ p:last-child {margin: 0}
 	padding: 0 51.5px;
 	margin: 0 auto;
 }
-.discography #pageContent .release-type .release .fg .header {margin: 0 0 27px}
+.discography #pageContent .release-type .release .fg .header {
+	position: relative;
+	margin: 0 0 27px;
+}
+.discography #pageContent .release-type .release .fg .header h2,
+.discography #pageContent .release-type .release .fg .header h2 span,
+.discography #pageContent .release-type .release .fg .header a {line-height: 1em}
 .discography #pageContent .release-type .release .fg .header h2 {
+	float: left;
 	font-size: 36px;
-	line-height: 1em;
 }
 .discography #pageContent .release-type .release .fg .header h2 span {
 	display: inline-block;
-	font-family: "itc-avant-garde-gothic-pro", sans-serif;
 }
 .discography #pageContent .release-type .release#inTheSky .fg .header h2 span {
 	background-image: url("");
 	width: 298px;
 }
+.discography #pageContent .release-type .release .fg .header h2 .title {
+	font-family: "itc-avant-garde-gothic-pro", sans-serif;
+}
 .discography #pageContent .release-type .release .fg .header h2 .replace {height: 36px}
 .discography #pageContent .release-type .release .fg .header h2 .date {font-size: 27px}
 .discography #pageContent .release-type .release .fg .header h2 .date:before {content: " / "}
+.discography #pageContent .release-type .release .fg .header a {
+	float: right;
+	font-size: 27px;
+}
 .discography #pageContent .release-type .release .fg .content > * {float: left}
 .discography #pageContent .release-type .release .fg .content .artwork {
 	width: 37.5%;
@@ -196,6 +208,9 @@ p:last-child {margin: 0}
 	height: 2.25px;
 	background-color: #000418;
 }
+.discography #pageContent .release-type .release .fg .content .artwork .description .production li {margin: 0 0 4.5px 0}
+.discography #pageContent .release-type .release .fg .content .artwork .description .production li.last-of-subsec {margin: 0 0 9px 0}
+.discography #pageContent .release-type .release .fg .content .artwork .description .production li:last-child {margin: 0}
 
 /* V. Responsive CSS */
 /* V.I. Equal or narrower than 767px */
