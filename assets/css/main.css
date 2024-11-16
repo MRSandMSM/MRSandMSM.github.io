@@ -145,7 +145,7 @@ p:last-child {margin: 0}
 }
 #footer .footer-inner #footerCopy {
 	border-top: 2.25px solid #000418;
-	padding: 0 13.5px;
+	padding: 13.5px 0;
 }
 #footer .footer-inner #footerCopy .menu {
 	float: right;
@@ -219,6 +219,7 @@ p:last-child {margin: 0}
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #c91e30;
+	transition: color .375s linear;
 }
 .discography #pageContent .release-type .release .fg .header a:hover {color: #9d1725}
 .discography #pageContent .release-type .release .fg .content > * {float: left}
