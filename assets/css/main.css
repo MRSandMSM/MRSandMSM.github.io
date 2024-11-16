@@ -177,8 +177,8 @@ p:last-child {margin: 0}
 	font-family: "itc-avant-garde-gothic-pro", sans-serif;
 }
 .discography #pageContent .release-type .release#inTheSky .fg .header h2 .title {
-	background-image: url("");
-	width: 298px;
+	background-image: url("/assets/img/discography/release_logos/inthesky_logo.png");
+	width: 277.75px;
 }
 .discography #pageContent .release-type .release .fg .header h2 .replace {height: 36px}
 .discography #pageContent .release-type .release .fg .header h2 .date {font-size: 27px}
