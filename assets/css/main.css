@@ -172,6 +172,7 @@ p:last-child {margin: 0}
 .discography #pageContent .release-type .release .fg .content .artwork {
 	width: 37.5%;
 	padding: 0 13.5px 0 0;
+	line-height: 0;
 }
 .discography #pageContent .release-type .release .fg .content .artwork img {width: 100%}
 .discography #pageContent .release-type .release .fg .content .artwork .description {
