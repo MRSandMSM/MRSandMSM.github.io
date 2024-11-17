@@ -81,5 +81,5 @@ $(document).ready(function(){
         $(this).css("color", trackColors[trackN])
       })
     })
-  }, 0)
+  }, 10000)
 })
