@@ -3,7 +3,7 @@ $(document).ready(function(){
     var settings = $.extend({
       namespace: '',
       loadAs: 'html'
-    })
+    }, options)
 
     var loadURL = settings.namespace + url + '.txt'
 
