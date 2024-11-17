@@ -73,6 +73,7 @@ $(document).ready(function(){
   
   setTimeout(function(){
     $(".tracklist").each(function(){
+      var $this = $(this);
       var tracksQty = $this.find("li").length;
       var trackColors = $this.gradientStops("#052d6a", "#c91e30", tracksQty)
 
