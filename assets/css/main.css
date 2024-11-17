@@ -300,28 +300,31 @@ li.toaster, div.toaster {display: none}
 	list-style-type: none;
 }
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist ol {margin: 0 0 9px}
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist ol:last-child {margin: 0}
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li {
-	overflow: auto;
-	padding: 13.5px 0;
-	border-top: 2.25px solid;
+	overflow: hidden;
+	padding: 9px 0;
+	border-top: 4.5px solid;
 	line-height: 1em;
 }
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li a {
 	float: left;
 	width: 0;
 	height: 0;
-	margin: 0 0 9px 0;
-	border-width: 9px 0 9px 13.5px;
+	margin: 0 9px 0 0;
+	border-width: 9px 0 9px 14.625px;
 	border-style: solid;
 	border-top-color: transparent;
 	border-right-color: transparent;
 	border-bottom-color: transparent;
 	text-indent: -9999px;
-	color: #000418;
+	color: inherit;
 }
-.discography #pageContent .release-type .release .fg .content .tabs .tracklist li .title {font-weight: 700}
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist li .title {
+	color: #000418;
+	font-weight: 700;
+}
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li .length {float: right}
-
 
 /* V. Responsive CSS */
 /* V.I. Equal or narrower than 767px */
