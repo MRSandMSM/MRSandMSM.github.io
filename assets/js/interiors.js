@@ -79,7 +79,7 @@ $(document).ready(function(){
           var trackColor = trackColors[trackNumber]
           
           $(this).css("color", trackColor)
-        }
+        })
       })
     })
   })
