@@ -77,10 +77,8 @@ $(document).ready(function(){
       var tracksQty = $this.find("li").length;
       var trackColors = $this.gradientStops("#052d6a", "#c91e30", tracksQty)
 
-      $this.find("li").each(function(){
-        var trackNumber = $(this).index();
-        var trackColor = trackColors[trackNumber]
-        $(this).css("color", trackColor)
+      $this.find("li").each(function(trackN){
+        $(this).css("color", trackColors[trackN])
       })
     })
   }, 0)
