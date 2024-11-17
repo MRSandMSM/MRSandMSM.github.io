@@ -12,7 +12,7 @@
 	box-sizing: border-box;
 	margin: 0;
 }
-html, body, body #pageContent {overflow-x: hidden}
+html, body, body #pageContainer {overflow-x: hidden}
 body {
 	font-family: "adobe-garamond-pro", sans-serif;
 	font-size: 18px;
