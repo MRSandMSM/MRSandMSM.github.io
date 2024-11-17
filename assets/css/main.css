@@ -321,10 +321,16 @@ li.toaster, div.toaster {display: none}
 	color: inherit;
 }
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li span {color: #000418}
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist li .track,
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li .title {
-	font-weight: 700;
 	display: inline-block;
+	font-weight: 700;
 }
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist li .track {
+	min-width: 28.08333396911621px;
+	margin: 0 4.5px 0 0;
+}
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist li .title {margin: 0 9px 0 0}
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li .length {float: right}
 
 /* V. Responsive CSS */
