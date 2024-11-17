@@ -201,16 +201,15 @@ p:last-child {margin: 0}
 #footer .footer-inner #footerCopy .menu li#siteCredits,
 #footer .footer-inner #footerCopy .menu li#siteCredits .close {
 	position: absolute;
+	right: 0;
 	bottom: 0;
 }
 #footer .footer-inner #footerCopy .menu li#siteCredits {
-	right: 0;
 	width: 478px;
 	padding: 0 24.75px 0 18px;
 	text-align: right;
 	background-color: #faf9f7;
 }
-#footer .footer-inner #footerCopy .menu li#siteCredits .close {right: 18px}
 #footer .footer-inner #footerCopy .menu li#siteCredits span {
 	display: block;
 	margin: 0 0 9px 0;
