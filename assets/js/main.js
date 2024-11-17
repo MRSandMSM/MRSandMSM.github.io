@@ -8,7 +8,7 @@ $(document).ready(function(){
   var $tabs = $(".tabs")
   var $toaster = $("a.toaster")
 
-  /* Trigger major plugins */
+  /* Run major plugins */
   $tabs.tabs()
   $toaster.toaster()
 })
