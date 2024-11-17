@@ -94,9 +94,9 @@ li.toaster, div.toaster {display: none}
 	position: fixed;
 	top: 0;
 	left: 0;
-	border-bottom: 1px solid rgba(0, 4, 24, .125);
-	padding: 13.5px 0;
 	width: 100%;
+	padding: 13.5px 0;
+	border-bottom: 1px solid rgba(0, 4, 24, .125);
 	background-color: #faf9f7;
 	z-index: 3;
 }
@@ -104,9 +104,9 @@ li.toaster, div.toaster {display: none}
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	max-width: 2023.5px;
 	margin: 0 auto;
 	padding: 0 51.75px;
-	max-width: 2023.5px;
 }
 #header .header-content .logo {
 	width: 301.521px;
@@ -130,14 +130,14 @@ li.toaster, div.toaster {display: none}
 	position: fixed;
 	top: 59.16666793823242px;
 	left: 0;
-	padding: 9px 51.75px;
 	width: 100%;
+	padding: 9px 51.75px;
 	background-image: linear-gradient(to right, #1b2b64, #b32036);
 	z-index: 2;
 }
 .secondary-nav .clearfix {
-	margin: 0 auto;
 	max-width: 2023.5px;
+	margin: 0 auto;
 }
 .secondary-nav h2, .secondary-nav .menu li a {color: #faf9f7}
 .secondary-nav h2 {
@@ -170,8 +170,8 @@ li.toaster, div.toaster {display: none}
 	padding: 36px 0 0 0;
 }
 #footer .footer-inner {
-	padding: 0 51.5px;
 	max-width: 2023.5px;
+	padding: 0 51.5px;
 }
 #footer .footer-inner #footerCopy {
 	border-top: 2.25px solid #000418;
@@ -226,9 +226,9 @@ li.toaster, div.toaster {display: none}
 .discography #pageContent .release-type .release .fg {
 	position: relative;
 	z-index: 1;
-	padding: 27px 51.5px;
-	margin: 0 auto;
 	max-width: 2023.5px;
+	margin: 0 auto;
+	padding: 27px 51.5px;
 }
 .discography #pageContent .release-type .release .fg .header {
 	position: relative;
@@ -247,8 +247,8 @@ li.toaster, div.toaster {display: none}
 	font-family: "itc-avant-garde-gothic-pro", sans-serif;
 }
 .discography #pageContent .release-type .release#inTheSky .fg .header h2 .title {
-	background-image: url("/assets/img/discography/release_logos/inthesky_logo.png");
 	width: 277.75px;
+	background-image: url("/assets/img/discography/release_logos/inthesky_logo.png");
 }
 .discography #pageContent .release-type .release .fg .header h2 .replace {height: 36px}
 .discography #pageContent .release-type .release .fg .header h2 .date {font-size: 27px}
@@ -283,9 +283,9 @@ li.toaster, div.toaster {display: none}
 .discography #pageContent .release-type .release .fg .content .artwork .description .production:before {
 	content: "";
 	display: block;
-	margin: 0 0 13.5px 0;
 	width: 54px;
 	height: 2.25px;
+	margin: 0 0 13.5px 0;
 	background-color: #052d6a;
 }
 .discography #pageContent .release-type .release .fg .content .artwork .description .production li {margin: 0 0 4.5px 0}
@@ -296,6 +296,26 @@ li.toaster, div.toaster {display: none}
 	padding: 0 0 0 13.5px;
 	list-style-type: none;
 }
+.discography #pageContent .release-type .release .fg .content .tracklist ol {margin: 0 0 9px}
+.discography #pageContent .release-type .release .fg .content .tracklist li {
+	overflow: auto;
+	padding: 9px 0;
+	border-top: 2.25px solid;
+	line-height: 1em;
+}
+.discography #pageContent .release-type .release .fg .content .tracklist li a {
+	float: left;
+	border-width: 9px 0 9px 13.5px;
+	border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	font-size: 0;
+	color: #000418;
+}
+.discography #pageContent .release-type .release .fg .content .tracklist li .title {font-weight: 700}
+.discography #pageContent .release-type .release .fg .content .tracklist li .length {float: right}
+
 
 /* V. Responsive CSS */
 /* V.I. Equal or narrower than 767px */
