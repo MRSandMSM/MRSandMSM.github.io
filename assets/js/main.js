@@ -10,7 +10,7 @@ $(document).ready(function(){
 
   /* Run major plugins */
   $toaster.toaster({
-    duration: 375,
+    duration: 3750,
     easing: "linear"
   })
   $tabs.tabs()
