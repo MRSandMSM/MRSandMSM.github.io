@@ -6,12 +6,13 @@ $(document).ready(function(){
     }, options)
 
     var loadURL = settings.namespace + url + '.txt'
+    var $this = $(this);
 
     $.ajax({
       url: loadURL,
       dataType: settings.loadAs,
       success: function(data) {
-        return $(this).html(data)
+        $this.html(data)
         alert('Was successful')
       }
     })
