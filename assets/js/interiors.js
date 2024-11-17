@@ -2,7 +2,8 @@ $(document).ready(function(){
   $.fn.txtLoader = function(url, options){
     var settings = $.extend({
       namespace: '',
-      loadAs: 'text'
+      loadAs: 'text',
+      after: function(){}
     }, options)
 
     var loadURL = settings.namespace + url + '.txt'
@@ -12,7 +13,8 @@ $(document).ready(function(){
       url: loadURL,
       dataType: settings.loadAs,
       success: function(data) {
-        $this.html(data)
+        $this.html(data);
+        settings.after;
       }
     })
   }
@@ -67,19 +69,18 @@ $(document).ready(function(){
     var album = $this.attr("id")
     $this.txtLoader(album, {
       namespace: '/assets/text-data/',
-      loadAs: 'html'
-    })
-    
-    setTimeout(function(){
-      var tracksQty = $this.find("li").length;
-      var trackColors = $this.gradientStops("#052d6a", "#c91e30", tracksQty)
-        
-      $this.find("li").each(function(){
-        var trackNumber = $(this).index();
-        var trackColor = trackColors[trackNumber]
+      loadAs: 'html',
+      after: function(){
+        var tracksQty = $this.find("li").length;
+        var trackColors = $this.gradientStops("#052d6a", "#c91e30", tracksQty)
+
+        $this.find("li").each(function(){
+          var trackNumber = $(this).index();
+          var trackColor = trackColors[trackNumber]
           
-        $(this).css("color", trackColor)
-      })
-    }, 1)
+          $(this).css("color", trackColor)
+        }
+      }
+    })
   })
 })
