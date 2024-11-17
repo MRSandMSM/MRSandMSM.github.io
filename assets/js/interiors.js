@@ -13,7 +13,6 @@ $(document).ready(function(){
       dataType: settings.loadAs,
       success: function(data) {
         $this.html(data)
-        alert('Was successful')
       }
     })
   }
