@@ -79,17 +79,5 @@ $(document).ready(function(){
         $(this).css("color", trackColors[trackN]);
       });
     })
-
-    setTimeout(function(){
-      $(".tracklist").each(function(){
-        var $this = $(this);
-        var tracksQty = $this.find("li").length;
-        var trackColors = $this.gradientStops("#052d6a", "#c91e30", tracksQty)
-
-        $this.find("li").each(function(trackN){
-          $(this).css("color", trackColors[trackN])
-        })
-      })
-    }, 0)
   })
 })
