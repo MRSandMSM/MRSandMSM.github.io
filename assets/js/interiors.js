@@ -1,4 +1,24 @@
 $(document).ready(function(){
+  /* Tabs plugin */
+  $.fn.tabs = function(options){
+    var settings = $.extend({
+      navSelector: "> .menu",
+      tabsSelector: ".tabs-content",
+      activeClass: "active"
+    }, options)
+    
+    var $this = $(this)
+    var $navItem = $this.find(settings.navSelector + " li");
+    var $navLink = $navItem.find("a");
+    
+    $navItem.first().find("a").trigger("click")
+    $navLink.click(function(){
+      event.preventDefault()
+      $(settings.tabsSelector).find($navLink.attr("href")).addClass(settings.activeClass)
+        .siblings().removeClass(settings.activeClass)
+    })
+  }
+  
   $.fn.txtLoader = function(url, options, callback){
     var settings = $.extend({
       namespace: '',
