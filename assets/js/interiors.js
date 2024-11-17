@@ -84,6 +84,7 @@ $(document).ready(function(){
   };
   
   /* II. Discography page */
+  $(".tabs").tabs()
   $(".tracklist").each(function(){
     var $this = $(this);
     
