@@ -98,7 +98,7 @@ li.toaster, div.toaster {display: none}
 	padding: 13.5px 0;
 	width: 100%;
 	background-color: #faf9f7;
-	z-index: 2;
+	z-index: 3;
 }
 #header .header-content {
 	display: flex;
@@ -133,11 +133,11 @@ li.toaster, div.toaster {display: none}
 	padding: 9px 51.75px;
 	width: 100%;
 	background-image: linear-gradient(to right, #1b2b64, #b32036);
-	z-index: 1;
+	z-index: 2;
 }
 .secondary-nav .clearfix {
-	max-width: 2023.5px;
 	margin: 0 auto;
+	max-width: 2023.5px;
 }
 .secondary-nav h2, .secondary-nav .menu li a {color: #faf9f7}
 .secondary-nav h2 {
@@ -170,8 +170,8 @@ li.toaster, div.toaster {display: none}
 	padding: 36px 0 0 0;
 }
 #footer .footer-inner {
-	max-width: 2023.5px;
 	padding: 0 51.5px;
+	max-width: 2023.5px;
 }
 #footer .footer-inner #footerCopy {
 	border-top: 2.25px solid #000418;
@@ -224,9 +224,10 @@ li.toaster, div.toaster {display: none}
 .discography #pageContent .release-type .release {position: relative}
 .discography #pageContent .release-type .release .bg {opacity: .5}
 .discography #pageContent .release-type .release .fg {
-	max-width: 2023.5px;
+	z-index: 1;
 	padding: 27px 51.5px;
 	margin: 0 auto;
+	max-width: 2023.5px;
 }
 .discography #pageContent .release-type .release .fg .header {
 	position: relative;
