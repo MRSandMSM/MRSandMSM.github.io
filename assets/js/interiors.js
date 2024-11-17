@@ -14,7 +14,7 @@ $(document).ready(function(){
     $navItem.first().find("a").trigger("click")
     $navLink.click(function(e){
       if(event.preventDefault){event.preventDefault()} else {event.returnValue = false}
-      $(settings.tabsSelector).find($navLink.attr("href")).addClass(settings.activeClass)
+      $(settings.tabsSelector).find($navLink.attr("href")).show().siblings().hide()
     })
   }
   
