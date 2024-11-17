@@ -162,7 +162,8 @@ p:last-child {margin: 0}
 	font-family: "proxima-nova", sans-serif;
 }
 #footer .footer-inner #footerCopy .menu li {margin: 0 18px 0 0}
-#footer .footer-inner #footerCopy .menu li a, #footer .footer-inner #footerCopy p {line-height: 1em}
+#footer .footer-inner #footerCopy .menu li a, #footer .footer-inner #footerCopy .menu li span,
+#footer .footer-inner #footerCopy p {line-height: 1em}
 #footer .footer-inner #footerCopy .menu li a, #footer .footer-inner #footerCopy .menu li span {font-size: 15.75px}
 #footer .footer-inner #footerCopy .menu li a {
 	color: #c91e30;
