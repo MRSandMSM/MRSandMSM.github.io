@@ -20,6 +20,9 @@ $(document).ready(function(){
         var titleArray = $trackTitle.text().toLowerCase().split(" ").join("-");
         var lyricsLink = '<a href="/lyrics/' + titleArray + '" class="lyrics">Lyrics</a>';
         $trackTitle.after(lyricsLink)
+
+        var $trackPlay = $this.find("a.play");
+        $this.append('<audio src="' + $trackPlay.attr("href") + '" controls></audio>'
       });
     })
   })
