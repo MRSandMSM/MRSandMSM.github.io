@@ -1,3 +1,40 @@
+/* Dismiss plugin */
+$.fn.dismiss = function(options) {
+  var settings = $.extend({
+    duration: 500,
+    easing: "linear",
+    target: "",
+  })
+
+  var $this = $(this);
+  $(this).click(function(e){
+    if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
+    $(settings.target).fadeOut(settings.duration, settings.easing)
+  })
+}
+
+/* Toaster plugin */
+$.fn.toaster = function(options) {
+  var settings = $.extend({
+    duration: 500,
+    easing: "linear",
+    dismissSelector: ".close",
+  })
+
+  var $this = $(this)
+  var target = $(this).attr("href")
+  
+  $(this).click(function(){
+    $(target).fadeToggle(settings.duration, settings.easing)
+  })
+
+  $(target).find(dismissSelector).dismiss({
+    duration: settings.duration,
+    easing: settings.easing,
+    target: settings.target,
+  })
+}
+
 /* Tabs plugin */
 $.fn.tabs = function(options){
   var settings = $.extend({
