@@ -68,7 +68,9 @@ $(document).ready(function(){
     $this.txtLoader(album, {
       namespace: '/assets/text-data/',
       loadAs: 'html'
-    }, function(){
+    })
+    
+    setTimeout(function(){
       var tracksQty = $this.find("li").length;
       var trackColors = $this.gradientStops("#052d6a", "#c91e30", tracksQty)
         
@@ -78,6 +80,6 @@ $(document).ready(function(){
           
         $(this).css("color", trackColor)
       })
-    })
+    }, 0)
   })
 })
