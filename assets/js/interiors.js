@@ -80,6 +80,6 @@ $(document).ready(function(){
           
         $(this).css("color", trackColor)
       })
-    }, 0)
+    }, 1)
   })
 })
