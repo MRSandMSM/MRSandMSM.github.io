@@ -17,7 +17,7 @@ $(document).ready(function(){
         $this.find(".title").before('<span class="track">' + parseInt(trackN + 1) + '</span>')
         
         var $trackTitle = $this.find(".title");
-        var titleArray = $trackTitle.text().toLowercase().split(" ").join("-");
+        var titleArray = $trackTitle.text().toLowerCase().split(" ").join("-");
         var lyricsLink = '<a href="/lyrics/' + titleArray + '" class="lyrics">Lyrics</a>';
         $trackTitle.after(lyricsLink)
       });
