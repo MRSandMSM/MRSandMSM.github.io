@@ -2,7 +2,7 @@ $(document).ready(function(){
   $.fn.txtLoader = function(url, options){
     var settings = $.extend({
       namespace: '',
-      loadAs: 'html'
+      loadAs: 'text'
     }, options)
 
     var loadURL = settings.namespace + url + '.txt'
