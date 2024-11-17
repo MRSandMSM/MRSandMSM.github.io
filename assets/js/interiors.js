@@ -18,7 +18,7 @@ $(document).ready(function(){
         if(event.preventDefault){event.preventDefault()} else {event.returnValue = false}
         $(settings.tabsSelector).find($navLink.attr("href")).show().siblings().hide()
       })
-    }
+    })
   }
   
   $.fn.txtLoader = function(url, options, callback){
