@@ -22,7 +22,7 @@ $(document).ready(function(){
         $trackTitle.after(lyricsLink)
 
         var $trackPlay = $this.find("a.play");
-        $this.append('<audio src="' + $trackPlay.attr("href") + '" controls></audio>'
+        $this.append('<audio src="' + $trackPlay.attr("href") + '" controls></audio>')
       });
     })
   })
