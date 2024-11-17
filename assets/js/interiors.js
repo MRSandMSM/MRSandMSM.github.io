@@ -9,11 +9,10 @@ $(document).ready(function(){
     
     var $this = $(this)
     var $navItem = $this.find(settings.navSelector + " li");
+    var $navItem.first().find("a").trigger("click");
 
     $navItem.each(function(){
       var $navLink = $(this).find("a");
-    
-      $navLink.first().find("a").trigger("click")
       $navLink.click(function(e){
         if(event.preventDefault){event.preventDefault()} else {event.returnValue = false}
         $(settings.tabsSelector).find($navLink.attr("href")).show().siblings().hide()
