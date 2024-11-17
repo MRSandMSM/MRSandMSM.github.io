@@ -143,6 +143,10 @@ p:last-child {margin: 0}
 .secondary-nav .menu li.is-active a {opacity: .5}
 
 /* III.III. Footer */
+#footer {
+	background-color: #faf9f7;
+	padding-top: 0 36px;
+}
 #footer .footer-inner {
 	max-width: 2023.5px;
 	padding: 0 51.5px;
@@ -169,9 +173,9 @@ p:last-child {margin: 0}
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	width: 100%;
 	max-width: 478px;
 	padding: 0 0 0 18px;
+	text-align: right;
 	background-color: #faf9f7;
 }
 #footer .footer-inner #footerCopy .menu li#siteCredits span {
