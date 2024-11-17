@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $.fn.txtLoader = function(url, options){
+  $.fn.txtLoader = function(url, options, callback){
     var settings = $.extend({
       namespace: '',
       loadAs: 'text'
@@ -13,6 +13,9 @@ $(document).ready(function(){
       dataType: settings.loadAs,
       success: function(data) {
         $this.html(data)
+        if (callback && typeof callback === 'function') {
+          callback($this);
+        }
       }
     })
   }
@@ -68,6 +71,13 @@ $(document).ready(function(){
     $this.txtLoader(album, {
       namespace: '/assets/text-data/',
       loadAs: 'html'
+    }, function($loadedTracklist) {
+      var tracksQty = $loadedTracklist.find("li").length;
+      var trackColors = $loadedTracklist.gradientStops("#052d6a", "#c91e30", tracksQty);
+
+      $loadedTracklist.find("li").each(function(trackN){
+        $(this).css("color", trackColors[trackN]);
+      });
     })
 
     setTimeout(function(){
@@ -82,16 +92,4 @@ $(document).ready(function(){
       })
     }, 0)
   })
-  
-  /* setTimeout(function(){
-    $(".tracklist").each(function(){
-      var $this = $(this);
-      var tracksQty = $this.find("li").length;
-      var trackColors = $this.gradientStops("#052d6a", "#c91e30", tracksQty)
-
-      $this.find("li").each(function(trackN){
-        $(this).css("color", trackColors[trackN])
-      })
-    })
-  }, 10000) */
 })
