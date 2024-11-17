@@ -22,6 +22,13 @@ $(document).ready(function(){
         $trackTitle.after(lyricsLink)
 
         var $trackPlay = $this.find("a.play");
+        $trackPlay.click(function(e){
+          event.preventDefault();
+
+          var $this = $(this);
+          $this.toggleClass("playing");
+          $this.add($this.parent(), $this.closest(".release, .release-type")).siblings().find("a.play").removeClass("playing");
+        })
         $this.append('<audio src="' + $trackPlay.attr("href") + '" controls></audio>')
       });
     })
