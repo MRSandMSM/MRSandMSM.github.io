@@ -24,7 +24,8 @@ $.fn.toaster = function(options) {
   var $this = $(this)
   var target = $(this).attr("href")
   
-  $(this).click(function(){
+  $(this).click(function(e){
+    if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
     $(target).fadeToggle(settings.duration, settings.easing)
   })
 
