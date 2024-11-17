@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  /* Tabs plugin */
+  /* Tabs plugin
   $.fn.tabs = function(options){
     var settings = $.extend({
       navSelector: "> .menu",
@@ -82,7 +82,7 @@ $(document).ready(function(){
 
     // Return the array of gradient stops
     return colorStops;
-  };
+  }; */
   
   /* II. Discography page */
   $(".tabs").tabs()
