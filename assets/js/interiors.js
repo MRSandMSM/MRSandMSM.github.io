@@ -18,7 +18,7 @@ $(document).ready(function(){
         
         var $trackTitle = $this.find(".title");
         var titleArray = $trackTitle.text().split(" ").join("-");
-        var lyricsLink = '<a href="/lyrics/' + titleArray + '" class="lyrics"></a>';
+        var lyricsLink = '<a href="/lyrics/' + titleArray + '" class="lyrics">Lyrics</a>';
         $trackTitle.after(lyricsLink)
       });
     })
