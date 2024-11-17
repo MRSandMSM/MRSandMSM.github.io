@@ -2,14 +2,14 @@
 $.fn.tabs = function(options){
   var settings = $.extend({
     navSelector: "> .menu",
-    tabsSelector: ".tabs-content",
-    activeClass: "active"
+    tabsSelector: ".tabs-content"
   }, options)
     
   var $this = $(this)
   var $navItem = $this.find(settings.navSelector + " li");
   
-  $navItem.first().find("a").trigger("click");
+  var firstTab = $navItem.first().find("a").attr("href")
+  $(firstTab).show().siblings().hide()
 
   $navItem.each(function(){
     var $navLink = $(this).find("a");
