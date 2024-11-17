@@ -77,7 +77,7 @@ $(document).ready(function(){
 
       $loadedTracklist.find("li").each(function(trackN){
         $(this).css("color", trackColors[trackN]);
-        $(this).find(".title").before('<span>' + parseInt(trackN + 1) + '</span>')
+        $(this).find(".title").before('<span class="track">' + parseInt(trackN + 1) + '</span>')
       });
     })
   })
