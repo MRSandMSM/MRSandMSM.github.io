@@ -71,7 +71,7 @@ $(document).ready(function(){
     })
 
     var tracksQty = $this.find("li").length;
-    var trackColors = $this.gradientStops("#052d6a", #c91e30, tracksQty)
+    var trackColors = $this.gradientStops("#052d6a", "#c91e30", tracksQty)
 
     console.log(trackColors)
   })
