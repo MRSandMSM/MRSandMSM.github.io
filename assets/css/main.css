@@ -224,6 +224,7 @@ li.toaster, div.toaster {display: none}
 .discography #pageContent .release-type .release {position: relative}
 .discography #pageContent .release-type .release .bg {opacity: .5}
 .discography #pageContent .release-type .release .fg {
+	position: relative;
 	z-index: 1;
 	padding: 27px 51.5px;
 	margin: 0 auto;
