@@ -65,6 +65,28 @@ p:last-child {margin: 0}
 	clear: both;
 	display: table;
 }
+.close {
+	width: 15.75px;
+	height: 15.75px;
+}
+.close:before, .close:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #000418
+}
+.close:before {
+	width: 2.25px;
+	height: 100%;
+	margin: 0 6.75px;
+	transform: rotate(-45deg);
+}
+.close:after {
+	width: 100%;
+	height: 2.25px;
+	margin: 6.75px 0;
+	transform: rotate(45deg);
+}
 
 /* II. Site-specific CSS */
 /* II.I. Site-specific CSS: Header */
@@ -170,14 +192,20 @@ p:last-child {margin: 0}
 	transition: color .375s linear;
 }
 #footer .footer-inner #footerCopy ul li a:hover {color: #9d1725}
-#footer .footer-inner #footerCopy .menu li#siteCredits {
+#footer .footer-inner #footerCopy .menu li#siteCredits,
+#footer .footer-inner #footerCopy .menu li#siteCredits .close {
 	position: absolute;
-	right: 0;
 	bottom: 0;
+}
+#footer .footer-inner #footerCopy .menu li#siteCredits {
+	right: 0;
 	width: 478px;
 	padding: 0 0 0 18px;
 	text-align: right;
 	background-color: #faf9f7;
+}
+#footer .footer-inner #footerCopy .menu li#siteCredits .close {
+	left: 18px;
 }
 #footer .footer-inner #footerCopy .menu li#siteCredits span {
 	display: block;
