@@ -41,6 +41,7 @@ $.fn.txtLoader = function(url, options, callback){
   })
 }
 
+/* Calculate and display stops in a gradient */
 $.fn.gradientStops = function(startColor, endColor, n) {
   // Simplified function to convert hex color to RGB
   function hexToRgb(hex) {
