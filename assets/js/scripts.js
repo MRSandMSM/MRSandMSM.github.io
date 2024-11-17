@@ -32,7 +32,7 @@ $.fn.toaster = function(options) {
   $(target).find(settings.dismissSelector).dismiss({
     duration: settings.duration,
     easing: settings.easing,
-    target: settings.target,
+    target: target,
   })
 }
 
