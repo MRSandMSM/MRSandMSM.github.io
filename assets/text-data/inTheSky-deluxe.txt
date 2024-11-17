@@ -38,11 +38,11 @@
     <a href="">Play an excerpt</a>
     <span class="length">04:31</span></li>
 <li><span class="title">Politsiya (solo)</span>
-    <a href="">Play an excerpt</a>
+    <a href="" class="play">Play an excerpt</a>
     <span class="length">02:16</span></li>
 <li><span class="title">You Don&rsquo;t Own Me</span>
-    <a href="">Play an excerpt</a>
+    <a href="" class="play">Play an excerpt</a>
     <span class="length">02:30</span></li>
 <li><span class="title">Zombie</span>
-    <a href="">Play an excerpt</a>
+    <a href="" class="play">Play an excerpt</a>
     <span class="length">05:06</span></li>
