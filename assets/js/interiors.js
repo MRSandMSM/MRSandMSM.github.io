@@ -11,7 +11,7 @@ $(document).ready(function(){
       url: loadURL,
       dataType: settings.loadAs,
       success: function(data) {
-        this.html(data)
+        $(this).html(data)
         alert('Was successful')
       }
     })
