@@ -9,6 +9,9 @@ $(document).ready(function(){
   var $toaster = $("a.toaster")
 
   /* Run major plugins */
+  $toaster.toaster({
+    duration: 375,
+    easing: "linear"
+  })
   $tabs.tabs()
-  $toaster.toaster()
 })
