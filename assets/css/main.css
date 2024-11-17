@@ -346,6 +346,7 @@ li.toaster, div.toaster {display: none}
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li .lyrics {
 	font-size: 13.5px;
 	font-weight: 400;
+	color: inherit;
 }
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li .length {float: right}
 
