@@ -5,4 +5,10 @@ $(document).ready(function(){
   var $body = $("body")
   var $container = $("#pageContainer")
   var $header = $("#header")
+  var $tabs = $(".tabs")
+  var $toaster = $("a.toaster")
+
+  /* Trigger major plugins */
+  $tabs.tabs()
+  $toaster.toaster()
 })
