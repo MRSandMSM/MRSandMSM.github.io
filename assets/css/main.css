@@ -57,7 +57,7 @@ p:last-child {margin: 0}
 	letter-spacing: .25px;
 	font-size: 0;
 }
-.menu li, .menu li a {display: inline-block}
+.menu li, .menu li a, .menu li span {display: inline-block}
 .menu li.last {margin: 0 -.25px 0 0 !important}
 .mobile-only {display: none !important}
 .clearfix:after, .section:after {
@@ -173,7 +173,7 @@ p:last-child {margin: 0}
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	max-width: 478px;
+	width: 478px;
 	padding: 0 0 0 18px;
 	text-align: right;
 	background-color: #faf9f7;
