@@ -291,6 +291,11 @@ li.toaster, div.toaster {display: none}
 .discography #pageContent .release-type .release .fg .content .artwork .description .production li {margin: 0 0 4.5px 0}
 .discography #pageContent .release-type .release .fg .content .artwork .description .production li.last-of-subsec {margin: 0 0 9px 0}
 .discography #pageContent .release-type .release .fg .content .artwork .description .production li:last-child {margin: 0}
+.discography #pageContent .release-type .release .fg .content .tracklist {
+	width: 62.5%;
+	padding: 0 0 0 13.5px;
+	list-style-type: none;
+}
 
 /* V. Responsive CSS */
 /* V.I. Equal or narrower than 767px */
