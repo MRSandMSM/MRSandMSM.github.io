@@ -326,10 +326,14 @@ li.toaster, div.toaster {display: none}
 	border-width: 9px 0 9px 14.625px;
 	border-style: solid;
 	border-top-color: transparent;
-	border-right-color: transparent;
 	border-bottom-color: transparent;
 	text-indent: -9999px;
 	color: inherit;
+}
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist li a.playing {
+	width: 14px;
+	height: 17.33333396911621px;
+	border-width: 0 5.625px;
 }
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li span {color: #000418}
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li .track,
