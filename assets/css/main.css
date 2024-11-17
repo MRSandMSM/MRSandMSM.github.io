@@ -291,30 +291,36 @@ li.toaster, div.toaster {display: none}
 .discography #pageContent .release-type .release .fg .content .artwork .description .production li {margin: 0 0 4.5px 0}
 .discography #pageContent .release-type .release .fg .content .artwork .description .production li.last-of-subsec {margin: 0 0 9px 0}
 .discography #pageContent .release-type .release .fg .content .artwork .description .production li:last-child {margin: 0}
-.discography #pageContent .release-type .release .fg .content .tracklist {
+.discography #pageContent .release-type .release .fg .content .tabs {
 	width: 62.5%;
 	padding: 0 0 0 13.5px;
+}
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist {
+	padding: 0;
 	list-style-type: none;
 }
-.discography #pageContent .release-type .release .fg .content .tracklist ol {margin: 0 0 9px}
-.discography #pageContent .release-type .release .fg .content .tracklist li {
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist ol {margin: 0 0 9px}
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist li {
 	overflow: auto;
-	padding: 9px 0;
+	padding: 13.5px 0;
 	border-top: 2.25px solid;
 	line-height: 1em;
 }
-.discography #pageContent .release-type .release .fg .content .tracklist li a {
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist li a {
 	float: left;
+	width: 0;
+	height: 0;
+	margin: 0 0 9px 0;
 	border-width: 9px 0 9px 13.5px;
 	border-style: solid;
 	border-top-color: transparent;
 	border-right-color: transparent;
 	border-bottom-color: transparent;
-	font-size: 0;
+	text-indent: -9999px;
 	color: #000418;
 }
-.discography #pageContent .release-type .release .fg .content .tracklist li .title {font-weight: 700}
-.discography #pageContent .release-type .release .fg .content .tracklist li .length {float: right}
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist li .title {font-weight: 700}
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist li .length {float: right}
 
 
 /* V. Responsive CSS */
