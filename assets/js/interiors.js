@@ -21,7 +21,8 @@ $(document).ready(function(){
   $(".tracklist").each(function(){
     var album = $(this).attr("id")
     $(this).txtLoader(album, {
-      namespace: '/assets/text-data/'
+      namespace: '/assets/text-data/',
+      loadAs: 'html'
     })
   })
 })
