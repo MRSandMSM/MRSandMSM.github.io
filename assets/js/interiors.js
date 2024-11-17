@@ -9,14 +9,16 @@ $(document).ready(function(){
     
     var $this = $(this)
     var $navItem = $this.find(settings.navSelector + " li");
-    var $navLink = $navItem.find("a");
+
+    $navItem.each(function(){
+      var $navLink = $(this).find("a");
     
-    $navItem.first().find("a").trigger("click")
-    $navLink.click(function(e){
-      if(event.preventDefault){event.preventDefault()} else {event.returnValue = false}
-      $(settings.tabsSelector).find($navLink.attr("href")).show();
-      $($navLink.attr("href")).siblings().hide()
-    })
+      $navLink.first().find("a").trigger("click")
+      $navLink.click(function(e){
+        if(event.preventDefault){event.preventDefault()} else {event.returnValue = false}
+        $(settings.tabsSelector).find($navLink.attr("href")).show().siblings().hide()
+      })
+    }
   }
   
   $.fn.txtLoader = function(url, options, callback){
