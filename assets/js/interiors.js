@@ -69,9 +69,21 @@ $(document).ready(function(){
       namespace: '/assets/text-data/',
       loadAs: 'html'
     })
+
+    setTimeout(function(){
+      $(".tracklist").each(function(){
+        var $this = $(this);
+        var tracksQty = $this.find("li").length;
+        var trackColors = $this.gradientStops("#052d6a", "#c91e30", tracksQty)
+
+        $this.find("li").each(function(trackN){
+          $(this).css("color", trackColors[trackN])
+        })
+      })
+    }, 0)
   })
   
-  setTimeout(function(){
+  /* setTimeout(function(){
     $(".tracklist").each(function(){
       var $this = $(this);
       var tracksQty = $this.find("li").length;
@@ -81,5 +93,5 @@ $(document).ready(function(){
         $(this).css("color", trackColors[trackN])
       })
     })
-  }, 10000)
+  }, 10000) */
 })
