@@ -8,7 +8,8 @@ $.fn.tabs = function(options){
     
   var $this = $(this)
   var $navItem = $this.find(settings.navSelector + " li");
-  var $navItem.first().find("a").trigger("click");
+  
+  $navItem.first().find("a").trigger("click");
 
   $navItem.each(function(){
     var $navLink = $(this).find("a");
