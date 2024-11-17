@@ -5,35 +5,35 @@
     <a href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/0f/23/65/0f2365e8-5176-fa50-6f04-fdf399a67211/mzaf_4297514658921037886.plus.aac.ep.m4a" class="play">Play an excerpt</a>
     <span class="length">03:16</span></li>
 <li><span class="title">Vomit</span>
-    <a href="" class="play">Play an excerpt</a>
+    <a href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/95/59/83/95598343-3979-70f6-050d-75efc2500c8a/mzaf_8062031643615305873.plus.aac.ep.m4a" class="play">Play an excerpt</a>
     <span class="length">03:33</span></li>
 <li><span class="title">Kapitalism</span>
-    <a href="" class="play">Play an excerpt</a>
+    <a href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/d3/cc/0c/d3cc0c04-54d3-24b9-3cc2-59abd3b52a79/mzaf_14918138893154798926.plus.aac.ep.m4a" class="play">Play an excerpt</a>
     <span class="length">02:47</span></li>
 <li><span class="title">War Redux</span>
-    <a href="" class="play">Play an excerpt</a>
+    <a href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ff/2d/ef/ff2defd4-dc8f-d81e-4a03-53d41e08c881/mzaf_8677599616813722237.plus.aac.ep.m4a" class="play">Play an excerpt</a>
     <span class="length">02:06</span></li>
 <li><span class="title">Dreadlocker</span>
-    <a href="" class="play">Play an excerpt</a>
+    <a href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/c1/fd/78/c1fd789a-8614-5d4c-2743-2b9c7273269b/mzaf_4048179692404814503.plus.aac.ep.m4a" class="play">Play an excerpt</a>
     <span class="length">04:23</span></li>
 <li><span class="title">Unrequited Obsession</span>
-    <a href="" class="play">Play an excerpt</a>
+    <a href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4e/59/5a/4e595a14-f545-606a-05b8-6183e6b35a4a/mzaf_11289524521830981957.plus.aac.ep.m4a" class="play">Play an excerpt</a>
     <span class="length">06:13</span></li>
 <li><span class="title">Let&rsquo;s See</span>
-    <a href="" class="play">Play an excerpt</a>
+    <a href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/cc/76/c3/cc76c36e-d327-01d7-1c12-7dc7c89e0136/mzaf_12076206110056032696.plus.aac.ep.m4a" class="play">Play an excerpt</a>
     <span class="length">03:16</span></li>
 <li><span class="title">Fatter</span>
-    <a href="" class="play">Play an excerpt</a>
+    <a href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/14/b6/b114b65e-937e-87c4-36ca-1176c186bb35/mzaf_17237979798022212169.plus.aac.ep.m4a" class="play">Play an excerpt</a>
     <span class="length">02:55</span></li>
 <li><span class="title">Love Or Lust</span>
-    <a href="" class="play">Play an excerpt</a>
+    <a href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/00/3f/3c/003f3cb8-a422-18d1-0210-54f697615cb9/mzaf_11405787701228061250.plus.aac.ep.m4a" class="play">Play an excerpt</a>
     <span class="length">03:20</span></li>
 <li><span class="title">Hysteric</span>
-    <a href="" class="play">Play an excerpt</a>
+    <a href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/c6/7d/e1/c67de1f1-68ca-842a-f67f-ba172ab78cc2/mzaf_8177910202467832325.plus.aac.ep.m4a" class="play">Play an excerpt</a>
     <span class="length">03:36</span></li>
 <li><span class="title">Piscine Had A Big Tiger</span>
-    <a href="" class="play">Play an excerpt</a>
+    <a href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/a0/aa/f2/a0aaf2ba-a121-ef5c-e1ee-d190be05e6c6/mzaf_10908312818244109567.plus.aac.ep.m4a" class="play">Play an excerpt</a>
     <span class="length">04:27</span></li>
 <li><span class="title">Escape</span>
-    <a href="" class="play">Play an excerpt</a>
+    <a href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e3/23/21/e3232109-eeda-6a69-ab16-a1eec6f6a628/mzaf_9756495985456701677.plus.aac.ep.m4a" class="play">Play an excerpt</a>
     <span class="length">04:31</span></li>
