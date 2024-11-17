@@ -4,7 +4,7 @@ $.fn.dismiss = function(options) {
     duration: 500,
     easing: "linear",
     target: "",
-  })
+  }, options)
 
   var $this = $(this);
   $(this).click(function(e){
@@ -19,7 +19,7 @@ $.fn.toaster = function(options) {
     duration: 500,
     easing: "linear",
     dismissSelector: ".close",
-  })
+  }, options)
 
   var $this = $(this)
   var target = $(this).attr("href")
