@@ -295,6 +295,15 @@ li.toaster, div.toaster {display: none}
 	width: 62.5%;
 	padding: 0 0 0 13.5px;
 }
+.discography #pageContent .release-type .release .fg .content .tabs .menu li {margin-right: 18px}
+.discography #pageContent .release-type .release .fg .content .tabs .menu li a {
+	padding: 0 0 7.875px 0;
+	font-family: "itc-avant-garde-gothic-pro", sans-serif;
+	font-size: 22.5px;
+	text-transform: uppercase;
+	line-height: 1em;
+	color: #000418;
+}
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist {
 	padding: 0;
 	list-style-type: none;
