@@ -65,6 +65,7 @@ p:last-child {margin: 0}
 	clear: both;
 	display: table;
 }
+li.toaster, div.toaster {display: none}
 .close {
 	width: 15.75px;
 	height: 15.75px;
