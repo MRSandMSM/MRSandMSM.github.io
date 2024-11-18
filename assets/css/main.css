@@ -307,6 +307,7 @@ audio:not([controls]) {display: none !important}
 	line-height: 1em;
 	color: #000418;
 }
+.discography #pageContent .release-type .release .fg .content .tabs .menu li.active a {color: #052d6a}
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist {
 	padding: 0;
 	list-style-type: none;
