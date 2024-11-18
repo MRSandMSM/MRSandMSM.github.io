@@ -32,13 +32,7 @@ $(document).ready(function(){
           $this.add($this.parent(), $this.closest(".release, .release-type")).siblings().find("a.play").removeClass("playing");
 
           var $audio = $this.find("audio");
-          if ($this.hasClass("playing")) {
-            if($audio.attr("src") !== $trackPlay.attr("href")) {$audio.attr("src", $trackPlay.attr("href"))}
-            $audio.trigger("play");
-          } else {
-            $audio.trigger("pause");
-            $audio.attr("src", "")
-          }
+          if ($this.hasClass("playing")) {$audio.trigger("play")} else {$audio.trigger("pause")}
         });
 
         $this.find("audio").on("ended", function(){
