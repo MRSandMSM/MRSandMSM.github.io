@@ -38,7 +38,7 @@ $(document).ready(function(){
           if($this.hasClass("playing")) {$audioTrack.trigger("play")} else {$audioTrack.trigger("pause")}
         });
 
-        $(this).closest(".tabs audio").on("ended", function(){
+        $(this).closest(".tabs").find("audio").on("ended", function(){
           $("a.playing").removeClass("playing")
         })
       });
