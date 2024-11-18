@@ -31,7 +31,8 @@ $(document).ready(function(){
           var $this = $(this);
           $this.toggleClass("playing");
           $this.parent().siblings().find("a.play").removeClass("playing");
-          $this.closest(".release, .release-type").siblings().find("a.play").removeClass("playing");
+          $this.closest(".release-type").css("opacity",".5")
+          // $this.closest(".release, .release-type").siblings().find("a.play").removeClass("playing");
 
           $audioTrack = $this.closest(".tabs").find("audio")
           $audioTrack.attr("src", $trackPlay.attr("href"))
