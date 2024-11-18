@@ -22,8 +22,6 @@ $(document).ready(function(){
         $trackTitle.after(lyricsLink)
 
         var $trackPlay = $this.find("a.play");
-        $this.append('<audio controls></audio>')
-        
         $trackPlay.click(function(e){
           if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
 
@@ -31,19 +29,9 @@ $(document).ready(function(){
           $this.toggleClass("playing");
           $this.add($this.parent(), $this.closest(".release, .release-type")).siblings().find("a.play").removeClass("playing");
         });
-        
-        var $audio = $this.find("audio");
-        if($this.hasClass("playing")) {
-          $audio.attr("src", $trackPlay.attr("href"))
-          $audio.trigger("play");
-        } else {
-          $audio.attr("src", "")
-          $audio.trigger("pause");
-        }
-        $this.find("audio").on("ended", function(){
-          $this.find("a.play").removeClass("playing")
-        })
       });
+
+      $loadedTracklist.after("<audio controls></audio>")
     })
   })
 })
