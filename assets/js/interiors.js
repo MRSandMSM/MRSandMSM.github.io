@@ -22,14 +22,21 @@ $(document).ready(function(){
         $trackTitle.after(lyricsLink)
 
         var $trackPlay = $this.find("a.play");
+        $this.append('<audio src="' + $trackPlay.attr("href") + '" controls></audio>')
+        
         $trackPlay.click(function(e){
           event.preventDefault();
 
           var $this = $(this);
           $this.toggleClass("playing");
           $this.add($this.parent(), $this.closest(".release, .release-type")).siblings().find("a.play").removeClass("playing");
+
+          var $audio = $this.find("audio")
+          if($this.hasClass("playing")) {$audio.trigger("play")} else {
+            $audio.trigger("play");
+            $audio[0].currentTime = 0;
+          }
         })
-        $this.append('<audio src="' + $trackPlay.attr("href") + '" controls></audio>')
       });
     })
   })
