@@ -1,7 +1,7 @@
 $(document).ready(function(){
   /* II. Discography page */
   $(".release").each(function(){
-      $this.find(".tabs-content").append("<audio controls></audio>")
+      $(this).find(".tabs-content").append("<audio controls></audio>")
   })
   $(".tracklist").each(function(){
     var $this = $(this);
