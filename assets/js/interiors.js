@@ -11,6 +11,9 @@ $(document).ready(function(){
       var tracksQty = $loadedTracklist.find("li").length;
       var trackColors = $loadedTracklist.gradientStops("#052d6a", "#c91e30", tracksQty);
 
+      $loadedTracklist.append("<audio controls></audio>")
+      $audioTrack = $loadedTracklist.find("audio")
+
       $loadedTracklist.find("li").each(function(trackN){
         var $this = $(this);
         $this.css("color", trackColors[trackN]);
@@ -28,10 +31,10 @@ $(document).ready(function(){
           var $this = $(this);
           $this.toggleClass("playing");
           $this.add($this.parent(), $this.closest(".release, .release-type")).siblings().find("a.play").removeClass("playing");
+
+          $audioTrack.attr("src", $trackPlay.attr("href")) 
         });
       });
-
-      $loadedTracklist.after("<audio controls></audio>")
     })
   })
 })
