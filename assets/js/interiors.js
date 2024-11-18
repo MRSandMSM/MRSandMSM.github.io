@@ -31,12 +31,12 @@ $(document).ready(function(){
           $this.toggleClass("playing");
           $this.add($this.parent(), $this.closest(".release, .release-type")).siblings().find("a.play").removeClass("playing");
 
-          var $audio = $this.find("audio")[0]
-          if($this.hasClass("playing")) {$audio.play()} else {
+          var $audio = $this.find("audio")[0];
+          if ($this.hasClass("playing")) {$audio.play();} else {
             $audio.pause();
             $audio.currentTime = 0;
           }
-        })
+        });
 
         $this.find("audio").on("ended", function(){
           $this.find("a.play").removeClass("playing")
