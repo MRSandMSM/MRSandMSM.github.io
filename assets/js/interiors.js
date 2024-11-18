@@ -31,8 +31,10 @@ $(document).ready(function(){
           var $this = $(this);
           $this.toggleClass("playing");
           $this.add($this.parent(), $this.closest(".release, .release-type")).siblings().find("a.play").removeClass("playing");
+          
+          $audioTrack.attr("src", $trackPlay.attr("href"))
 
-          $audioTrack.attr("src", $trackPlay.attr("href")) 
+          if(this.hasClass("playing") {$audioTrack.trigger("play")} else {$audioTrack.trigger("pause")}
         });
       });
     })
