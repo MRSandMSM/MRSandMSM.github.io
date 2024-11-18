@@ -1,7 +1,7 @@
 $(document).ready(function(){
   /* II. Discography page */
   $(".release").each(function(){
-      $(this).find(".tabs-content").append("<audio controls></audio>")
+      $(this).find(".tabs").append("<audio controls></audio>")
   })
   $(".tracklist").each(function(){
     var $this = $(this);
@@ -32,11 +32,15 @@ $(document).ready(function(){
           $this.toggleClass("playing");
           $this.add($this.parent(), $this.closest(".release, .release-type")).siblings().find("a.play").removeClass("playing");
 
-          $audioTrack = $this.closest(".tabs-content").find("audio")
+          $audioTrack = $this.closest(".tabs").find("audio")
           $audioTrack.attr("src", $trackPlay.attr("href"))
 
           if($this.hasClass("playing")) {$audioTrack.trigger("play")} else {$audioTrack.trigger("pause")}
         });
+
+        $(this).closest(".tabs audio").on("ended", function(){
+          $("a.playing").removeClass("playing")
+        })
       });
     })
   })
