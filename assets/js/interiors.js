@@ -22,7 +22,7 @@ $(document).ready(function(){
         $trackTitle.after(lyricsLink)
 
         var $trackPlay = $this.find("a.play");
-        $this.append('<audio src="' + $trackPlay.attr("href") + '" controls></audio>')
+        $this.append('<audio controls></audio>')
         
         $trackPlay.click(function(e){
           if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
@@ -30,13 +30,16 @@ $(document).ready(function(){
           var $this = $(this);
           $this.toggleClass("playing");
           $this.add($this.parent(), $this.closest(".release, .release-type")).siblings().find("a.play").removeClass("playing");
-
-          var $audio = $this.find("audio");
-          setTimeout(function(){
-            if($this.hasClass("playing")) {$audio.trigger("play"); alert("regressive");} else {$audio.trigger("pause") alert("progressive");}
-          }, 0)
         });
-
+        
+        var $audio = $this.find("audio");
+        if($this.hasClass("playing")) {
+          $audio.attr("src", $trackPlay.attr("href"))
+          $audio.trigger("play");
+        } else {
+          $audio.attr("src", "")
+          $audio.trigger("pause");
+        }
         $this.find("audio").on("ended", function(){
           $this.find("a.play").removeClass("playing")
         })
