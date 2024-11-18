@@ -32,7 +32,7 @@ $(document).ready(function(){
           $this.add($this.parent(), $this.closest(".release, .release-type")).siblings().find("a.play").removeClass("playing");
 
           var $audio = $this.find("audio");
-          if ($this.hasClass("playing")) {$audio.trigger("play")} else {$audio.trigger("pause")}
+          if($this.hasClass("playing")) {$audio.trigger("play"); alert("regressive");} else {$audio.trigger("pause") alert("progressive");}
         });
 
         $this.find("audio").on("ended", function(){
