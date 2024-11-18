@@ -34,7 +34,7 @@ $(document).ready(function(){
           
           $audioTrack.attr("src", $trackPlay.attr("href"))
 
-          if(this.hasClass("playing") {$audioTrack.trigger("play")} else {$audioTrack.trigger("pause")}
+          if(this.hasClass("playing")) {$audioTrack.trigger("play")} else {$audioTrack.trigger("pause")}
         });
       });
     })
