@@ -31,10 +31,10 @@ $(document).ready(function(){
           $this.toggleClass("playing");
           $this.add($this.parent(), $this.closest(".release, .release-type")).siblings().find("a.play").removeClass("playing");
 
-          var $audio = $this.find("audio")
-          if($this.hasClass("playing")) {$audio.trigger("play")} else {
-            $audio.trigger("play");
-            $audio[0].currentTime = 0;
+          var $audio = $this.find("audio")[0]
+          if($this.hasClass("playing")) {$audio.play()} else {
+            $audio.pause();
+            $audio.currentTime = 0;
           }
         })
 
