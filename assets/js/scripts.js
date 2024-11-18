@@ -40,6 +40,7 @@ $.fn.toaster = function(options) {
 $.fn.tabs = function(options){
   var settings = $.extend({
     navSelector: "> .menu",
+    navActiveClass: "active",
     tabsSelector: ".tabs-content"
   }, options)
     
@@ -47,12 +48,14 @@ $.fn.tabs = function(options){
   var $navItem = $this.find(settings.navSelector + " li");
   
   var firstTab = $navItem.first().find("a").attr("href")
+  $navItem.first().addClass(settings.navActiveClass)
   $(firstTab).show().siblings().hide()
 
   $navItem.each(function(){
     var $navLink = $(this).find("a");
     $navLink.click(function(e){
       if(event.preventDefault){event.preventDefault()} else {event.returnValue = false}
+      $(this).parent().addClass(settings.navActiveClass).siblings().removeClass(settings.navActiveClass);
       $(settings.tabsSelector).find($navLink.attr("href")).show().siblings().hide()
     })
   })
