@@ -25,7 +25,7 @@ $(document).ready(function(){
         $this.append('<audio src="' + $trackPlay.attr("href") + '" controls></audio>')
         
         $trackPlay.click(function(e){
-          event.preventDefault();
+          if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
 
           var $this = $(this);
           $this.toggleClass("playing");
@@ -36,6 +36,10 @@ $(document).ready(function(){
             $audio.trigger("play");
             $audio[0].currentTime = 0;
           }
+        })
+
+        $this.find("audio").on("ended", function(){
+          $this.find("a.play").removeClass("playing")
         })
       });
     })
