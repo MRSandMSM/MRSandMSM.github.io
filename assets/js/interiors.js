@@ -1,5 +1,8 @@
 $(document).ready(function(){
   /* II. Discography page */
+  $(".release").each(function(){
+      $this.find(".tabs-content").append("<audio controls></audio>")
+  })
   $(".tracklist").each(function(){
     var $this = $(this);
     
@@ -10,9 +13,6 @@ $(document).ready(function(){
     }, function($loadedTracklist) {
       var tracksQty = $loadedTracklist.find("li").length;
       var trackColors = $loadedTracklist.gradientStops("#052d6a", "#c91e30", tracksQty);
-
-      $loadedTracklist.append("<audio controls></audio>")
-      $audioTrack = $loadedTracklist.find("audio")
 
       $loadedTracklist.find("li").each(function(trackN){
         var $this = $(this);
@@ -31,7 +31,8 @@ $(document).ready(function(){
           var $this = $(this);
           $this.toggleClass("playing");
           $this.add($this.parent(), $this.closest(".release, .release-type")).siblings().find("a.play").removeClass("playing");
-          
+
+          $audioTrack = $this.closest(".tabs-content").find("audio")
           $audioTrack.attr("src", $trackPlay.attr("href"))
 
           if($this.hasClass("playing")) {$audioTrack.trigger("play")} else {$audioTrack.trigger("pause")}
