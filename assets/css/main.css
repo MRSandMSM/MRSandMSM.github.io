@@ -87,6 +87,7 @@ li.toaster, div.toaster {display: none}
 	left: -9999px;
 	right: -9999px;
 }
+audio:not([controls]) {display: none !important}
 
 /* II. Site-specific CSS */
 /* II.I. Site-specific CSS: Header */
