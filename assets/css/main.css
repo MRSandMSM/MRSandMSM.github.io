@@ -410,17 +410,18 @@ audio:not([controls]) {display: none !important}
 	.discography #pageContent .release-type .release#inTheSky .fg .header h2 {height: auto}
 	.discography #pageContent .release-type .release .fg .header h2 span {display: block}
 	.discography #pageContent .release-type .release#inTheSky .fg .header h2 .title {
-		width: 208.125px;
+		width: 100%;
 		height: 27px;
-		margin: 0 0 6.75px 0
+		margin: 0 0 9px 0
 	}
 	.discography #pageContent .release-type .release#inTheSky .fg .header h2 .date {font-size: 18px}
 	.discography #pageContent .release-type .release#inTheSky .fg .header h2 .date:before {display: none}
 	.discography #pageContent .release-type .release#inTheSky .fg .header a {
 		display: inline-block;
-		margin: 0 0 13.5px 0;
+		margin: 13.5px 0 0 0;
 	}
-	.discography #pageContent .release-type .release .fg .content .artwork {margin: 0 0 27px 0}
+	.discography #pageContent .release-type .release .fg .content .artwork {margin: 0 0 18px 0}
+	.discography #pageContent .release-type .release .fg .content .artwork .description {font-size: 15.75px}
 }
 /* IV.II. Equal or narrower than 639px */
 @media screen and (max-width: 639px) {
