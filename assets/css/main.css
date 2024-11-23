@@ -389,7 +389,11 @@ audio:not([controls]) {display: none !important}
 
 	/* IV.I.III. Page-specific CSS */
 	/* IV.I.III.II. Discography */
-	.discography #pageContent .release-type .release .fg {padding: 18px 27px}
+	.discography #pageContent .release-type .release .fg {padding: 22.5px 27px}
+	.discography #pageContent .release-type .release .fg > *,
+	.discography #pageContent .release-type .release .fg > * > * {
+		float: none
+	}
 }
 /* IV.II. Equal or narrower than 639px */
 @media screen and (max-width: 639px) {
