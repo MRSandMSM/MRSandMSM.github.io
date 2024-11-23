@@ -385,6 +385,6 @@ audio:not([controls]) {display: none !important}
 /* V.II. Equal or narrower than 639px */
 @media screen and (max-width: 639px) {
 	/* V.II.I. Footer */
-	#footer .footer-inner .section > * {float: none}
-	#footer .footer-inner .section .menu {margin: 0 0 9px 0}
+	#footer .footer-inner #footerCopy > * {float: none !important}
+	#footer .footer-inner #footerCopy .menu {margin: 0 0 9px 0}
 }
