@@ -378,7 +378,7 @@ audio:not([controls]) {display: none !important}
 
 	/* IV.I.II. Site-specific CSS */ 
 	/* IV.I.II.I. Layout */
-	#header .header-content, #page .secondary-nav, #footer .footer-inner {padding: 0 22.5px}
+	#header .header-content, #page .secondary-nav .clearfix, #footer .footer-inner {padding: 0 22.5px}
 	
 	/* IV.I.II.II. Header */
 	#header .header-content .navigation {display: none}
@@ -393,7 +393,12 @@ audio:not([controls]) {display: none !important}
 	.discography #pageContent .release-type .release .fg > *,
 	.discography #pageContent .release-type .release .fg .header > *,
 	.discography #pageContent .release-type .release .fg .content > * {float: none}
-	.discography #pageContent .release-type .release .fg .content > * {width: 100%}
+	.discography #pageContent .release-type .release .fg .content .artwork,
+	.discography #pageContent .release-type .release .fg .content .tabs {
+		width: 100%;
+		padding: 0;
+	}
+	.discography #pageContent .release-type .release .fg .content .artwork {margin: 0 0 27px 0}
 }
 /* IV.II. Equal or narrower than 639px */
 @media screen and (max-width: 639px) {
