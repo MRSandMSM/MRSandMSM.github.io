@@ -111,7 +111,7 @@ audio:not([controls]) {display: none !important}
 	padding: 0 51.75px;
 }
 #header .header-content .logo {
-	width: 301.521px;
+	width: 301.53125px;
 	height: 31.5px;
 	background-image: url("/assets/img/ontheroof_logo-standard.png");
 }
@@ -378,25 +378,47 @@ audio:not([controls]) {display: none !important}
 
 	/* IV.I.II. Site-specific CSS */ 
 	/* IV.I.II.I. Layout */
-	#header .header-content, #page .secondary-nav .clearfix, #footer .footer-inner {padding: 0 22.5px}
+	#header .header-content, #page .secondary-nav .clearfix, #footer .footer-inner {padding: 0 27px}
 	
 	/* IV.I.II.II. Header */
+	#header .header-content .logo {
+		width: 236.9166717529297px;
+		height: 24.75px;
+	}
 	#header .header-content .navigation {display: none}
 	#header .header-content .navigation ul li {display: block}
 
 	/* IV.I.II.III. Main content */
+	#page {margin-top: 52.41666793823242px}
+	#page .secondary-nav {
+		top: 52.41666793823242px;
+		padding: 6.75px 0;
+	}
 	#page .secondary-nav .menu {display: none}
 
 	/* IV.I.III. Page-specific CSS */
 	/* IV.I.III.II. Discography */
+	.discography #pageContent {margin-top: 40.5px}
 	.discography #pageContent .release-type .release .fg {padding: 22.5px 27px}
 	.discography #pageContent .release-type .release .fg > *,
-	.discography #pageContent .release-type .release .fg .header > *,
-	.discography #pageContent .release-type .release .fg .content > * {float: none}
+	.discography #pageContent .release-type .release .fg > * > * {float: none !important}
 	.discography #pageContent .release-type .release .fg .content .artwork,
 	.discography #pageContent .release-type .release .fg .content .tabs {
 		width: 100%;
 		padding: 0;
+	}
+	.discography #pageContent .release-type .release#inTheSky .fg .header h2 {height: auto}
+	.discography #pageContent .release-type .release .fg .header h2 span {display: block}
+	.discography #pageContent .release-type .release#inTheSky .fg .header h2 .title {
+		width: 208.125px;
+		height: 27px;
+		margin: 0 0 6.75px 0
+	}
+	.discography #pageContent .release-type .release#inTheSky .fg .header h2 .date {font-size: 18px}
+	.discography #pageContent .release-type .release#inTheSky .fg .header h2 .date:before {display: none}
+	.discography #pageContent .release-type .release#inTheSky .fg .header a {
+		display: inline-block;
+		margin: 0 0 13.5px 0;
 	}
 	.discography #pageContent .release-type .release .fg .content .artwork {margin: 0 0 27px 0}
 }
