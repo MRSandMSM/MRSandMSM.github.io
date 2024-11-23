@@ -201,6 +201,7 @@ audio:not([controls]) {display: none !important}
 	right: 0;
 }
 #footer .footer-inner #footerCopy .menu li#siteCredits {
+	bottom: 0;
 	width: 454.375px;
 	margin: 0 0 -4.5px 0 !important;
 	padding: 4.5px 24.75px 4.5px 18px;
@@ -327,6 +328,11 @@ audio:not([controls]) {display: none !important}
 	border-top: 4.5px solid;
 	line-height: 1em;
 }
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist li a {
+	color: inherit;
+	transition: color .375s linear;
+}
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist li a:hover {color: #000418}
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li a.play {
 	float: left;
 	width: 0;
@@ -337,7 +343,6 @@ audio:not([controls]) {display: none !important}
 	border-top-color: transparent;
 	border-bottom-color: transparent;
 	text-indent: -9999px;
-	color: inherit;
 }
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li a.playing {
 	width: 14px;
@@ -359,10 +364,7 @@ audio:not([controls]) {display: none !important}
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li .lyrics {
 	font-size: 13.5px;
 	font-weight: 400;
-	color: inherit;
-	transition: color .375s linear;
 }
-.discography #pageContent .release-type .release .fg .content .tabs .tracklist li .lyrics:hover {color: #000418}
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li .length {float: right}
 
 /* V. Responsive CSS */
@@ -372,6 +374,17 @@ audio:not([controls]) {display: none !important}
 	.mobile-only {display: block !important}
 	.desktop-only {display: none !important}
 
-	/* V.I.II. Header */
+	/* V.I.II. Layout */
+	#header .header-content,
+	#footer .footer-inner {padding: 0 22.5px}
+	
+	/* V.I.III. Header */
+	#header .header-content .navigation {display: none}
 	#header .header-content .navigation ul li {display: block}
+}
+/* V.II. Equal or narrower than 639px */
+@media screen and (max-width: 639px) {
+	/* V.II.I. Footer */
+	#footer .footer-inner .section > * {float: none}
+	#footer .footer-inner .section .menu {margin: 0 0 9px 0}
 }
