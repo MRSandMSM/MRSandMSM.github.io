@@ -29,6 +29,7 @@ footer, header, hgroup, main, menu, nav, section {
 /* I.III. Common CSS */
 a {text-decoration: none}
 a:focus {outline: 1px dotted}
+a:hover, a:active {outline: none}
 h1, h2, h3, h4, h5, h6 {font-weight: normal}
 p {margin: 0 0 9px 0}
 p:last-child {margin: 0}
@@ -122,12 +123,12 @@ audio:not([controls]) {display: none !important}
 }
 #header .header-content .navigation .menu li a:hover {color: #c91e30}
 
-/* III.II. Main content */
+/* II.II. Main content */
 #page {
 	margin-top: 59.16666793823242px;
 	overflow: hidden;
 }
-.secondary-nav {
+#page .secondary-nav {
 	position: fixed;
 	top: 59.16666793823242px;
 	left: 0;
@@ -136,13 +137,13 @@ audio:not([controls]) {display: none !important}
 	background-image: linear-gradient(to right, #1b2b64, #b32036);
 	z-index: 2;
 }
-.secondary-nav .clearfix {
+#page .secondary-nav .clearfix {
 	max-width: 2023.5px;
 	padding: 0 51.75px;
 	margin: 0 auto;
 }
-.secondary-nav h2, .secondary-nav .menu li a {color: #faf9f7}
-.secondary-nav h2 {
+#page .secondary-nav h2, .secondary-nav .menu li a {color: #faf9f7}
+#page .secondary-nav h2 {
 	float: left;
 	padding: 5.4px 0 0 0;
 	font-family: "itc-avant-garde-gothic-pro", sans-serif;
@@ -153,20 +154,20 @@ audio:not([controls]) {display: none !important}
 	line-height: 1em;
 	color: #faf9f7;
 }
-.secondary-nav .menu {
+#page .secondary-nav .menu {
 	float: right;
 	margin: 4.5px 0;
 }
-.secondary-nav .menu li {margin: 0 13.5px 0 0}
-.secondary-nav .menu li a {
+#page .secondary-nav .menu li {margin: 0 13.5px 0 0}
+#page .secondary-nav .menu li a {
 	font-family: "proxima-nova", sans-serif;
 	font-size: 18px;
 	text-transform: uppercase;
 	line-height: 1em;
 }
-.secondary-nav .menu li.is-active a {opacity: .5}
+#page .secondary-nav .menu li.is-active a {opacity: .5}
 
-/* III.III. Footer */
+/* II.III. Footer */
 #footer {
 	background-color: #faf9f7;
 	padding: 36px 0 0 0;
@@ -216,8 +217,8 @@ audio:not([controls]) {display: none !important}
 #footer .footer-inner #footerCopy .menu li#siteCredits span:last-child {margin: 0}
 #footer .footer-inner #footerCopy p {float: left}
 
-/* IV. Page-specific CSS */
-/* IV.III. Discography */
+/* III. Page-specific CSS */
+/* III.III. Discography */
 .discography #pageContent {
 	margin-top: 45px;
 }
@@ -367,24 +368,32 @@ audio:not([controls]) {display: none !important}
 }
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li .length {float: right}
 
-/* V. Responsive CSS */
-/* V.I. Equal or narrower than 767px */
+/* IV. Responsive CSS */
+/* IV.I. Equal or narrower than 767px */
 @media screen and (max-width: 767px) {
-	/* V.I.I. Common CSS */
+	/* IV.I.I. CSS Essentials */
+	/* IV.I.I.I. Common CSS */
 	.mobile-only {display: block !important}
 	.desktop-only {display: none !important}
 
-	/* V.I.II. Layout */
-	#header .header-content,
-	#footer .footer-inner {padding: 0 22.5px}
+	/* IV.I.II. Site-specific CSS */ 
+	/* IV.I.II.I. Layout */
+	#header .header-content, #page .secondary-nav, #footer .footer-inner {padding: 0 22.5px}
 	
-	/* V.I.III. Header */
+	/* IV.I.II.II. Header */
 	#header .header-content .navigation {display: none}
 	#header .header-content .navigation ul li {display: block}
+
+	/* IV.I.II.III. Main content */
+	#page .secondary-nav .menu {display: none}
+
+	/* IV.I.III. Page-specific CSS */
+	/* IV.I.III.II. Discography */
+	.discography #pageContent .release-type .release .fg {padding: 18px 27px}
 }
-/* V.II. Equal or narrower than 639px */
+/* IV.II. Equal or narrower than 639px */
 @media screen and (max-width: 639px) {
-	/* V.II.I. Footer */
+	/* IV.II.I. Footer */
 	#footer .footer-inner #footerCopy > * {float: none !important}
 	#footer .footer-inner #footerCopy .menu {margin: 0 0 9px 0}
 }
