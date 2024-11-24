@@ -308,7 +308,7 @@ audio:not([controls]) {display: none !important}
 .discography #pageContent .release-type .release .fg .content .tabs .menu li {margin-right: 18px}
 .discography #pageContent .release-type .release .fg .content .disable-inactive .menu li:not(.active) {
 	pointer-events: none;
-	opacity: .75;
+	opacity: .5;
 }
 .discography #pageContent .release-type .release .fg .content .tabs .menu li a {
 	padding: 13.5px 0 7.875px 0;
