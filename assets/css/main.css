@@ -121,7 +121,8 @@ audio:not([controls]) {display: none !important}
 	color: #000418;
 	transition: color .375s linear;
 }
-#header .header-content .navigation .menu li a:hover {color: #c91e30}
+#header .header-content .navigation .menu li a:hover,
+#header .header-content .navigation .menu li .is-active a {color: #c91e30}
 
 /* II.II. Main content */
 #page {
