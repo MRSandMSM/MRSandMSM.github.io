@@ -31,11 +31,9 @@ $(document).ready(function(){
           var $this = $(this);
           var audioURL = $trackPlay.attr("href");
           var $audioURLSelector = '[href="' + audioURL + '"]'
-
-          alert($("a.play").filter($audioURLSelector).length)
           
           $this.toggleClass("playing");
-          // $this.parent().siblings().find("a.play").is('[href="' + audioURL + '"]').toggleClass("playing")
+          $this.parent().siblings().find("a.play").filter($audioURLSelector).toggleClass("playing")
           $this.parent().siblings().find("a.play").removeClass("playing");
           $this.closest(".tracklist, .release, .release-type").siblings().find("a.play").removeClass("playing");
 
