@@ -41,12 +41,12 @@ $(document).ready(function(){
           // THE FUCK IT IS THAT IT CAN'T START WORKING, we have to mask it so you can't see
           // the other tabs while you are listening to that one song you want.
           setTimeout(function(){
-            if($this.closest(".release").has("a.playing")) {
+            if($this.closest(".release").has("a.playing").length) {
               $this.closest(".release").find(".tabs").addClass("disable-inactive")
-              alert($this.closest(".release").has("a.playing"))
-            } else if(!$this.closest(".release").has("a.playing")) {
+              alert($this.closest(".release").has("a.playing").length)
+            } else if(!$this.closest(".release").has("a.playing").length) {
               $this.closest(".release").find(".tabs").removeClass("disable-inactive")
-              alert($this.closest(".release").has("a.playing"))
+              alert($this.closest(".release").has("a.playing").length)
             }
           }, 0)
 
