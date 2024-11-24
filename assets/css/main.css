@@ -306,6 +306,7 @@ audio:not([controls]) {display: none !important}
 	white-space: nowrap;
 }
 .discography #pageContent .release-type .release .fg .content .tabs .menu li {margin-right: 18px}
+.discography #pageContent .release-type .release .fg .content .disable-inactive .menu li:not(.active) {pointer-events: none}
 .discography #pageContent .release-type .release .fg .content .tabs .menu li a {
 	padding: 13.5px 0 7.875px 0;
 	font-family: "itc-avant-garde-gothic-pro", sans-serif;
