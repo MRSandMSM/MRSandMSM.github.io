@@ -229,7 +229,9 @@ audio:not([controls]) {display: none !important}
 	padding: 0;
 }
 .discography #pageContent .release-type .release {position: relative}
-.discography #pageContent .release-type .release .bg {opacity: .5}
+.discography #pageContent .release-type .release#inTheSky {background-color: #e0eaf5}
+.discography #pageContent .release-type .release .bg {opacity: .25}
+.discography #pageContent .release-type .release#inTheSky .bg {background-image: url("/assets/img/discography/release_bgs/in-the-sky_bg.jpg")}
 .discography #pageContent .release-type .release .fg {
 	position: relative;
 	z-index: 1;
