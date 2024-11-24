@@ -34,8 +34,13 @@ $(document).ready(function(){
           
           $this.toggleClass("playing");
           $this.parent().siblings().find("a.play").removeClass("playing");
-          $this.parent().siblings().find($audioURLSelector).toggleClass("playing")
           $this.closest(".tracklist, .release, .release-type").siblings().find("a.play").removeClass("playing");
+
+          // Given that we can't sync two audios that are the same on more that one tracklist,
+          // in spite of ALL our trying and OUR CODE BEING PERFECT AND WE DON'T KNOW WHY
+          // THE FUCK IT IS THAT IT CAN'T START WORKING, we have to mask it so you can't see
+          // the other tabs while you are listening to that one song you want.
+          $this.closest(".release").find(".tabs").addClass("disable-inactive")
 
           var $audioTrack = $this.closest(".tabs").find("audio")
           $audioTrack.attr("src", audioURL)
@@ -45,6 +50,7 @@ $(document).ready(function(){
 
         $(this).closest(".tabs").find("audio").on("ended", function(){
           $("a.playing").removeClass("playing")
+          $(".release .tabs").removeClass("disable-inactive")
         })
       });
     })
