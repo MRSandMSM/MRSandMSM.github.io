@@ -40,11 +40,13 @@ $(document).ready(function(){
           // in spite of ALL our trying and OUR CODE BEING PERFECT AND WE DON'T KNOW WHY
           // THE FUCK IT IS THAT IT CAN'T START WORKING, we have to mask it so you can't see
           // the other tabs while you are listening to that one song you want.
-          if($this.closest(".release").has("a.playing")) {
-            $this.closest(".release").find(".tabs").addClass("disable-inactive")
-          } else if(!$this.closest(".release").has("a.playing")) {
-            $this.closest(".release").find(".tabs").removeClass("disable-inactive")
-          }
+          setTimeout(function(){
+            if($this.closest(".release").has("a.playing")) {
+              $this.closest(".release").find(".tabs").addClass("disable-inactive")
+            } else if(!$this.closest(".release").has("a.playing")) {
+              $this.closest(".release").find(".tabs").removeClass("disable-inactive")
+            }
+          }, 0)
 
           var $audioTrack = $this.closest(".tabs").find("audio")
           $audioTrack.attr("src", audioURL)
