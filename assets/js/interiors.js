@@ -35,7 +35,7 @@ $(document).ready(function(){
           // $this.toggleClass("playing");
           // $this.parent().siblings().find($audioURLSelector).toggleClass("playing")
           alert($audioURLSelector + ": " +  $($audioURLSelector).length)
-          $($audioURLSelector).toggleClass("playing")
+          $($audioURLSelector).css("color", "red").toggleClass("playing")
           $this.parent().siblings().find("a.play").not($audioURLSelector).removeClass("playing");
           $this.closest(".tracklist, .release, .release-type").siblings().find("a.play").removeClass("playing");
 
