@@ -30,11 +30,12 @@ $(document).ready(function(){
 
           var $this = $(this);
           var audioURL = $trackPlay.attr("href");
-          var $audioURLSelector = $('a.play[href="' + audioURL + '"]')
+          var $audioURLSelector = 'a.play[href="' + audioURL + '"]'
           
           // $this.toggleClass("playing");
           // $this.parent().siblings().find($audioURLSelector).toggleClass("playing")
-          $audioURLSelector.toggleClass("playing")
+          alert($audioURLSelector + ": " +  $($audioURLSelector).length)
+          $($audioURLSelector).toggleClass("playing")
           $this.parent().siblings().find("a.play").not('a.play[href="' + audioURL + '"]').removeClass("playing");
           $this.closest(".tracklist, .release, .release-type").siblings().find("a.play").removeClass("playing");
 
