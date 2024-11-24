@@ -122,7 +122,7 @@ audio:not([controls]) {display: none !important}
 	transition: color .375s linear;
 }
 #header .header-content .navigation .menu li a:hover,
-#header .header-content .navigation .menu li .is-active a {color: #c91e30}
+#header .header-content .navigation .menu li.is-active a {color: #c91e30}
 
 /* II.II. Main content */
 #page {
@@ -376,18 +376,29 @@ audio:not([controls]) {display: none !important}
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li .length {float: right}
 
 /* IV. Responsive CSS */
-/* IV.I. Equal or narrower than 767px */
+/* IV.I. Equal or narrower than 939px */
+@media screen and (max-width: 938.98px) {
+	/* IV.III.I. Footer */
+	#footer .footer-inner #footerCopy {position: relative}
+	#footer .footer-inner #footerCopy .menu {position: static}
+	#footer .footer-inner #footerCopy .menu li#siteCredits {
+		bottom: 19.125px;
+		width: 100%;
+	}
+}
+
+/* IV.II. Equal or narrower than 767px */
 @media screen and (max-width: 767px) {
-	/* IV.I.I. CSS Essentials */
-	/* IV.I.I.I. Common CSS */
+	/* IV.II.I. CSS Essentials */
+	/* IV.II.I.I. Common CSS */
 	.mobile-only {display: block !important}
 	.desktop-only {display: none !important}
 
-	/* IV.I.II. Site-specific CSS */ 
+	/* IV.II.II. Site-specific CSS */ 
 	/* IV.I.II.I. Layout */
 	#header .header-content, #page .secondary-nav .clearfix, #footer .footer-inner {padding: 0 27px}
 	
-	/* IV.I.II.II. Header */
+	/* IV.II.II.II. Header */
 	#header .header-content .logo {
 		width: 236.9166717529297px;
 		height: 24.75px;
@@ -395,7 +406,7 @@ audio:not([controls]) {display: none !important}
 	#header .header-content .navigation {display: none}
 	#header .header-content .navigation ul li {display: block}
 
-	/* IV.I.II.III. Main content */
+	/* IV.II.II.III. Main content */
 	#page {margin-top: 52.41666793823242px}
 	#page .secondary-nav {
 		top: 52.41666793823242px;
@@ -403,8 +414,8 @@ audio:not([controls]) {display: none !important}
 	}
 	#page .secondary-nav .menu {display: none}
 
-	/* IV.I.III. Page-specific CSS */
-	/* IV.I.III.II. Discography */
+	/* IV.II.III. Page-specific CSS */
+	/* IV.II.III.II. Discography */
 	.discography #pageContent {margin-top: 40.5px}
 	.discography #pageContent .release-type .release .fg {padding: 22.5px 27px}
 	.discography #pageContent .release-type .release .fg > *,
@@ -430,9 +441,9 @@ audio:not([controls]) {display: none !important}
 	.discography #pageContent .release-type .release .fg .content .artwork {margin: 0 0 18px 0}
 	.discography #pageContent .release-type .release .fg .content .artwork .description {font-size: 15.75px}
 }
-/* IV.II. Equal or narrower than 639px */
+/* IV.III. Equal or narrower than 639px */
 @media screen and (max-width: 639px) {
-	/* IV.II.I. Footer */
+	/* IV.III.I. Footer */
 	#footer .footer-inner #footerCopy > * {float: none !important}
 	#footer .footer-inner #footerCopy .menu {margin: 0 0 9px 0}
 }
