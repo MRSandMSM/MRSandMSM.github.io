@@ -43,8 +43,10 @@ $(document).ready(function(){
           setTimeout(function(){
             if($this.closest(".release").has("a.playing")) {
               $this.closest(".release").find(".tabs").addClass("disable-inactive")
+              alert($this.closest(".release").has("a.playing"))
             } else if(!$this.closest(".release").has("a.playing")) {
               $this.closest(".release").find(".tabs").removeClass("disable-inactive")
+              alert($this.closest(".release").has("a.playing"))
             }
           }, 0)
 
