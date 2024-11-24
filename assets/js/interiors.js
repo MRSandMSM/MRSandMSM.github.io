@@ -42,7 +42,7 @@ $(document).ready(function(){
           // the other tabs while you are listening to that one song you want.
           if($this.closest(".release").has("a.playing")) {
             $this.closest(".release").find(".tabs").addClass("disable-inactive")
-          } else {
+          } else if(!$this.closest(".release").has("a.playing")) {
             $this.closest(".release").find(".tabs").removeClass("disable-inactive")
           }
 
