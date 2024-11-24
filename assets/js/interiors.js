@@ -32,7 +32,7 @@ $(document).ready(function(){
           var audioURL = $trackPlay.attr("href");
           var $audioURLSelector = '[href="' + audioURL + '"]'
 
-          alert($("a").is($audioURLSelector).length))
+          alert($("a").is($audioURLSelector).length)
           
           $this.toggleClass("playing");
           // $this.parent().siblings().find("a.play").is('[href="' + audioURL + '"]').toggleClass("playing")
