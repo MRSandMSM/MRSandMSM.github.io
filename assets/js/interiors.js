@@ -29,12 +29,15 @@ $(document).ready(function(){
           if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
 
           var $this = $(this);
+          var audioURL = $trackPlay.attr("href");
+          
           $this.toggleClass("playing");
+          $this.parent().siblings().find('a.play[href="' + audioURL + '"]').toggleClass("playing")
           $this.parent().siblings().find("a.play").removeClass("playing");
           $this.closest(".tracklist, .release, .release-type").siblings().find("a.play").removeClass("playing");
 
-          $audioTrack = $this.closest(".tabs").find("audio")
-          $audioTrack.attr("src", $trackPlay.attr("href"))
+          var $audioTrack = $this.closest(".tabs").find("audio")
+          $audioTrack.attr("src", audioURL)
 
           if($this.hasClass("playing")) {$audioTrack.trigger("play")} else {$audioTrack.trigger("pause")}
         });
