@@ -210,7 +210,14 @@ audio:not([controls]) {display: none !important}
 	text-align: right;
 	background-color: #faf9f7;
 }
-#footer .footer-inner #footerCopy .menu li#siteCredits .close {bottom: 4.5px}
+#footer .footer-inner #footerCopy .menu li#siteCredits .close {
+	background-image: url("/assets/img/icons/close_icon.png");
+	background-position: center;
+	background-size: cover;
+	bottom: 4.5px;
+}
+#footer .footer-inner #footerCopy .menu li#siteCredits .close:before,
+#footer .footer-inner #footerCopy .menu li#siteCredits .close:after {display: none}
 #footer .footer-inner #footerCopy .menu li#siteCredits span {
 	display: block;
 	margin: 0 0 9px 0;
