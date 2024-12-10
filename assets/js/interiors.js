@@ -81,4 +81,5 @@ $(document).ready(function(){
     if(location.hash.indexOf("-") !== -1) {
       releaseView == 'full';
     }
-}
+  }
+})
