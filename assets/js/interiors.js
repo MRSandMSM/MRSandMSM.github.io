@@ -73,7 +73,7 @@ $(document).ready(function(){
       history.replaceState(identifier, "Release | MR S and MS M", releaseURL)
     } else if (releaseView == 'teaser') {
       $(".artwork .description, .tabs .menu").remove()
-      setTimeout(function(){$(".tabs .tabs-content ol li a").remove()}, 0)
+      $("head").append("<style>.tabs .tabs-content ol li a {display: none}</style>")
     }
   }
 })
