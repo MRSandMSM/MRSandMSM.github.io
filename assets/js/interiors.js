@@ -63,7 +63,7 @@ $(document).ready(function(){
   if($("body #pageContainer").hasClass("discography")) {
     var releaseView;
     if(releaseView == 'full') {
-      var activeReleaseIdentifier = location.hash;
+      var activeReleaseIdentifier = location.hash.split("#")[1];
       var activeReleaseWords = activeReleaseIdentifier.split("-")
       var activeReleaseLetter = [];
     
