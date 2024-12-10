@@ -66,14 +66,10 @@ $(document).ready(function(){
     var activeReleaseWords = activeReleaseIdentifier.split("-")
     var activeReleaseLetter = [];
     
-    $.each(activeReleaseArray, function(){
-      var $this = $(this);
-      $.each(array, function(_, word) {
-        firstLetters.push(word[0].toUpperCase);
-      });
-
-      console.log(firstLetters);
-    })
+    $.each(activeReleaseWords, function(_, word) {
+      firstLetters.push(word[0].toUpperCase);
+    });
+    console.log(firstLetters);
   } else {
     // Do nothing yet.
   }
