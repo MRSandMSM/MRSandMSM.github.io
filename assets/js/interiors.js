@@ -60,13 +60,13 @@ $(document).ready(function(){
     })
   })
 
-  if ($("body #pageContainer").hasClass("discography")) {
+  if($("body #pageContainer").hasClass("discography")) {
     var releaseView;
 
-    if (location.hash.indexOf("-") !== -1) {releaseView = 'full'}
+    if(location.hash.indexOf("-") !== -1) {releaseView = 'full'}
     else {releaseView = 'teaser'}
 
-    if (releaseView == 'full') {
+    if(releaseView == 'full') {
       var identifier = location.hash.split("#")[1];
       var identifierArray = identifier.split("-");
       var identifierWords = []
@@ -83,7 +83,7 @@ $(document).ready(function(){
       history.replaceState(identifier, releaseTitle, releaseURL)
 
       $release.siblings().remove().parent().show().siblings().remove()
-    } else if (releaseView == 'teaser') {
+    } else if(releaseView == 'teaser') {
       $(".artwork .description, .tabs .menu").remove()
       $("head").append("<style>.tabs .tabs-content ol li a.lyrics {display: none !important}</style>")
     }
