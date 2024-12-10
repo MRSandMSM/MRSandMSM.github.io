@@ -32,9 +32,9 @@ a {
 	text-decoration: none;
 	transition: color .375s linear;
 }
-a:hover, a:active {outline: none !important}
-a:hover {color: #9d1725}
 a:focus {outline: 1px dotted}
+a:hover, a:active {outline: none}
+a:hover {color: #9d1725}
 h1, h2, h3, h4, h5, h6 {font-weight: normal}
 p {margin: 0 0 9px 0}
 p:last-child {margin: 0}
