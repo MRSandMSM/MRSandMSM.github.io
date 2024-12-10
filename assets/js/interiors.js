@@ -63,23 +63,15 @@ $(document).ready(function(){
   if($("body #pageContainer").hasClass("discography")) {
     var releaseView;
     if(releaseView == 'full') {
-      var activeReleaseIdentifier = location.hash.split("#")[1];
-      var activeReleaseWords = activeReleaseIdentifier.split("-")
-      var activeReleaseLetter = [];
-    
-      $.each(activeReleaseWords, function(_, word) {
-        firstLetters.push(word[0].toUpperCase);
-      });
-      console.log(firstLetters);
-
-      releaseURL = "/discography/" + activeReleaseIdentifier;
-      history.replaceState(activeReleaseIdentifier, "Release", releaseURL)
+      var identifier = location.hash.split("#")[1];
+      
     } else {
       // Do nothing yet.
     }
 
     if(location.hash.indexOf("-") !== -1) {
-      releaseView == 'full';
+      releaseView = 'full';
     }
+    console.log(releaseView)
   }
 })
