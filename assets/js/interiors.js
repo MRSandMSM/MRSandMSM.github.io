@@ -65,12 +65,16 @@ $(document).ready(function(){
     if(releaseView == 'full') {
       var identifier = location.hash.split("#")[1];
       
-    } else {
+      var releaseURL = "/discography/" + identifier;
+      history.replaceState(identifier, "Release | MR S and MS M", releaseURL)
+    } else if(releaseView == 'teaser' || releaseView !== 'full') {
       // Do nothing yet.
     }
 
     if(location.hash.indexOf("-") !== -1) {
-      releaseView = 'full';
+      releaseView = 'full'
+    } else {
+      releaseView = 'teaser'
     }
     console.log(releaseView)
   }
