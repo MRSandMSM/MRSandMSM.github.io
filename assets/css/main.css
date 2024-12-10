@@ -34,7 +34,7 @@ a {
 }
 a:focus {outline: 1px dotted}
 a:hover, a:active {outline: none}
-a:hover {color: #9d1725}
+a:hover, a:focus {color: #9d1725}
 h1, h2, h3, h4, h5, h6 {font-weight: normal}
 p {margin: 0 0 9px 0}
 p:last-child {margin: 0}
@@ -126,6 +126,7 @@ audio:not([controls]) {display: none !important}
 	color: #000418;
 }
 #header .header-content .navigation .menu li a:hover,
+#header .header-content .navigation .menu li a:focus,
 #header .header-content .navigation .menu li.is-active a {color: #c91e30}
 
 /* II.II. Main content */
@@ -171,7 +172,8 @@ audio:not([controls]) {display: none !important}
 	line-height: 1em;
 	transition: opacity .375s linear;
 }
-#page .secondary-nav .menu li a:hover, #page .secondary-nav .menu li.is-active a {opacity: .625}
+#page .secondary-nav .menu li a:hover, #page .secondary-nav .menu li a:focus,
+#page .secondary-nav .menu li.is-active a {opacity: .625}
 
 /* II.III. Footer */
 #footer {
@@ -327,6 +329,7 @@ audio:not([controls]) {display: none !important}
 	color: #000418;
 }
 .discography #pageContent .release-type .release .fg .content .tabs .menu li a:hover,
+.discography #pageContent .release-type .release .fg .content .tabs .menu li a:focus,
 .discography #pageContent .release-type .release .fg .content .tabs .menu li.active a {color: #052d6a}
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist {
 	padding: 0;
@@ -341,7 +344,8 @@ audio:not([controls]) {display: none !important}
 	line-height: 1em;
 }
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li a {color: inherit}
-.discography #pageContent .release-type .release .fg .content .tabs .tracklist li a:hover {color: #000418}
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist li a:hover,
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist li a:focus {color: #000418}
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li a.play {
 	float: left;
 	width: 0;
