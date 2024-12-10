@@ -75,7 +75,7 @@ $(document).ready(function(){
         identifierWords.push(word[0].toUpperCase() + word.slice(1));
       })
 
-      var identifierID = identifierWords.join();
+      var identifierID = identifierWords.join("");
       console.log(identifierID)
       
       var releaseURL = "/discography/" + identifier;
