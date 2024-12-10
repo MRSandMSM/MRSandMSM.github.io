@@ -27,9 +27,14 @@ footer, header, hgroup, main, menu, nav, section {
 }
 
 /* I.III. Common CSS */
-a {text-decoration: none}
-a:focus {outline: 1px dotted}
+a {
+	color: #c91e30;
+	text-decoration: none;
+	transition: color .375s linear;
+}
 a:hover, a:active {outline: none}
+a:hover {color: #9d1725}
+a:focus {outline: 1px dotted}
 h1, h2, h3, h4, h5, h6 {font-weight: normal}
 p {margin: 0 0 9px 0}
 p:last-child {margin: 0}
@@ -115,11 +120,10 @@ audio:not([controls]) {display: none !important}
 	height: 31.5px;
 	background-image: url("/assets/img/ontheroof_logo-standard.png");
 }
-#header .header-content .navigation .menu li {margin: 0 18px 0 0}
+#header .header-content .navigation .menu li {margin: 0 27px 0 0}
 #header .header-content .navigation .menu li a {
 	font-size: 20.25px;
 	color: #000418;
-	transition: color .375s linear;
 }
 #header .header-content .navigation .menu li a:hover,
 #header .header-content .navigation .menu li.is-active a {color: #c91e30}
@@ -159,13 +163,15 @@ audio:not([controls]) {display: none !important}
 	float: right;
 	margin: 4.5px 0;
 }
-#page .secondary-nav .menu li {margin: 0 13.5px 0 0}
+#page .secondary-nav .menu li {margin: 0 18px 0 0}
 #page .secondary-nav .menu li a {
 	font-family: "proxima-nova", sans-serif;
 	font-size: 18px;
 	text-transform: uppercase;
 	line-height: 1em;
+	transition: opacity .375s linear;
 }
+#page .secondary-nav .menu li.is-active a:hover,
 #page .secondary-nav .menu li.is-active a {opacity: .5}
 
 /* II.III. Footer */
@@ -192,11 +198,6 @@ audio:not([controls]) {display: none !important}
 #footer .footer-inner #footerCopy .menu li a, #footer .footer-inner #footerCopy .menu li span,
 #footer .footer-inner #footerCopy p {line-height: 1em}
 #footer .footer-inner #footerCopy .menu li a, #footer .footer-inner #footerCopy .menu li span {font-size: 15.75px}
-#footer .footer-inner #footerCopy .menu li a {
-	color: #c91e30;
-	transition: color .375s linear;
-}
-#footer .footer-inner #footerCopy ul li a:hover {color: #9d1725}
 #footer .footer-inner #footerCopy .menu li#siteCredits,
 #footer .footer-inner #footerCopy .menu li#siteCredits .close {
 	position: absolute;
@@ -281,10 +282,7 @@ audio:not([controls]) {display: none !important}
 	letter-spacing: -1.125px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #c91e30;
-	transition: color .375s linear;
 }
-.discography #pageContent .release-type .release .fg .header a:hover {color: #9d1725}
 .discography #pageContent .release-type .release .fg .content > * {float: left}
 .discography #pageContent .release-type .release .fg .content .artwork {
 	width: 37.5%;
@@ -328,7 +326,6 @@ audio:not([controls]) {display: none !important}
 	text-transform: uppercase;
 	line-height: 1em;
 	color: #000418;
-	transition: color .375s linear;
 }
 .discography #pageContent .release-type .release .fg .content .tabs .menu li a:hover,
 .discography #pageContent .release-type .release .fg .content .tabs .menu li.active a {color: #052d6a}
@@ -344,10 +341,7 @@ audio:not([controls]) {display: none !important}
 	border-top: 4.5px solid;
 	line-height: 1em;
 }
-.discography #pageContent .release-type .release .fg .content .tabs .tracklist li a {
-	color: inherit;
-	transition: color .375s linear;
-}
+.discography #pageContent .release-type .release .fg .content .tabs .tracklist li a {color: inherit}
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li a:hover {color: #000418}
 .discography #pageContent .release-type .release .fg .content .tabs .tracklist li a.play {
 	float: left;
