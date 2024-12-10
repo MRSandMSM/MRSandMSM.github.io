@@ -275,9 +275,12 @@ audio:not([controls]) {display: none !important}
 	content: " / ";
 	opacity: .75;
 }
-.discography #pageContent .release-type .release .fg .header a {
+.discography #pageContent .release-type .release .fg .header > a,
+.discography #pageContent .release-type .release .fg .header > .menu {
 	float: right;
 	margin: 13.5px 1.125px 0 0;
+}
+.discography #pageContent .release-type .release .fg .header a {
 	font-family: "proxima-nova", sans-serif;
 	font-size: 22.5px;
 	letter-spacing: -1.125px;
