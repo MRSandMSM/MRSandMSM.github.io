@@ -73,7 +73,7 @@ $(document).ready(function(){
       var releaseURL = "/discography/" + identifier;
 
       console.log(identifier + ", " + releaseURL);
-      // history.replaceState(identifier, "Release | MR S and MS M", releaseURL)
+      history.replaceState(identifier, "Release | MR S and MS M", releaseURL)
     } else if (releaseView == 'teaser') {
       // Do nothing yet.
     }
