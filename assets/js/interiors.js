@@ -59,22 +59,26 @@ $(document).ready(function(){
       });
     })
   })
-  
-  var releaseView;
-  if(releaseView == 'full') {
-    var activeReleaseIdentifier = location.hash;
-    var activeReleaseWords = activeReleaseIdentifier.split("-")
-    var activeReleaseLetter = [];
-    
-    $.each(activeReleaseWords, function(_, word) {
-      firstLetters.push(word[0].toUpperCase);
-    });
-    console.log(firstLetters);
-  } else {
-    // Do nothing yet.
-  }
 
-  if(location.hash.indexOf("-") !== -1) {
-    releaseView == 'full';
-  }
-})
+  if($("body").hasClass("discography")) {
+    var releaseView;
+    if(releaseView == 'full') {
+      var activeReleaseIdentifier = location.hash;
+      var activeReleaseWords = activeReleaseIdentifier.split("-")
+      var activeReleaseLetter = [];
+    
+      $.each(activeReleaseWords, function(_, word) {
+        firstLetters.push(word[0].toUpperCase);
+      });
+      console.log(firstLetters);
+
+      releaseURL = "/discography/" + activeReleaseIdentifier;
+      history.replaceState(activeReleaseIdentifier, "Release", releaseURL)
+    } else {
+      // Do nothing yet.
+    }
+
+    if(location.hash.indexOf("-") !== -1) {
+      releaseView == 'full';
+    }
+}
