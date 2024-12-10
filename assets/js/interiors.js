@@ -60,23 +60,22 @@ $(document).ready(function(){
     })
   })
 
-  if($("body #pageContainer").hasClass("discography")) {
+  if ($("body #pageContainer").hasClass("discography")) {
     var releaseView;
-    if(releaseView == 'full') {
+
+    if (location.hash.indexOf("-") !== -1) {releaseView = 'full'}
+    else {releaseView = 'teaser'}
+
+    console.log(releaseView); // Log the value of releaseView
+
+    if (releaseView == 'full') {
       var identifier = location.hash.split("#")[1];
       var releaseURL = "/discography/" + identifier;
 
-      console.log(identifier + "," + releaseURL)
+      console.log(identifier + ", " + releaseURL);
       // history.replaceState(identifier, "Release | MR S and MS M", releaseURL)
-    } else if(releaseView == 'teaser' || releaseView !== 'full') {
+    } else if (releaseView == 'teaser') {
       // Do nothing yet.
     }
-
-    if(location.hash.indexOf("-") !== -1) {
-      releaseView = 'full'
-    } else {
-      releaseView = 'teaser'
-    }
-    console.log(releaseView)
   }
 })
