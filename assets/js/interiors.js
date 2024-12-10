@@ -60,7 +60,7 @@ $(document).ready(function(){
     })
   })
 
-  if($("body").hasClass("discography")) {
+  if($("body #pageContainer").hasClass("discography")) {
     var releaseView;
     if(releaseView == 'full') {
       var activeReleaseIdentifier = location.hash;
