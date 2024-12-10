@@ -76,10 +76,13 @@ $(document).ready(function(){
       })
 
       var identifierID = identifierWords.join("");
-      console.log(identifierID)
-      
+      var $release = $(identifierID)
+
+      var releaseTitle = identifierWords.join(" ") + " | MR S and MS M";
       var releaseURL = "/discography/" + identifier;
-      history.replaceState(identifier, "Release | MR S and MS M", releaseURL)
+      history.replaceState(identifier, releaseTitle, releaseURL)
+
+      $release.siblings().remove().parent().show().siblings().remove()
     } else if (releaseView == 'teaser') {
       $(".artwork .description, .tabs .menu").remove()
       $("head").append("<style>.tabs .tabs-content ol li a.lyrics {display: none !important}</style>")
