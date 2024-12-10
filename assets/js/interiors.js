@@ -70,12 +70,12 @@ $(document).ready(function(){
       var identifier = location.hash.split("#")[1];
       var identifierArray = identifier.split("-");
       var identifierWords = []
-      var identifierID = identifierWords.join();
 
       $.each(identifierArray, function(_, word){
         identifierWords.push(word[0].toUpperCase() + word.slice(1));
       })
-      
+
+      var identifierID = identifierWords.join();
       console.log(identifierID)
       
       var releaseURL = "/discography/" + identifier;
