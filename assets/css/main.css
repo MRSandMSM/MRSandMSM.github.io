@@ -17,7 +17,7 @@ body {
 	font-family: "adobe-garamond-pro", sans-serif;
 	font-size: 18px;
 	color: #000418;
-	background-color: #faf9f7;
+	background-color: #f7f8fa;
 }
 
 /* I.II. HTML5 display-role reset for older browsers */
@@ -104,7 +104,7 @@ audio:not([controls]) {display: none !important}
 	width: 100%;
 	padding: 13.5px 0;
 	border-bottom: 1px solid rgba(0, 4, 24, .125);
-	background-color: #faf9f7;
+	background-color: #f7f8fa; /* Good Bye, #faf9f7! */
 	z-index: 3;
 }
 #header .header-content {
@@ -147,7 +147,7 @@ audio:not([controls]) {display: none !important}
 	padding: 0 51.75px;
 	margin: 0 auto;
 }
-#page .secondary-nav h2, .secondary-nav .menu li a {color: #faf9f7}
+#page .secondary-nav h2, .secondary-nav .menu li a {color: #f7f8fa}
 #page .secondary-nav h2 {
 	float: left;
 	padding: 5.4px 0 0 0;
@@ -157,7 +157,7 @@ audio:not([controls]) {display: none !important}
 	font-weight: 300;
 	text-transform: uppercase;
 	line-height: 1em;
-	color: #faf9f7;
+	color: #f7f8fa;
 }
 #page .secondary-nav .menu {
 	float: right;
@@ -171,12 +171,11 @@ audio:not([controls]) {display: none !important}
 	line-height: 1em;
 	transition: opacity .375s linear;
 }
-#page .secondary-nav .menu li.is-active a:hover,
-#page .secondary-nav .menu li.is-active a {opacity: .5}
+#page .secondary-nav .menu li a:hover, #page .secondary-nav .menu li.is-active a {opacity: .5}
 
 /* II.III. Footer */
 #footer {
-	background-color: #faf9f7;
+	background-color: #f7f8fa;
 	padding: 36px 0 0 0;
 }
 #footer .footer-inner {
@@ -209,7 +208,7 @@ audio:not([controls]) {display: none !important}
 	margin: 0 0 -4.5px 0 !important;
 	padding: 4.5px 24.75px 4.5px 18px;
 	text-align: right;
-	background-color: #faf9f7;
+	background-color: #f7f8fa;
 }
 #footer .footer-inner #footerCopy .menu li#siteCredits .close {
 	background-image: url("/assets/img/icons/close_icon.png");
