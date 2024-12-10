@@ -69,11 +69,13 @@ $(document).ready(function(){
     if (releaseView == 'full') {
       var identifier = location.hash.split("#")[1];
       var identifierArray = identifier.split("-");
-      var identifierID = []
+      var identifierWords = []
+      var identifierID = identifierWords.join();
 
       $.each(identifierArray, function(_, word){
-        identifierID.push(word[0].toUpperCase() + word.slice(1));
+        identifierWords.push(word[0].toUpperCase() + word.slice(1));
       })
+      
       console.log(identifierID)
       
       var releaseURL = "/discography/" + identifier;
