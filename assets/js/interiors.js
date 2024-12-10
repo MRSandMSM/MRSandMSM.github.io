@@ -68,8 +68,14 @@ $(document).ready(function(){
 
     if (releaseView == 'full') {
       var identifier = location.hash.split("#")[1];
-      var releaseURL = "/discography/" + identifier;
+      var identifierArray = identifier.split("-");
+      var identifierWords = []
 
+      $.each(identifierArray, function(_, word){
+        identifierWords.push(word[0].toUpperCase());
+      })
+      
+      var releaseURL = "/discography/" + identifier;
       history.replaceState(identifier, "Release | MR S and MS M", releaseURL)
     } else if (releaseView == 'teaser') {
       $(".artwork .description, .tabs .menu").remove()
