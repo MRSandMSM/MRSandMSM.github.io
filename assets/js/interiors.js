@@ -74,7 +74,7 @@ $(document).ready(function(){
     // Do nothing yet.
   }
 
-  if(location.hash.indexOf("-")) {
+  if(location.hash.indexOf("-") !== -1) {
     releaseView == 'full';
   }
 })
