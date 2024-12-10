@@ -64,9 +64,10 @@ $(document).ready(function(){
     var releaseView;
     if(releaseView == 'full') {
       var identifier = location.hash.split("#")[1];
-      
       var releaseURL = "/discography/" + identifier;
-      history.replaceState(identifier, "Release | MR S and MS M", releaseURL)
+
+      console.log(identifier + "," + releaseURL)
+      // history.replaceState(identifier, "Release | MR S and MS M", releaseURL)
     } else if(releaseView == 'teaser' || releaseView !== 'full') {
       // Do nothing yet.
     }
