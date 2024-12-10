@@ -74,6 +74,7 @@ $(document).ready(function(){
       $.each(identifierArray, function(_, word){
         identifierWords.push(word[0].toUpperCase());
       })
+      console.log(identifierWords)
       
       var releaseURL = "/discography/" + identifier;
       history.replaceState(identifier, "Release | MR S and MS M", releaseURL)
