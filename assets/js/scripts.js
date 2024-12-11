@@ -51,15 +51,16 @@ $.fn.share = function(options){
   
   var $this = $(this)
   var platforms = settings.platforms.split(" ")
+
+  var shareCode = '',
   
-  var shareCode = '<' + settings.label;
-  if(settings.labelClass !== "") {shareCode += ' class="' + settings.labelClass}
-  shareCode += '>';
-  shareCode += '</' + settings.label + '>';
-  
-  /* $.each(platforms, function(){
-    shareCode += "
-  }) */
+  $.each(platforms, function(){
+    shareCode += '<a href="' + '' + '"';
+    if(settings.iconClass !== "") {
+      shareCode += ' class="' + settings.iconClass + '"
+    }
+    shareCode += '>' + '' + '</a>';
+  })
   
   $this.append(shareCode)
 }
