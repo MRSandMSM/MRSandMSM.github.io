@@ -36,6 +36,28 @@ $.fn.toaster = function(options) {
   })
 }
 
+/* Share plugin */
+$.fn.share = function(options){
+  var settings = $.extend({
+    platforms: "facebook x linkedin gplus tumblr email",
+    iconClass: "icon icon-",
+    iconWrap: "li",
+    containerClass: "",
+    container: "ul",
+    labelText: "Share",
+    labelClass: "",
+    label: "span"
+  }, options)
+  
+  var $this = $(this)
+  var platforms = settings.platforms.split(" ")
+  
+  var shareCode = '<' + settings.label;
+  if(settings.labelClass !== "") {shareCode += ' class="' + settings.labelClass}
+  shareCode += '>';
+  shareCode += '</' + settings.label + '>';
+}
+
 /* Tabs plugin */
 $.fn.tabs = function(options){
   var settings = $.extend({
