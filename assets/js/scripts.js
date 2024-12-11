@@ -54,14 +54,6 @@ $.fn.share = function(options){
 
   var shareCode = '',
   
-  $.each(platforms, function(index, icon){
-    shareCode += '<a href="' + '' + '"';
-    if(settings.iconClass !== "") {
-      shareCode += ' class="' + settings.iconClass + '"
-    }
-    shareCode += '>' + '' + '</a>';
-  })
-  
   $this.append(shareCode)
 }
 
