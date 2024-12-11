@@ -52,7 +52,7 @@ $.fn.share = function(options){
   var $this = $(this)
   var platforms = settings.platforms.split(" ")
 
-  var shareCode = '',
+  var shareCode = '';
   
   $this.append(shareCode)
 }
