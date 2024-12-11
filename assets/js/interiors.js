@@ -81,6 +81,7 @@ $(document).ready(function(){
       var releaseTitle = identifierWords.join(" ") + " | MR S and MS M";
       var releaseURL = "/discography/" + identifier;
       history.replaceState(identifier, releaseTitle, releaseURL)
+      $("title").html(releaseTitle)
 
       $release.siblings().remove().parent().show().siblings().remove()
     } else if(releaseView == 'teaser') {
