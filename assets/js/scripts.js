@@ -56,6 +56,12 @@ $.fn.share = function(options){
   if(settings.labelClass !== "") {shareCode += ' class="' + settings.labelClass}
   shareCode += '>';
   shareCode += '</' + settings.label + '>';
+  
+  /* $.each(platforms, function(){
+    shareCode += "
+  }) */
+  
+  $this.append(shareCode)
 }
 
 /* Tabs plugin */
