@@ -54,8 +54,8 @@ $.fn.share = function(options){
 
   var platformName = {
     facebook: "Facebook",
-    x: "X",
-    linkedin2: "LinkedIn",
+    x: "https://x.com/intent/post?text=" + $("title").html() + "%0A" + location.href,
+    linkedin2: "https://www.linkedin.com/shareArticle?mini=true&url=" + location.href,
     "google-plus": "gPlus",
     tumblr: "Tumblr",
     email: "Email"
