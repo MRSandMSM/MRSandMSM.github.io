@@ -39,7 +39,7 @@ $.fn.toaster = function(options) {
 /* Share plugin */
 $.fn.share = function(options){
   var settings = $.extend({
-    platforms: "facebook x linkedin google-plus tumblr email",
+    platforms: "facebook x linkedin2 google-plus tumblr email",
     iconClass: "icon icon-",
     iconWrap: "li",
     containerClass: "",
@@ -55,7 +55,7 @@ $.fn.share = function(options){
   var platformName = {
     facebook: "Facebook",
     x: "X",
-    linkedin: "LinkedIn",
+    linkedin2: "LinkedIn",
     "google-plus": "gPlus",
     tumblr: "Tumblr",
     email: "Email"
