@@ -5,7 +5,6 @@ $(document).ready(function(){
   var $body = $("body")
   var $container = $("#pageContainer")
   var $header = $("#header")
-  var $share = $(".share")
   var $tabs = $(".tabs")
   var $toaster = $("a.toaster")
 
@@ -14,6 +13,5 @@ $(document).ready(function(){
     duration: 375,
     easing: "linear"
   })
-  $share.share()
   $tabs.tabs()
 })
