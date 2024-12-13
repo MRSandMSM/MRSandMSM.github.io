@@ -62,10 +62,19 @@ $.fn.share = function(options){
   }
 
   var shareCode = '';
+  if(settings.container !== ""){
+    shareCode += "<" + settings.container;
+    if(settings.containerClass !== ""){shareCode += ' class="' + settings.containerClass + '"'}
+    shareCode += ">";
+  }
+  if(settings.iconWrap !== "")
   var pageURL = '<a href="' + location.href + '" target="_blank">' + location.href + "</a>";
   $.each(platforms, function(index, platform){
-    shareCode += (platformName[platform] || pageURL) + ", ";
+    shareCode += '<a href="' + (platformName[platform] || pageURL) + '" class="';
+    if(settings.iconClass !== "") {shareCode += settings.iconClass}
+    shareCode += platform + '" target="_blank">' + platform + '</a>';
   })
+  if(settings.container !== ""){shareCode += "</" + settings.container + ">"}
   
   $this.append(shareCode)
 }
