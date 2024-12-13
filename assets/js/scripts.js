@@ -52,7 +52,21 @@ $.fn.share = function(options){
   var $this = $(this)
   var platforms = settings.platforms.split(" ")
 
+  var platName;
+  var platformName = {
+    facebook: function(){platName = "Facebook"},
+    x:  function(){platName = "X"},
+    linkedin: function(){platName = "linkedin"},
+    gplus:  function(){platName = "gplus"},
+    tumblr: function(){platName = "tumblr"},
+    email:  function(){platName = "email"},
+  }
+
   var shareCode = '';
+  $.each(platforms, function(index, platform){
+    platformName[platform]();
+    shareCode += platName + ", ";
+  })
   
   $this.append(shareCode)
 }
