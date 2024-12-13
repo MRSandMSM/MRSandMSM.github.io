@@ -53,11 +53,11 @@ $.fn.share = function(options){
   var platforms = settings.platforms.split(" ")
 
   var platformName = {
-    facebook: "Facebook",
+    facebook: "https://www.facebook.com/sharer/sharer.php?u=" + location.href,
     x: "https://x.com/intent/post?text=" + $("title").html() + "%0A" + location.href,
     linkedin2: "https://www.linkedin.com/shareArticle?mini=true&url=" + location.href,
-    "google-plus": "gPlus",
-    tumblr: "Tumblr",
+    "google-plus": "https://plus.google.com/share?url=" + location.href,
+    tumblr: "https://www.tumblr.com/widgets/share/tool?canonicalUrl=" + location.href,
     email: "Email"
   }
 
