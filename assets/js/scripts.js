@@ -56,7 +56,7 @@ $.fn.share = function(options){
     facebook: "Facebook",
     x: "X",
     linkedin: "LinkedIn",
-    gplus: "gPlus",
+    "google-plus": "gPlus",
     tumblr: "Tumblr",
     email: "Email"
   }
