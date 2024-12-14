@@ -64,7 +64,7 @@ $.fn.share = function(options){
     linkedin2: ["LinkedIn", "https://www.linkedin.com/shareArticle?mini=true&url=" + settings.url],
     "google-plus": ["Google+", "https://plus.google.com/share?url=" + settings.url],
     tumblr: ["Tumblr", "https://www.tumblr.com/widgets/share/tool?canonicalUrl=" + settings.url],
-    email: ["Email", "mailto:?subject=" + $("title").html() + "&body=Oi [recipient name],%0ACheck out " + $("title").html() + ":" + settings.url] + "%0A%0AOi!%0A[your name]"
+    email: ["Email", "mailto:?subject=" + $("title").html() + "&body=Oi [recipient name],%0ACheck out " + $("title").html() + ":" + settings.url + "%0A%0AOi!%0A[your name]"
   }
 
   var shareCode = '';
