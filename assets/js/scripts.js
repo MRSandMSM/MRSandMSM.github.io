@@ -91,7 +91,7 @@ $.fn.share = function(options){
   $.each(platforms, function(index, platform){
     if(settings.wrap !== ""){
       if(settings.wrap.element !== "") {
-        shareCode += "<" settings.wrap.element;
+        shareCode += "<" + settings.wrap.element;
         if(settings.wrap.class !== "") {shareCode += ' class="' + settings.wrap.class + '"'}
         shareCode += ">"
       }
