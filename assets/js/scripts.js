@@ -49,6 +49,7 @@ $.fn.share = function(options){
     iconClass: "icon icon-",
     wrap: {
       class: "share-item",
+      lastChild: "last",
       element: "li"
     },
     container: {
@@ -59,6 +60,9 @@ $.fn.share = function(options){
       text: "Share",
       class: "share-label",
       element: "span"
+    },
+    after: function(){
+      if(settings.wrap !== "") {if(settings.wrap.element !== "") {$(this).find(settings.wrap.element).last().addClass(settins.wrap.lastChild)}}
     }
   }, options)
   
