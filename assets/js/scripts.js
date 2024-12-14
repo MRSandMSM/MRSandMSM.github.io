@@ -41,6 +41,11 @@ $.fn.share = function(options){
   var settings = $.extend({
     url: location.href,
     platforms: "facebook x linkedin2 google-plus tumblr email",
+    complementaryText: {
+      use: true,
+      class: "fill replace",
+      element: "span"
+    },
     iconClass: "icon icon-",
     wrap: {
       class: "share-item",
@@ -100,7 +105,21 @@ $.fn.share = function(options){
       var platformName = platformURL[platform][0]
       var platformLink = platformURL[platform][1]
 
-      shareCode += platformName + ", " + platformLink
+      shareCode += '<a href="' + platformName + '" class="';
+      if(settings.iconClass !== "") {shareCode += settings.iconClass}
+      shareCode += platformURL[platform] + '" target="_blank">';
+      if(settings.complementaryText !== "") {
+        if(settings.complementaryText.use == true) {
+          if(settings.complementaryText.element !== "") {
+            shareCode += "<" + settings.complementaryText.element;
+            if(settings.complementaryText.class !== "") {shareCode += ' class="' + settings.complementaryText.class + '"'}
+            shareCode += ">";
+          }
+          shareCode += platformName
+          if(settings.complementaryText.element !== "") {shareCode += "</" + settings.complementaryText.element + ">"}
+        }
+      }
+      shareCode += "</a>";
     }
     if(settings.wrap !== "") {if(settings.wrap.element !== "") {shareCode += "</" + settings.wrap.element + ">"}}
   })
