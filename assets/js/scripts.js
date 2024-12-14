@@ -107,7 +107,7 @@ $.fn.share = function(options){
 
       shareCode += '<a href="' + platformLink + '" class="';
       if(settings.iconClass !== "") {shareCode += settings.iconClass}
-      shareCode += + platformURL[platform] + '" target="_blank">';
+      shareCode += platform + '" target="_blank">';
       if(settings.complementaryText !== "") {
         if(settings.complementaryText.use == true) {
           if(settings.complementaryText.element !== "") {
