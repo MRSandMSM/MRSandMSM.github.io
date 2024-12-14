@@ -57,7 +57,6 @@ $.fn.share = function(options){
     }
   }, options)
   
-  var $this = $(this)
   var platforms = settings.platforms.split(" ")
 
   var platformURL = {
@@ -84,6 +83,8 @@ $.fn.share = function(options){
     
     shareCode = labelCode + shareCode;
   }
+
+  $(this).append(shareCode)
 }
 
 /* Tabs plugin */
