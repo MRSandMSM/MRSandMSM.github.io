@@ -52,7 +52,7 @@ $.fn.share = function(options){
       element: "li"
     },
     container: {
-      class: "",
+      class: "menu",
       element: "ul"
     },
     label: {
