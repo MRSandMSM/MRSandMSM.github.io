@@ -89,10 +89,20 @@ $.fn.share = function(options){
     }
   }
   $.each(platforms, function(index, platform){
+    if(settings.wrap !== ""){
+      if(settings.wrap.element !== "") {
+        shareCode += "<" settings.wrap.element;
+        if(settings.wrap.class !== "") {shareCode += ' class="' + settings.wrap.class + '"'}
+        shareCode += ">"
+      }
+    }
     if(platformURL[platform]) {
       var platformName = platformURL[platform][0]
       var platformLink = platformURL[platform][1]
+
+      shareCode += platformName + ", " + platformLink
     }
+    if(settings.wrap !== "") {if(settings.wrap.element !== "") {shareCode += "</" + settings.wrap.element + ">"}}
   })
   if(settings.container !== "") {if(settings.container.element !== "") {shareCode += "</" + settings.container.element + ">"}}
   
