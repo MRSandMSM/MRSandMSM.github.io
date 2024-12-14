@@ -39,44 +39,51 @@ $.fn.toaster = function(options) {
 /* Share plugin */
 $.fn.share = function(options){
   var settings = $.extend({
+    url: location.href,
     platforms: "facebook x linkedin2 google-plus tumblr email",
     iconClass: "icon icon-",
-    iconWrap: "li",
-    containerClass: "",
-    container: "ul",
-    labelText: "Share",
-    labelClass: "",
-    label: "span"
+    wrap: {
+      class: "share-item",
+      element: "li"
+    },
+    container: {
+      class: "",
+      element: "ul"
+    },
+    label: {
+      text: "Share",
+      class: "share-label",
+      element: "span"
+    }
   }, options)
   
   var $this = $(this)
   var platforms = settings.platforms.split(" ")
 
-  var platformName = {
-    facebook: "https://www.facebook.com/sharer/sharer.php?u=" + location.href,
-    x: "https://x.com/intent/post?text=" + $("title").html() + "%0A" + location.href,
-    linkedin2: "https://www.linkedin.com/shareArticle?mini=true&url=" + location.href,
-    "google-plus": "https://plus.google.com/share?url=" + location.href,
-    tumblr: "https://www.tumblr.com/widgets/share/tool?canonicalUrl=" + location.href,
-    email: "Email"
+  var platformURL = {
+    facebook: ["Facebook", "https://www.facebook.com/sharer/sharer.php?u=" + settings.url],
+    x: ["X", "https://x.com/intent/post?text=" + $("title").html() + "%0A" + settings.url],
+    linkedin2: ["LinkedIn", "https://www.linkedin.com/shareArticle?mini=true&url=" + settings.url],
+    "google-plus": ["Google+", "https://plus.google.com/share?url=" + settings.url],
+    tumblr: ["Tumblr", "https://www.tumblr.com/widgets/share/tool?canonicalUrl=" + settings.url],
+    email: ["Email", "mailto:?subject=" + $("title").html() + "&body=Oi [recipient name],%0ACheck out " + $("title").html() + ":" + settings.url]
   }
 
   var shareCode = '';
-  if(settings.container !== ""){
-    shareCode += "<" + settings.container;
-    if(settings.containerClass !== ""){shareCode += ' class="' + settings.containerClass + '"'}
-    shareCode += ">";
+  if(settings.label !== "") {
+    var labelCode = '';
+    if(settings.label.element !== "") {
+      labelCode += "<" + settings.label.element;
+      if(settings.label.class !== "") {labelCode += ' class="' + settings.label.class + '"'}
+      labelCode += ">"
+    }
+    labelCode += settings.label.text;
+    if(settings.label.element !== "") {
+      labelCode += "</" + settings.label.element + ">";
+    }
+    
+    shareCode = labelCode + shareCode;
   }
-  if(settings.iconWrap !== "")
-  var pageURL = '<a href="' + location.href + '" target="_blank">' + location.href + "</a>";
-  $.each(platforms, function(index, platform){
-    shareCode += '<a href="' + (platformName[platform] || pageURL) + '" class="';
-    if(settings.iconClass !== "") {shareCode += settings.iconClass}
-    shareCode += platform + '" target="_blank">' + platform + '</a>';
-  })
-  if(settings.container !== ""){shareCode += "</" + settings.container + ">"}
-  
-  $this.append(shareCode)
 }
 
 /* Tabs plugin */
