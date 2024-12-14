@@ -58,17 +58,17 @@ $.fn.share = function(options){
   }, options)
   
   var platforms = settings.platforms.split(" ")
-
   var platformURL = {
     facebook: ["Facebook", "https://www.facebook.com/sharer/sharer.php?u=" + settings.url],
     x: ["X", "https://x.com/intent/post?text=" + $("title").html() + "%0A" + settings.url],
     linkedin2: ["LinkedIn", "https://www.linkedin.com/shareArticle?mini=true&url=" + settings.url],
     "google-plus": ["Google+", "https://plus.google.com/share?url=" + settings.url],
     tumblr: ["Tumblr", "https://www.tumblr.com/widgets/share/tool?canonicalUrl=" + settings.url],
-    email: ["Email", "mailto:?subject=" + $("title").html() + "&body=Oi [recipient name],%0ACheck out " + $("title").html() + ":" + settings.url]
+    email: ["Email", "mailto:?subject=" + $("title").html() + "&body=Oi [recipient name],%0ACheck out " + $("title").html() + ":" + settings.url] + "%0A%0AOi!%0A[your name]"
   }
 
   var shareCode = '';
+  
   if(settings.label !== "") {
     var labelCode = '';
     if(settings.label.element !== "") {
@@ -76,14 +76,26 @@ $.fn.share = function(options){
       if(settings.label.class !== "") {labelCode += ' class="' + settings.label.class + '"'}
       labelCode += ">"
     }
-    labelCode += settings.label.text;
-    if(settings.label.element !== "") {
-      labelCode += "</" + settings.label.element + ">";
-    }
+    if(settings.label.text !== "") {labelCode += settings.label.text}
+    if(settings.label.element !== "") {labelCode += "</" + settings.label.element + ">"}
     
-    shareCode = labelCode + shareCode;
+    shareCode += labelCode;
   }
-
+  if(settings.container !== "") {
+    if(settings.container.element !== "") {
+      shareCode += "<" + settings.container.element;
+      if(settings.container.class !== "") {shareCode += 'class="' + settings.container.class + '"'}
+      shareCode += ">"
+    }
+  }
+  $.each(platforms, function(index, platform){
+    if(platformURL[platform]) {
+      var platformName = platformURL[platform][0]
+      var platformLink = platformURL[platform][1]
+    }
+  })
+  if(settings.container !== "") {if(settings.container.element !== "") {shareCode += "</" + settings.container.element + ">"}}
+  
   $(this).append(shareCode)
 }
 
