@@ -89,7 +89,7 @@ $.fn.share = function(options){
   if(settings.container !== "") {
     if(settings.container.element !== "") {
       shareCode += "<" + settings.container.element;
-      if(settings.container.class !== "") {shareCode += 'class="' + settings.container.class + '"'}
+      if(settings.container.class !== "") {shareCode += ' class="' + settings.container.class + '"'}
       shareCode += ">"
     }
   }
