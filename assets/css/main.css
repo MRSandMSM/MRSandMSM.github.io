@@ -99,6 +99,10 @@ li.toaster, div.toaster {display: none}
 	top: -9999px;
 	left: -9999px;
 }
+.icon {
+	position: relative;
+	overflow: hidden;
+}
 audio:not([controls]) {display: none !important}
 
 /* II. Site-specific CSS */
