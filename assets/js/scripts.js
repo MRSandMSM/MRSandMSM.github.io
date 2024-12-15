@@ -62,7 +62,7 @@ $.fn.share = function(options){
       element: "span"
     },
     after: function(){
-      if(settings.wrap !== "") {if(settings.wrap.element !== "") {$(this).find(settings.wrap.element).last().addClass(settins.wrap.lastChild)}}
+      if(settings.wrap !== "") {if(settings.wrap.element !== "") {$(this).find(settings.wrap.element).last().addClass(settings.wrap.lastChild)}}
     }
   }, options)
   
