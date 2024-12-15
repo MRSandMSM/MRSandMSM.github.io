@@ -301,8 +301,11 @@ audio:not([controls]) {display: none !important}
 	font-weight: 700;
 	text-transform: uppercase;
 }
-.discography #pageContent .release-type .release .fg .header .menu > li {margin: 0 27px 0 0}
-.discography #pageContent .release-type .release .fg .header li {
+.discography #pageContent .release-type .release .fg .header .menu > li {
+	margin: 0 27px 0 0;
+	vertical-align: middle;
+}
+.discography #pageContent .release-type .release .fg .header li.share {
 	border-right: 1px solid #000418;
 	padding-right: 27px;
 }
