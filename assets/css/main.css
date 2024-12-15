@@ -96,8 +96,8 @@ li.toaster, div.toaster {display: none}
 .close:after {transform: translateY(-50%) rotate(45deg)}
 .visually-hidden {
 	position: absolute;
+	top: -9999px;
 	left: -9999px;
-	right: -9999px;
 }
 audio:not([controls]) {display: none !important}
 
