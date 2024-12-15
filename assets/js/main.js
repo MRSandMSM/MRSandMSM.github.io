@@ -14,6 +14,8 @@ $(document).ready(function(){
     duration: 375,
     easing: "linear"
   })
-  $share.share()
+  $share.share({
+    platforms: "facebook x linkedin2 email"
+  })
   $tabs.tabs()
 })
