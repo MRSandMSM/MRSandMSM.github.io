@@ -302,11 +302,14 @@ audio:not([controls]) {display: none !important}
 	text-transform: uppercase;
 }
 .discography #pageContent .release-type .release .fg .header .menu > li {margin: 0 27px 0 0}
-.discography #pageContent .release-type .release .fg .header li.share span {margin: 0 18px 0 0}
-.discography #pageContent .release-type .release .fg .header li.share .menu > li {
-	vertical-align: bottom;
-	margin: 0 9px 0 0;
+.discography #pageContent .release-type .release .fg .header li {
+	border-right: 1px solid #000418;
+	padding-right: 27px;
 }
+.discography #pageContent .release-type .release .fg .header li.share span,
+.discography #pageContent .release-type .release .fg .header li.share .menu > li {vertical-align: bottom}
+.discography #pageContent .release-type .release .fg .header li.share span {margin: 0 18px 0 0}
+.discography #pageContent .release-type .release .fg .header li.share .menu > li {margin: 0 9px 0 0}
 .discography #pageContent .release-type .release .fg .content > * {float: left}
 .discography #pageContent .release-type .release .fg .content .artwork {
 	width: 37.5%;
