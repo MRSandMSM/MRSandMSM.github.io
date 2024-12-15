@@ -303,7 +303,7 @@ audio:not([controls]) {display: none !important}
 }
 .discography #pageContent .release-type .release .fg .header .menu > li {margin: 0 27px 0 0}
 .discography #pageContent .release-type .release .fg .header li.share span {margin: 0 18px 0 0}
-.discography #pageContent .release-type .release .fg .header .menu > .menu > li {
+.discography #pageContent .release-type .release .fg .header li.share .menu > li {
 	vertical-align: bottom;
 	margin: 0 9px 0 0;
 }
