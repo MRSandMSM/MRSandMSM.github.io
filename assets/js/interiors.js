@@ -84,8 +84,9 @@ $(document).ready(function(){
       $("title").html(releaseTitle)
 
       $release.siblings().remove().parent().show().siblings().remove()
+      $(".more-link").remove();
     } else if(releaseView == 'teaser') {
-      $(".artwork .description, .tabs .menu").remove()
+      $(".release .artwork .description, .release .tabs .menu, .release .header > .menu").remove()
       $("head").append("<style>.tabs .tabs-content ol li a.lyrics {display: none !important}</style>")
     }
   }
