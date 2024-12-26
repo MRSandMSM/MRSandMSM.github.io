@@ -130,6 +130,10 @@ audio:not([controls]) {display: none !important}
 	height: 31.5px;
 	background-image: url("/assets/img/ontheroof_logo-standard.png");
 }
+#header .header-content .navigation {
+	flex-grow: 1;
+	text-align: right;
+}
 #header .header-content .navigation .menu li {margin: 0 27px 0 0}
 #header .header-content .navigation .menu li a {
 	font-size: 20.25px;
@@ -291,7 +295,7 @@ audio:not([controls]) {display: none !important}
 .discography #pageContent .release-type .release .fg .header .more-link,
 .discography #pageContent .release-type .release .fg .header > .menu {
 	float: right;
-	margin: 13.5px 1.125px 0 0;
+	margin: 13.5px 0 0 0;
 }
 .discography #pageContent .release-type .release .fg .header a,
 .discography #pageContent .release-type .release .fg .header li.share span {
