@@ -2,8 +2,10 @@ $(document).ready(function(){
   /* II. Discography page */
   $(".release").each(function(){
     var $this = $(this);
-    $this.find(".artwork-img").addClass("desktop-only").clone()
-      .removeClass("desktop-only").addClass("mobile-only").prependTo($this.find(".header"))
+    var $header = $this.find(".header");
+    var $artworkImg = $this.find(".artwork-img");
+    
+    $artworkImg.addClass("desktop-only").clone().removeClass("desktop-only").addClass("mobile-only").prependTo($header)
     $this.find(".tabs").append("<audio></audio>")
   })
   $(".tracklist").each(function(){
