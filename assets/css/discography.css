@@ -1,4 +1,3 @@
-
 /* III.III. Discography */
 .discography #pageContent {
 	margin-top: 45px;
@@ -156,3 +155,35 @@
 	font-weight: 400;
 }
 .release .tracklist .length {float: right}
+
+/* IV.II. Equal or narrower than 767px */
+@media screen and (max-width: 767px) {
+		/* IV.II.III.II. Discography */
+	.discography #pageContent {margin-top: 40.5px}
+	.release .fg {padding: 22.5px 27px}
+	.release .fg > *, .release .fg > * > * {float: none !important}
+	.release .content .artwork, .release .content .tabs {
+		width: 100%;
+		padding: 0;
+	}
+	.release#inTheSky .header h2 {height: auto}
+	.release .header h2 span {display: block}
+	.release .header .title {
+		width: 100%;
+		height: 27px;
+		margin: 0 0 9px 0
+	}
+	.release .header .date {font-size: 18px}
+	.release .header .date:before {display: none}
+	.release .header .more-link, .release .header > .menu > li {
+		display: block;
+		margin: 13.5px 0 0 0;
+	}
+	.release .header > .menu > .share {
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+	.release .content .artwork {margin: 0 0 18px 0}
+	.release .content .artwork .description {font-size: 15.75px}
+}
