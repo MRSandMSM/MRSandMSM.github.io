@@ -83,6 +83,7 @@ $(document).ready(function(){
 
       var identifierID = identifierWords.join("");
       var $release = $("#" + identifierID)
+      alert(identifierID)
 
       var releaseTitle = identifierWords.join(" ") + " | MR S and MS M";
       var releaseURL = "/discography/" + identifier;
