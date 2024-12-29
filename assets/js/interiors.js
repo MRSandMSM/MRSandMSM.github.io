@@ -1,13 +1,15 @@
 $(document).ready(function(){
   /* II. Discography page */
   $(".release").each(function(){
-    $(this).find(".tabs").append("<audio></audio>")
-    var $win = $(window)
+    var $this = $(this);
+    var winW = $(window).innerWidth();
+    
+    $this.find(".tabs").append("<audio></audio>")
 
-    if($win.innerWidth() > 486 && $win.innerWidth <= 767) {
-      $(this).find(".artwork-img").prependTo($(this).find(".header"))
+    if(winW > 486 && winW <= 767) {
+      $this.find(".artwork-img").prependTo($this.find(".header"))
     } else {
-      $(this).find(".artwork-img").prependTo($(this).find(".artwork"))
+      $this.find(".artwork-img").prependTo($this.find(".artwork"))
     }
   })
   $(".tracklist").each(function(){
