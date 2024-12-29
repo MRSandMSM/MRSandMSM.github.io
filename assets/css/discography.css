@@ -158,7 +158,7 @@
 
 /* IV.II. Equal or narrower than 767px */
 @media screen and (max-width: 767px) {
-		/* IV.II.III.II. Discography */
+	/* IV.II.III.II. Discography */
 	.discography #pageContent {margin-top: 40.5px}
 	.release .fg {padding: 22.5px 27px}
 	.release .fg > *, .release .fg > * > * {float: none !important}
