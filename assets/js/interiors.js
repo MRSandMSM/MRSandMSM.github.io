@@ -1,7 +1,12 @@
 $(document).ready(function(){
   /* II. Discography page */
   $(".release").each(function(){
-      $(this).find(".tabs").append("<audio></audio>")
+    $(this).find(".tabs").append("<audio></audio>")
+    var $win = $(window)
+
+    if($win.innerWidth() > 486 && $win.innerWidth <= 767) {
+      $(this).find(".artwork-img").prependTo($(this).find(".header"))
+    }
   })
   $(".tracklist").each(function(){
     var $this = $(this);
