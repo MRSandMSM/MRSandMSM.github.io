@@ -248,74 +248,74 @@ audio:not([controls]) {display: none !important}
 }
 .release-type .release {position: relative}
 .release-type #inTheSky {background-color: #e0eaf5}
-.release-type .release .bg {opacity: .25}
-.release-type .release#inTheSky .bg {background-image: url("/assets/img/discography/release_bgs/in-the-sky_bg.jpg")}
-.release-type .release .fg {
+.release .bg {opacity: .25}
+.release#inTheSky .bg {background-image: url("/assets/img/discography/release_bgs/in-the-sky_bg.jpg")}
+.release .fg {
 	position: relative;
 	z-index: 1;
 	max-width: 2023.5px;
 	margin: 0 auto;
 	padding: 27px 51.75px;
 }
-.release-type .release .header {
+.release .header {
 	position: relative;
 	margin: 0 0 27px;
 }
-.release-type .release .header h2, .release-type .release .header h2 span, .release-type .release .header a,
-.release-type .release .header .share span, .release-type .release .header .share .menu {line-height: 1em}
-.release-type .release .header h2 {
+.release .header h2, .release .header h2 span, .release .header a, .release .header .share span,
+.release .header .share .menu {line-height: 1em}
+.release .header h2 {
 	float: left;
 	height: 1em;
 	font-size: 36px;
 }
-.release-type .release .header h2 span, .release-type .release .header .share .menu {display: inline-block}
-.release-type .release .header .title {font-family: "itc-avant-garde-gothic-pro", sans-serif}
-.release-type #inTheSky .header .title {
+.release .header h2 span, .release .header .share .menu {display: inline-block}
+.release .header .title {font-family: "itc-avant-garde-gothic-pro", sans-serif}
+.release#inTheSky .header .title {
 	width: 277.75px;
 	background-image: url("/assets/img/discography/release_logos/inthesky_logo.png");
 }
-.release-type .release .header .replace {height: 36px}
-.release-type .release .header .date {font-size: 27px}
-.release-type .release .header .date:before {
+.release .header .replace {height: 36px}
+.release .header .date {font-size: 27px}
+.release .header .date:before {
 	content: " / ";
 	opacity: .75;
 }
-.release-type .release .header .more-link, .release-type .release .header > .menu {
+.release .header .more-link, .release .header > .menu {
 	float: right;
 	margin: 13.5px 0 0 0;
 }
-.release-type .release .header a, .release-type .release .header .share span {
+.release .header a, .release .header .share span {
 	font-family: "proxima-nova", sans-serif;
 	font-size: 22.5px;
 	letter-spacing: -1.125px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
-.release-type .release .header .menu > li {
+.release .header .menu > li {
 	margin: 0 27px 0 0;
 	vertical-align: middle;
 }
-.release-type .release .header .share {
+.release .header .share {
 	border-right: 1px solid #000418;
 	padding-right: 27px;
 }
-.release-type .release .header .share span, .release-type .release .header .share .menu > li {
+.release .header .share span, .release .header .share .menu > li {
 	vertical-align: bottom;
 	margin: 0 18px 0 0;
 }
-.release-type .release .content > * {float: left}
-.release-type .release .content .artwork {
+.release .content > * {float: left}
+.release .content .artwork {
 	width: 37.5%;
 	padding: 0 13.5px 0 0;
 	line-height: 0;
 }
-.release-type .release .content .artwork img {width: 100%}
-.release-type .release .content .artwork .description {
+.release .content .artwork img {width: 100%}
+.release .content .artwork .description {
 	margin: 18px 0 0 0;
 	line-height: 1.5em;
 }
-.release-type .release .content .artwork .liner {margin: 0 0 13.5px 0}
-.release-type .release .content .artwork .production:before {
+.release .content .artwork .liner {margin: 0 0 13.5px 0}
+.release .content .artwork .production:before {
 	content: "";
 	display: block;
 	width: 54px;
@@ -323,23 +323,23 @@ audio:not([controls]) {display: none !important}
 	margin: 0 0 13.5px 0;
 	background-color: #052d6a;
 }
-.release-type .release .content .artwork .production li {margin: 0 0 4.5px 0}
-.release-type .release .content .artwork .production li.last-of-subsec {margin: 0 0 9px 0}
-.release-type .release .content .artwork .production li:last-child {margin: 0}
-.release-type .release .content .tabs {
+.release .content .artwork .production li {margin: 0 0 4.5px 0}
+.release .content .artwork .production li.last-of-subsec {margin: 0 0 9px 0}
+.release .content .artwork .production li:last-child {margin: 0}
+.release .content .tabs {
 	width: 62.5%;
 	padding: 0 0 0 13.5px;
 }
-.release-type .release .content .tabs .menu {
+.release .content .tabs .menu {
 	overflow-x: auto;
 	white-space: nowrap;
 }
-.release-type .release .content .tabs .menu li {margin: 0 18px 0 0}
-.release-type .release .content .disable-inactive .menu li:not(.active) {
+.release .content .tabs .menu li {margin: 0 18px 0 0}
+.release .content .disable-inactive .menu li:not(.active) {
 	pointer-events: none;
 	opacity: .5;
 }
-.release-type .release .content .tabs .menu a {
+.release .content .tabs .menu a {
 	padding: 13.5px 0 7.875px 0;
 	font-family: "itc-avant-garde-gothic-pro", sans-serif;
 	font-size: 22.5px;
@@ -347,23 +347,23 @@ audio:not([controls]) {display: none !important}
 	line-height: 1em;
 	color: #000418;
 }
-.release-type .release .content .tabs .menu a:hover, .release-type .release .content .tabs .menu a:focus,
-.release-type .release .content .tabs .menu .active a {color: #052d6a}
-.release-type .release .content .tracklist {
+.release .content .tabs .menu a:hover, .release .content .tabs .menu a:focus,
+.release .content .tabs .menu .active a {color: #052d6a}
+.release .content .tracklist {
 	padding: 0;
 	list-style-type: none;
 }
-.release-type .release .tracklist ol {margin: 0 0 9px}
-.release-type .release .tracklist ol:last-child {margin: 0}
+.release .tracklist ol {margin: 0 0 9px}
+.release .tracklist ol:last-child {margin: 0}
 .release-type .release .tracklist li {
 	overflow: hidden;
 	padding: 9px 0;
 	border-top: 4.5px solid;
 	line-height: 1em;
 }
-.release-type .release .tracklist li a {color: inherit}
-.release-type .release .tracklist li a:hover, .release-type .release .tracklist li a:focus {color: #000418}
-.release-type .release .tracklist li a.play {
+.release .tracklist li a {color: inherit}
+.release .tracklist li a:hover, .release .tracklist li a:focus {color: #000418}
+.release .tracklist li a.play {
 	float: left;
 	width: 0;
 	height: 0;
@@ -374,27 +374,27 @@ audio:not([controls]) {display: none !important}
 	border-bottom-color: transparent;
 	text-indent: -9999px;
 }
-.release-type .release .tracklist li a.playing {
+.release .tracklist li a.playing {
 	width: 14px;
 	height: 17.33333396911621px;
 	border-width: 0 5.625px;
 }
-.release-type .release .tracklist li span {color: #000418}
-.release-type .release .tracklist .track, .release-type .release .tracklist .title,
-.release-type .release .tracklist .lyrics {
+.release .tracklist li span {color: #000418}
+.release .tracklist .track, .release .tracklist .title,
+.release .tracklist .lyrics {
 	display: inline-block;
 	font-weight: 700;
 }
-.release-type .release .tracklist .track {
+.release .tracklist .track {
 	min-width: 28.08333396911621px;
 	margin: 0 4.5px 0 0;
 }
-.release-type .release .tracklist .title {margin: 0 9px 0 0}
-.release-type .release .tracklist .lyrics {
+.release .tracklist .title {margin: 0 9px 0 0}
+.release .tracklist .lyrics {
 	font-size: 13.5px;
 	font-weight: 400;
 }
-.release-type .release .tracklist .length {float: right}
+.release .tracklist .length {float: right}
 
 /* IV. Responsive CSS */
 /* IV.I. Equal or narrower than 939px */
