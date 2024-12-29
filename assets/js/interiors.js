@@ -6,6 +6,15 @@ $(document).ready(function(){
     var $artworkImg = $this.find(".artwork-img");
     
     $artworkImg.addClass("desktop-only").clone().removeClass("desktop-only").addClass("mobile-only").appendTo($header)
+    $header.each(function(){
+      var $this = $(this);
+      var titleHeight = $this.find("h2").outerHeight(true)
+      var linksHeight = $this.find(".more-link, .menu").outerHeight(true)
+      var contentHeight = titleHeight + linksHeight;
+
+      $this.css("padding-top", contentHeight)
+    })
+    
     $this.find(".tabs").append("<audio></audio>")
   })
   $(".tracklist").each(function(){
