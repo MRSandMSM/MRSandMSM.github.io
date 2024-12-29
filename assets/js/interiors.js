@@ -5,7 +5,7 @@ $(document).ready(function(){
     $this.find(".tabs").append("<audio></audio>")
 
     $(window).on("load resize", function(){
-      var winW = $(window).innerWidth(true);
+      var winW = $(body).prop("clientWidth");
       if(winW > 486 && winW <= 767) {
         $this.find(".artwork-img").prependTo($this.find(".header"))
       } else {
