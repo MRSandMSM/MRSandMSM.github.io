@@ -438,27 +438,27 @@ audio:not([controls]) {display: none !important}
 	/* IV.II.III. Page-specific CSS */
 	/* IV.II.III.II. Discography */
 	.discography #pageContent {margin-top: 40.5px}
-	.release-type .release .fg {padding: 22.5px 27px}
-	.release-type .release .fg > *, .release-type .release .fg > * > * {float: none !important}
-	.release-type .release .content .artwork, .release-type .release .content .tabs {
+	.release .fg {padding: 22.5px 27px}
+	.release .fg > *, .release .fg > * > * {float: none !important}
+	.release .content .artwork, .release .content .tabs {
 		width: 100%;
 		padding: 0;
 	}
-	.release-type #inTheSky .header h2 {height: auto}
-	.release-type .release .header h2 span {display: block}
-	.release-type .release#inTheSky .header .title {
+	.release#inTheSky .header h2 {height: auto}
+	.release .header h2 span {display: block}
+	.release .header .title {
 		width: 100%;
 		height: 27px;
 		margin: 0 0 9px 0
 	}
-	.release-type .release#inTheSky .header .date {font-size: 18px}
-	.release-type .release#inTheSky .header .date:before {display: none}
-	.release-type .release#inTheSky .header a {
+	.release .header .date {font-size: 18px}
+	.release .header .date:before {display: none}
+	.release .header .more-link {
 		display: inline-block;
 		margin: 13.5px 0 0 0;
 	}
-	.release-type .release .content .artwork {margin: 0 0 18px 0}
-	.release-type .release .content .artwork .description {font-size: 15.75px}
+	.release .content .artwork {margin: 0 0 18px 0}
+	.release .content .artwork .description {font-size: 15.75px}
 }
 /* IV.III. Equal or narrower than 639px */
 @media screen and (max-width: 639px) {
