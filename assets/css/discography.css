@@ -175,10 +175,8 @@
 	}
 	.release .header .date {font-size: 18px}
 	.release .header .date:before {display: none}
-	.release .header .more-link, .release .header > .menu > li {
-		display: block;
-		margin: 13.5px 0 0 0;
-	}
+	.release .header .more-link, .release .header > .menu > li {display: block}
+	.release .header > .menu > li {margin: 6.75px 0 0 0}
 	.release .header > .menu > .share {
 		border: none;
 		margin: 0;
