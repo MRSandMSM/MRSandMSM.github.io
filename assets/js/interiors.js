@@ -5,7 +5,7 @@ $(document).ready(function(){
     var $header = $this.find(".header");
     var $artworkImg = $this.find(".artwork-img");
     
-    $artworkImg.addClass("desktop-only").clone().removeClass("desktop-only").addClass("mobile-only").prependTo($header)
+    $artworkImg.addClass("desktop-only").clone().removeClass("desktop-only").addClass("mobile-only").appendTo($header)
     $this.find(".tabs").append("<audio></audio>")
   })
   $(".tracklist").each(function(){
