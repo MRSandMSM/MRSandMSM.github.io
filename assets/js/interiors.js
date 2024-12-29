@@ -89,6 +89,8 @@ $(document).ready(function(){
       history.replaceState(identifier, releaseTitle, releaseURL)
       $("title").html(releaseTitle)
 
+      $release.addClass("release-active")
+      
       $release.siblings().remove().parent().show().siblings().remove()
       $(".more-link").remove();
     } else if(releaseView == 'teaser') {
