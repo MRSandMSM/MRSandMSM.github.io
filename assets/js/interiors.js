@@ -6,6 +6,8 @@ $(document).ready(function(){
 
     if($win.innerWidth() > 486 && $win.innerWidth <= 767) {
       $(this).find(".artwork-img").prependTo($(this).find(".header"))
+    } else {
+      $(this).find(".artwork-img").prependTo($(this).find(".artwork"))
     }
   })
   $(".tracklist").each(function(){
