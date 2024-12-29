@@ -6,14 +6,6 @@ $(document).ready(function(){
     var $artworkImg = $this.find(".artwork-img");
     
     $artworkImg.addClass("desktop-only").clone().removeClass("desktop-only").addClass("mobile-only").appendTo($header)
-    $header.each(function(){
-      var $this = $(this);
-      var titleHeight = $this.find("h2").outerHeight(true)
-      var linksHeight = $this.find(".more-link, .menu").outerHeight(true)
-      var contentHeight = $this.outerHeight(true) - (titleHeight + linksHeight);
-
-      $this.css("padding-top", contentHeight)
-    })
     
     $this.find(".tabs").append("<audio></audio>")
   })
@@ -77,11 +69,11 @@ $(document).ready(function(){
   if($("body #pageContainer").hasClass("discography")) {
     var releaseView;
 
-    if(location.hash.indexOf("-") !== -1) {releaseView = 'full'}
+    if(location.hash.indexOf("/") !== -1) {releaseView = 'full'}
     else {releaseView = 'teaser'}
 
     if(releaseView == 'full') {
-      var identifier = location.hash.split("#")[1];
+      var identifier = location.hash.split("#/")[1];
       var identifierArray = identifier.split("-");
       var identifierWords = []
 
