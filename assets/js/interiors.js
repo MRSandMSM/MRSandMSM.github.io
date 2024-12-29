@@ -10,7 +10,7 @@ $(document).ready(function(){
       var $this = $(this);
       var titleHeight = $this.find("h2").outerHeight(true)
       var linksHeight = $this.find(".more-link, .menu").outerHeight(true)
-      var contentHeight = titleHeight + linksHeight;
+      var contentHeight = $this.outerHeight(true) - (titleHeight + linksHeight);
 
       $this.css("padding-top", contentHeight)
     })
