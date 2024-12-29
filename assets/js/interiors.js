@@ -2,16 +2,9 @@ $(document).ready(function(){
   /* II. Discography page */
   $(".release").each(function(){
     var $this = $(this);
+    $this.find(".artwork-img").addClass("desktop-only").clone()
+      .removeClass("desktop-only").addClass("mobile-only").prependTo($this.find(".header"))
     $this.find(".tabs").append("<audio></audio>")
-
-    $(window).on("load resize", function(){
-      var winW = $(window).innerWidth;
-      if(winW > 486 && winW < 782) {
-        $this.find(".artwork-img").prependTo($this.find(".header"))
-      } else {
-        $this.find(".artwork-img").prependTo($this.find(".artwork"))
-      }
-    })
   })
   $(".tracklist").each(function(){
     var $this = $(this);
