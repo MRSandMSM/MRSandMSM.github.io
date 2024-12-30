@@ -168,6 +168,24 @@
 		left: 0;
 		width: 270px;
 	}
+	.release-active .header img.desktop-only {display: none}
+	.release-active .header img.mobile-only {display: block}
+	.release-active .header h2 {height: auto}
+	.release-active .header h2 span {display: block}
+	.release-active .header .title {
+		width: 100%;
+		height: 27px;
+		margin: 0 0 9px 0
+	}
+	.release-active .header .date {font-size: 18px}
+	.release-active .header .date:before {display: none}
+	.release-active .header > .menu > li {display: block}
+	.release-active .header > .menu > li {margin: 6.75px 0 0 0 !important}
+	.release-active .header > .menu > .share {
+		border: none;
+		margin: 0 !important;
+		padding: 0;
+	}
 }
 /* IV.II. Equal or narrower than 767px */
 @media screen and (max-width: 767px) {
@@ -185,7 +203,7 @@
 		left: 0;
 		width: 270px;
 	}
-	.release#inTheSky .header h2 {height: auto}
+	.release .header h2 {height: auto}
 	.release .header h2 span {display: block}
 	.release .header .title {
 		width: 100%;
