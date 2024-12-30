@@ -152,7 +152,7 @@ $.fn.tabs = function(options){
   if(settings.nav.type == "internal") {
     var $navItem = $this.find(settings.nav.selector + " li");
   } else if(settings.nav.type == "external") {
-    var $navItem = $(settings.nav.selector + "li")
+    var $navItem = $(settings.nav.selector + " li")
   } else {
     console.error("Nav type must be internal or external")
   }
