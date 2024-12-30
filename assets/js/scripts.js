@@ -144,7 +144,8 @@ $.fn.tabs = function(options){
       selector: "> .menu"
     },
     navActiveClass: "active",
-    tabsSelector: ".tabs-content"
+    tabsSelector: ".tabs-content",
+    after: function(){}
   }, options)
     
   var $this = $(this)
@@ -164,6 +165,9 @@ $.fn.tabs = function(options){
       if(event.preventDefault){event.preventDefault()} else {event.returnValue = false}
       $(this).parent().addClass(settings.navActiveClass).siblings().removeClass(settings.navActiveClass);
       $(settings.tabsSelector).find($navLink.attr("href")).show().siblings().hide()
+      if (typeof settings.after === "function") {
+        settings.after.call(this); // Explicitly bind `this` to the plugin's element
+      }
     })
   })
 }
