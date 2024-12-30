@@ -307,6 +307,9 @@ audio:not([controls]) {display: none !important}
 	.secondary-nav .mobile-nav-toggler .plus .vertical {background-color: #f7f8fa}
 	.secondary-nav h2, .secondary-nav .menu {float: none}
 	.secondary-nav .menu, .secondary-nav .menu li, .secondary-nav .menu li a {display: block}
+	.secondary-nav .menu {margin: 0 -27px -6.75px -27px}
+	.secondary-nav .menu li {border-top: 1px solid rgba(247, 248, 250, .625)}
+	.secondary-nav .menu li a {padding: 9px 27px}
 
 	/* IV.II.III. Page-specific CSS */
 }
