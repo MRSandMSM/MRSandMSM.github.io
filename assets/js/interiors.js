@@ -73,6 +73,8 @@ $(document).ready(function(){
     else {releaseView = 'teaser'}
 
     if(releaseView == 'full') {
+      $("#discography").removeClass("has-secondary-nav").find(".secondary-nav").remove()
+      
       var identifier = location.hash.split("#/")[1];
       var identifierArray = identifier.split("-");
       var identifierWords = []
