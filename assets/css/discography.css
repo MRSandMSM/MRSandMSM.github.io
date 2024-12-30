@@ -175,10 +175,10 @@
 	.release .header h2 span {display: block}
 	.release .header .title {
 		width: 100%  !important;
-		height: 27px;
-		margin: 0 0 9px 0
+		height: 31.5px;
+		margin: 0 0 13.5px 0
 	}
-	.release .header .date {font-size: 18px}
+	.release .header .date {font-size: 22.5px}
 	.release .header .date:before {display: none}
 	.release .header .more-link, .release .header > .menu > li {display: block}
 	.release .header > .menu > li {margin: 6.75px 0 0 0 !important}
@@ -204,6 +204,11 @@
 		padding-left: 288px;
 	}
 	.release .header img {width: 270px}
+	.release .header .title {
+		height: 27px;
+		margin: 0 0 9px 0;
+	}
+	.release .header .date {font-size: 18px}
 }
 /* IV.III. Equal or narrower than 486px */
 @media screen and (max-width: 639px) {
