@@ -130,9 +130,10 @@ $.fn.share = function(options){
   if(settings.container !== "") {if(settings.container.element !== "") {shareCode += "</" + settings.container.element + ">"}}
   
   $(this).append(shareCode)
-    if (typeof settings.after === "function") {
-      settings.after.call(this); // Explicitly bind `this` to the plugin's element
-    }
+  
+  if (typeof settings.after === "function") {
+    settings.after.call(this); // Explicitly bind `this` to the plugin's element
+  }
 }
 
 /* Tabs plugin */
