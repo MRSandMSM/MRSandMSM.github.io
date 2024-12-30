@@ -19,6 +19,7 @@
 	margin: 0;
 }
 html, body, #pageContainer {overflow-x: hidden}
+html {-webkit-text-size-adjust: 100%}
 body {
 	font-family: "minion-3", sans-serif;
 	font-size: 18px;
