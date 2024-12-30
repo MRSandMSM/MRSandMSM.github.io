@@ -161,14 +161,14 @@
 	.release .fg {padding: 22.5px 27px}
 	.release .fg > *, .release .fg > * > * {float: none !important}
 	.release .header {
-		height: 450px;
-		padding-left: 468px;
+		height: 360px;
+		padding-left: 378px;
 	}
 	.release .header img {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 450px;
+		width: 360px;
 	}
 	.release .header img.mobile-only {display: block !important}
 	.release .header h2 {height: auto}
