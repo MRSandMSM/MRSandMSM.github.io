@@ -202,7 +202,7 @@
 	.release .content .artwork img.desktop-only {display: none !important}
 	.release .content .artwork .description {
 		font-size: 15.75px;
-		width: 90%;
+		width: 50%;
 	}
 }
 /* IV.II. Equal or narrower than 767px */
