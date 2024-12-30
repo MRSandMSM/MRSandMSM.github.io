@@ -1,7 +1,5 @@
 /* III.III. Discography */
-.discography #pageContent {
-	margin-top: 45px;
-}
+.has-secondary-nav #pageContent {margin-top: 45px}
 .release-type, .release-type .production {
 	list-style-type: none;
 	padding: 0;
@@ -205,7 +203,7 @@
 /* IV.II. Equal or narrower than 767px */
 @media screen and (max-width: 767px) {
 	/* IV.II.III.II. Discography */
-	.discography #pageContent {margin-top: 40.5px}
+	.has-secondary-nav #pageContent {margin-top: 40.5px}
 	.release .fg {padding: 22.5px 27px}
 	.release .header {
 		height: 270px;
