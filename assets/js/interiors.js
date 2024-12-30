@@ -6,7 +6,10 @@ $(document).ready(function(){
       selector: "#filterNav .menu"
     },
     navActiveClass: "active",
-    tabsSelector: ".types-inner"
+    tabsSelector: ".types-inner",
+    after: function(){
+      $("#page").removeClass("secondary-nav-open")
+    }
   })
   $(".release").each(function(){
     var $this = $(this);
