@@ -292,7 +292,7 @@ audio:not([controls]) {display: none !important}
 	}
 	.secondary-nav .mobile-nav-toggler {
 		position: absolute;
-		top: 50%;
+		top: 20.25px;
 		right: 27px;
 		margin: -7.875px 0 0 0;
 	}
