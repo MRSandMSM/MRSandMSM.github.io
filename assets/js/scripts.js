@@ -138,13 +138,20 @@ $.fn.share = function(options){
 /* Tabs plugin */
 $.fn.tabs = function(options){
   var settings = $.extend({
-    navSelector: "> .menu",
+    nav: {
+      type: "internal",
+      selector: "> .menu"
+    },
     navActiveClass: "active",
     tabsSelector: ".tabs-content"
   }, options)
     
   var $this = $(this)
-  var $navItem = $this.find(settings.navSelector + " li");
+  if(settings.nav.type == "internal") {
+    var $navItem = $this.find(settings.nav.selector + " li");
+  } else {
+    var $navItem = $(settings.nav.selector + "li")
+  }
   
   var firstTab = $navItem.first().find("a").attr("href")
   $navItem.first().addClass(settings.navActiveClass)
