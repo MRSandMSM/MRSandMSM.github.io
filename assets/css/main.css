@@ -259,8 +259,13 @@ audio:not([controls]) {display: none !important}
 	#footer .footer-inner #footerCopy {position: relative}
 	#footer .footer-inner #footerCopy .menu {position: static}
 	#footer .footer-inner #footerCopy #siteCredits {
+	        padding: 4.5px 18px 4.5px 24.75px;
 		bottom: 19.125px;
 		width: 100%;
+	}
+	#footer .footer-inner #footerCopy #siteCredits .close {
+		right: auto;
+		left: 0;
 	}
 }
 
