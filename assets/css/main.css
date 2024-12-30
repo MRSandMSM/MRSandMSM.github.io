@@ -95,6 +95,18 @@ li.toaster, div.toaster {display: none}
 }
 .close:before {transform: translateY(-50%) rotate(-45deg)}
 .close:after {transform: translateY(-50%) rotate(45deg)}
+.plus {
+	position: relative;
+	width: 15.75px;
+	height: 2.25px;
+}
+.plus .vertical {
+	position: absolute;
+	top: -6.75px;
+	left: 6.75px;
+	width: 2.25px;
+	height: 15.75px;
+}
 .visually-hidden {
 	position: absolute;
 	top: -9999px;
@@ -175,6 +187,13 @@ audio:not([controls]) {display: none !important}
 	line-height: 1em;
 	color: #f7f8fa;
 }
+.secondary-nav .nav-toggler {
+	position: absolute;
+	top: 50%;
+	right: 27px;
+	margin: -7.875px 0 0 0;
+}
+.secondary-nav .nav-toggler .plus, .secondary-nav .nav-toggler .plus .vertical {background-color: #f7f8fa}
 .secondary-nav .menu {
 	float: right;
 	margin: 4.5px 0;
