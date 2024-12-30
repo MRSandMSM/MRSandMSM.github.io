@@ -145,7 +145,7 @@ $.fn.tabs = function(options){
     },
     navActiveClass: "active",
     tabsSelector: ".tabs-content",
-    after: function(){alert(settings.nav.type)}
+    after: function(){}
   }, options)
     
   var $this = $(this)
