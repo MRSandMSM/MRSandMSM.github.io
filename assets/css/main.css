@@ -281,7 +281,8 @@ audio:not([controls]) {display: none !important}
 		top: 52.41666793823242px;
 		padding: 6.75px 0;
 	}
-	.secondary-nav .menu {display: none}
+	.secondary-nav h2, .secondary-nav .menu {float: none}
+	.secondary-nav .menu, .secondary-nav .menu li, .secondary-nav .menu li a {display: block}
 
 	/* IV.II.III. Page-specific CSS */
 }
