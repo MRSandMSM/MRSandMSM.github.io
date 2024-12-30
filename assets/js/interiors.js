@@ -81,8 +81,9 @@ $(document).ready(function(){
         identifierWords.push(word[0].toUpperCase() + word.slice(1));
       })
 
-      var identifierID = identifierWords.join("");
-      var release = "#" + identifierID.slice(1);
+      var identifierName = identifierWords.join("");
+      var identifierID = identifierName[0].toLowerCase() + identifierName.slice(1);
+      var release = "#" + identifierID;
       var $release = $(release)
       alert(release)
 
