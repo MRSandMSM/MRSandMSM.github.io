@@ -168,8 +168,8 @@
 		left: 0;
 		width: 270px;
 	}
-	.release-active .header img.desktop-only {display: none}
-	.release-active .header img.mobile-only {display: block}
+	.release-active .header img.desktop-only {display: none !important}
+	.release-active .header img.mobile-only {display: block !important}
 	.release-active .header h2 {height: auto}
 	.release-active .header h2 span {display: block}
 	.release-active .header .title {
