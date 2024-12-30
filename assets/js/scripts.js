@@ -151,13 +151,17 @@ $.fn.tabs = function(options){
   var $this = $(this)
   if(settings.nav.type == "internal") {
     var $navItem = $this.find(settings.nav.selector + " li");
-  } else {
+  } else if(settings.nav.type == "external") {
     var $navItem = $(settings.nav.selector + "li")
+  } else {
+    console.error("Nav type must be internal or external")
   }
   
   var firstTab = $navItem.first().find("a").attr("href")
   $navItem.first().addClass(settings.navActiveClass)
   $(firstTab).show().siblings().hide()
+
+  alert(settings.nav.type)
 
   $navItem.each(function(){
     var $navLink = $(this).find("a");
