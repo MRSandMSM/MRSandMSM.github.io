@@ -200,10 +200,7 @@
 	}
 	.release-active .content .artwork {display: block}
 	.release .content .artwork img.desktop-only {display: none !important}
-	.release .content .artwork .description {
-		font-size: 15.75px;
-		width: 50%;
-	}
+	.release .content .artwork .description {font-size: 15.75px;}
 }
 /* IV.II. Equal or narrower than 767px */
 @media screen and (max-width: 767px) {
