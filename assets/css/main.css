@@ -262,6 +262,7 @@ audio:not([controls]) {display: none !important}
 	        padding: 4.5px 18px 4.5px 24.75px;
 		bottom: 19.125px;
 		width: 100%;
+		text-align: left;
 	}
 	#footer .footer-inner #footerCopy #siteCredits .close {
 		right: auto;
