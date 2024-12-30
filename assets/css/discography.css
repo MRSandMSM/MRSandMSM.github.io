@@ -5,7 +5,7 @@
 }
 .release-type .release {position: relative}
 .release-type #inTheSky {background-color: #e0eaf5}
-.release .bg {opacity: .25}
+.release .bg {opacity: .125}
 .release#inTheSky .bg {background-image: url("/assets/img/discography/release_bgs/in-the-sky_bg.jpg")}
 .release .fg {
 	position: relative;
