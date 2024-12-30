@@ -216,9 +216,9 @@
 @media screen and (max-width: 639px) {
 	.release .header {
 		height: 180px;
-		padding: 60.75px 0 0 198px;
+		padding: 90px 0 0 198px;
 	}
-	.release-active .header {padding: 90px 0 0 198px;}
+	.release-active .header {padding: 60.75px 0 0 198px;}
 	.release .header img {width: 180px}
 }
 /* IV.IV. Equal or narrower than 486px */
