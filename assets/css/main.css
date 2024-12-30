@@ -72,6 +72,7 @@ p:last-child {margin: 0}
 }
 .menu li, .menu li a, .menu li span {display: inline-block}
 .menu li.last {margin: 0 -.25px 0 0 !important}
+.mobile-nav-toggler {display: none}
 .mobile-only {display: none !important}
 .clearfix:after, .section:after {
 	content: "";
@@ -96,6 +97,7 @@ li.toaster, div.toaster {display: none}
 .close:before {transform: translateY(-50%) rotate(-45deg)}
 .close:after {transform: translateY(-50%) rotate(45deg)}
 .plus {
+	display: inline-block;
 	position: relative;
 	width: 15.75px;
 	height: 2.25px;
@@ -187,13 +189,6 @@ audio:not([controls]) {display: none !important}
 	line-height: 1em;
 	color: #f7f8fa;
 }
-.secondary-nav .nav-toggler {
-	position: absolute;
-	top: 50%;
-	right: 27px;
-	margin: -7.875px 0 0 0;
-}
-.secondary-nav .nav-toggler .plus, .secondary-nav .nav-toggler .plus .vertical {background-color: #f7f8fa}
 .secondary-nav .menu {
 	float: right;
 	margin: 4.5px 0;
@@ -280,6 +275,7 @@ audio:not([controls]) {display: none !important}
 @media screen and (max-width: 767px) {
 	/* IV.II.I. CSS Essentials */
 	/* IV.II.I.I. Common CSS */
+	.mobile-nav-toggler {display: block}
 	.mobile-only {display: block !important}
 	.desktop-only {display: none !important}
 
@@ -301,6 +297,14 @@ audio:not([controls]) {display: none !important}
 		top: 52.41666793823242px;
 		padding: 6.75px 0;
 	}
+	.secondary-nav .mobile-nav-toggler {
+		position: absolute;
+		top: 50%;
+		right: 27px;
+		margin: -7.875px 0 0 0;
+	}
+	.secondary-nav .mobile-nav-toggler .plus,
+	.secondary-nav .mobile-nav-toggler .plus .vertical {background-color: #f7f8fa}
 	.secondary-nav h2, .secondary-nav .menu {float: none}
 	.secondary-nav .menu, .secondary-nav .menu li, .secondary-nav .menu li a {display: block}
 
