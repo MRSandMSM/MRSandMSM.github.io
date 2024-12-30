@@ -82,7 +82,7 @@ $(document).ready(function(){
       })
 
       var identifierID = identifierWords.join("");
-      var release = "#" + identifierID;
+      var release = "#" + identifierID.slice(1);
       var $release = $(release)
       alert(release)
 
