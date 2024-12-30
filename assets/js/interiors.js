@@ -6,8 +6,7 @@ $(document).ready(function(){
       selector: "#filterNav .menu"
     },
     navActiveClass: "active",
-    tabsSelector: ".types-inner",
-    after: function(){}
+    tabsSelector: ".types-inner"
   })
   $(".release").each(function(){
     var $this = $(this);
