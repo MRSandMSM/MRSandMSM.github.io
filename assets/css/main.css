@@ -196,6 +196,7 @@ audio:not([controls]) {display: none !important}
 }
 .secondary-nav .menu li a:hover, #page .secondary-nav .menu li a:focus,
 .secondary-nav .menu li.is-active a {color: rgba(247, 248, 250, .625)}
+.has-secondary-nav #pageContent {margin-top: 45px}
 
 /* II.III. Footer */
 #footer {
