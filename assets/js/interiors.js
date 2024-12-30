@@ -1,5 +1,14 @@
 $(document).ready(function(){
   /* II. Discography page */
+  $(".release-types").tabs({
+    nav: {
+      type: "external",
+      selector: "#filterNav .menu"
+    },
+    navActiveClass: "active",
+    tabsSelector: ".types-inner",
+    after: function(){$("#page").removeClass("secondary-nav-open")}
+  })
   $(".release").each(function(){
     var $this = $(this);
     var $header = $this.find(".header");
