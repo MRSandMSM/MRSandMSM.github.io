@@ -173,7 +173,7 @@
 	.release-active .header h2 {height: auto}
 	.release-active .header h2 span {display: block}
 	.release-active .header .title {
-		width: 100%;
+		width: 100% !important;
 		height: 27px;
 		margin: 0 0 9px 0
 	}
@@ -206,7 +206,7 @@
 	.release .header h2 {height: auto}
 	.release .header h2 span {display: block}
 	.release .header .title {
-		width: 100%;
+		width: 100%  !important;
 		height: 27px;
 		margin: 0 0 9px 0
 	}
