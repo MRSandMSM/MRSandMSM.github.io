@@ -24,7 +24,7 @@
 .release .header h2, .release .header h2 span, .release .header a, .release .header .share span,
 .release .header .share .menu {line-height: 1em}
 .release .header h2 {
-	float: left;
+	float: left;m
 	height: 1em;
 	font-size: 36px;
 }
@@ -191,7 +191,11 @@
 		width: 100%;
 		padding: 0;
 	}
-	.release .content .artwork {margin: 0 0 18px 0}
+	.release .content .artwork {
+		display: none;
+		margin: 0 0 18px 0;
+	}
+	.release-active .content .artwork {display: block}
 	.release .content .artwork img.desktop-only {display: none !important}
 	.release .content .artwork .description {font-size: 15.75px}
 }
@@ -223,4 +227,13 @@
 }
 /* IV.IV. Equal or narrower than 486px */
 @media screen and (max-width: 486px) {
+	.release .header {
+		height: auto;
+		padding: 0;
+	}
+	.release .header .more-link, .release .header > .menu {margin: 13.5px 0 18px 0}
+	.release .header img {
+		width: 100%;
+		position: relative;
+	}
 }
