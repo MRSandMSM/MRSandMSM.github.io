@@ -145,7 +145,7 @@ $.fn.tabs = function(options){
     },
     navActiveClass: "active",
     tabsSelector: ".tabs-content",
-    after: function(){}
+    after: function(){alert(settings.nav.type)}
   }, options)
     
   var $this = $(this)
@@ -160,8 +160,6 @@ $.fn.tabs = function(options){
   var firstTab = $navItem.first().find("a").attr("href")
   $navItem.first().addClass(settings.navActiveClass)
   $(firstTab).show().siblings().hide()
-
-  alert(settings.nav.type)
 
   $navItem.each(function(){
     var $navLink = $(this).find("a");
