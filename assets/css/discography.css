@@ -170,7 +170,6 @@
 		left: 0;
 		width: 270px;
 	}
-	.release .header img.desktop-only {display: none !important}
 	.release .header img.mobile-only {display: block !important}
 	.release .header h2 {height: auto}
 	.release .header h2 span {display: block}
@@ -193,6 +192,7 @@
 		padding: 0;
 	}
 	.release .content .artwork {margin: 0 0 18px 0}
+	.release .content .artwork img.desktop-only {display: none !important}
 	.release .content .artwork .description {font-size: 15.75px}
 }
 /* IV.II. Equal or narrower than 767px */
