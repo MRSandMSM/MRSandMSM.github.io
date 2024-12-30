@@ -18,4 +18,13 @@ $(document).ready(function(){
     platforms: "facebook x linkedin2 email"
   })
   $tabs.tabs()
+
+  /* Nav togglers */
+  $(".mobile-nav-toggler").click(function(e){
+    var $this = $(this);
+    if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
+
+    /* Secondary nav */
+    if($this.closest(".secondary-nav").length) {$("#page").toggleClass("secondary-nav-open")}
+  })
 })
