@@ -164,6 +164,7 @@
 		height: 360px;
 		padding: 261px 0 0 378px;
 	}
+	.release-active .header {padding: 240.75px 0 0 378px}
 	.release .header img {
 		position: absolute;
 		top: 0;
@@ -203,6 +204,7 @@
 		height: 270px;
 		padding: 180px 0 0 288px;
 	}
+	.release-active .header {padding: 150.75px 0 0 288px;}
 	.release .header img {width: 270px}
 	.release .header .title {
 		height: 27px;
@@ -214,8 +216,9 @@
 @media screen and (max-width: 639px) {
 	.release .header {
 		height: 180px;
-		padding: 90px 0 0 198px;
+		padding: 60.75px 0 0 198px;
 	}
+	.release-active .header {padding: 90px 0 0 198px;}
 	.release .header img {width: 180px}
 }
 /* IV.IV. Equal or narrower than 486px */
