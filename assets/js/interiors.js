@@ -7,7 +7,7 @@ $(document).ready(function(){
     },
     navActiveClass: "active",
     tabsSelector: ".types-inner",
-    after: function(){$("#page").removeClass("secondary-nav-open")}
+    after: function(){}
   })
   $(".release").each(function(){
     var $this = $(this);
