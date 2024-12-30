@@ -295,12 +295,17 @@ audio:not([controls]) {display: none !important}
 		top: 20.25px;
 		right: 27px;
 		margin: -7.875px 0 0 0;
+		line-height: 0;
 	}
 	.secondary-nav .mobile-nav-toggler .vertical {background-image: url("/assets/img/icons/plus_icon.png")}
 	.secondary-nav .mobile-nav-toggler .horizontal {background-image: url("/assets/img/icons/less_icon.png")}
+	.secondary-nav-open .secondary-nav .mobile-nav-toggler .vertical {opacity: 0}
 	.secondary-nav h2, .secondary-nav .menu {float: none}
-	.secondary-nav .menu, .secondary-nav .menu > * {display: block}
-	.secondary-nav .menu {margin: 6.75px -27px -6.75px -27px}
+	.secondary-nav-open .secondary-nav .menu, .secondary-nav .menu > * {display: block}
+	.secondary-nav .menu {
+		margin: 6.75px -27px -6.75px -27px;
+		display: none;
+	}
 	.secondary-nav .menu li {border-top: 1px solid rgba(247, 248, 250, .625)}
 	.secondary-nav .menu li a {padding: 9px 27px}
 
