@@ -100,13 +100,6 @@ li.toaster, div.toaster {display: none}
 	display: inline-block;
 	position: relative;
 	width: 15.75px;
-	height: 2.25px;
-}
-.plus .vertical {
-	position: absolute;
-	top: -6.75px;
-	left: 6.75px;
-	width: 2.25px;
 	height: 15.75px;
 }
 .visually-hidden {
