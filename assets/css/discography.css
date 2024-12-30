@@ -158,7 +158,6 @@
 
 /* IV.I. Equal or narrower than 939px */
 @media screen and (max-width: 938.98px) {
-	.release .fg {padding: 22.5px 27px}
 	.release .fg > *, .release .fg > * > * {float: none !important}
 	.release .header {
 		height: 360px;
@@ -200,6 +199,7 @@
 @media screen and (max-width: 767px) {
 	/* IV.II.III.II. Discography */
 	.discography #pageContent {margin-top: 40.5px}
+	.release .fg {padding: 22.5px 27px}
 	.release .header {
 		height: 270px;
 		padding: 180px 0 0 288px;
