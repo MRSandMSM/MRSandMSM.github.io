@@ -192,10 +192,10 @@ audio:not([controls]) {display: none !important}
 	font-size: 18px;
 	text-transform: uppercase;
 	line-height: 1em;
-	transition: opacity .375s linear;
+	transition: color .375s linear;
 }
 .secondary-nav .menu li a:hover, #page .secondary-nav .menu li a:focus,
-.secondary-nav .menu li.is-active a {opacity: .625}
+.secondary-nav .menu li.is-active a {color: rgba(247, 248, 250, .625)}
 
 /* II.III. Footer */
 #footer {
