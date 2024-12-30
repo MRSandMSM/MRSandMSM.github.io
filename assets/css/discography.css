@@ -156,6 +156,19 @@
 }
 .release .tracklist .length {float: right}
 
+/* IV.I. Equal or narrower than 939px */
+@media screen and (max-width: 938.98px) {
+	.release-active .header {
+		height: 270px;
+		padding-left: 288px;
+	}
+	.release-active .header img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 270px;
+	}
+}
 /* IV.II. Equal or narrower than 767px */
 @media screen and (max-width: 767px) {
 	/* IV.II.III.II. Discography */
