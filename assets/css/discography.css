@@ -162,7 +162,7 @@
 	.release .fg > *, .release .fg > * > * {float: none !important}
 	.release .header {
 		height: 360px;
-		padding-left: 378px;
+		padding: 261px 0 0 378px;
 	}
 	.release .header img {
 		position: absolute;
@@ -201,7 +201,7 @@
 	.discography #pageContent {margin-top: 40.5px}
 	.release .header {
 		height: 270px;
-		padding-left: 288px;
+		padding: 180px 0 0 288px;
 	}
 	.release .header img {width: 270px}
 	.release .header .title {
@@ -214,7 +214,7 @@
 @media screen and (max-width: 639px) {
 	.release .header {
 		height: 180px;
-		padding-left: 198px;
+		padding: 90px 0 0 198px;
 	}
 	.release .header img {width: 180px}
 }
