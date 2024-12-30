@@ -161,14 +161,14 @@
 	.release .fg {padding: 22.5px 27px}
 	.release .fg > *, .release .fg > * > * {float: none !important}
 	.release .header {
-		height: 270px;
-		padding-left: 288px;
+		height: 450px;
+		padding-left: 468px;
 	}
 	.release .header img {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 270px;
+		width: 450px;
 	}
 	.release .header img.mobile-only {display: block !important}
 	.release .header h2 {height: auto}
@@ -199,7 +199,20 @@
 @media screen and (max-width: 767px) {
 	/* IV.II.III.II. Discography */
 	.discography #pageContent {margin-top: 40.5px}
+	.release .header {
+		height: 270px;
+		padding-left: 288px;
+	}
+	.release .header img {width: 270px}
 }
-/* IV.V. Equal or narrower than 486px */
+/* IV.III. Equal or narrower than 486px */
+@media screen and (max-width: 639px) {
+	.release .header {
+		height: 180px;
+		padding-left: 198px;
+	}
+	.release .header img {width: 180px}
+}
+/* IV.IV. Equal or narrower than 486px */
 @media screen and (max-width: 486px) {
 }
