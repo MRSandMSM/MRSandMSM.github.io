@@ -158,39 +158,6 @@
 
 /* IV.I. Equal or narrower than 939px */
 @media screen and (max-width: 938.98px) {
-	.release-active .header {
-		height: 270px;
-		padding-left: 288px;
-	}
-	.release-active .header img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 270px;
-	}
-	.release-active .header img.desktop-only {display: none !important}
-	.release-active .header img.mobile-only {display: block !important}
-	.release-active .header h2 {height: auto}
-	.release-active .header h2 span {display: block}
-	.release-active .header .title {
-		width: 100% !important;
-		height: 27px;
-		margin: 0 0 9px 0
-	}
-	.release-active .header .date {font-size: 18px}
-	.release-active .header .date:before {display: none}
-	.release-active .header > .menu > li {display: block}
-	.release-active .header > .menu > li {margin: 6.75px 0 0 0 !important}
-	.release-active .header > .menu > .share {
-		border: none;
-		margin: 0 !important;
-		padding: 0;
-	}
-}
-/* IV.II. Equal or narrower than 767px */
-@media screen and (max-width: 767px) {
-	/* IV.II.III.II. Discography */
-	.discography #pageContent {margin-top: 40.5px}
 	.release .fg {padding: 22.5px 27px}
 	.release .fg > *, .release .fg > * > * {float: none !important}
 	.release .header {
@@ -203,6 +170,8 @@
 		left: 0;
 		width: 270px;
 	}
+	.release .header img.desktop-only {display: none !important}
+	.release .header img.mobile-only {display: block !important}
 	.release .header h2 {height: auto}
 	.release .header h2 span {display: block}
 	.release .header .title {
@@ -225,6 +194,11 @@
 	}
 	.release .content .artwork {margin: 0 0 18px 0}
 	.release .content .artwork .description {font-size: 15.75px}
+}
+/* IV.II. Equal or narrower than 767px */
+@media screen and (max-width: 767px) {
+	/* IV.II.III.II. Discography */
+	.discography #pageContent {margin-top: 40.5px}
 }
 /* IV.V. Equal or narrower than 486px */
 @media screen and (max-width: 486px) {
