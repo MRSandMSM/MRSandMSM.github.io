@@ -29,8 +29,16 @@
             <p class="lead">The page you are looking for could not be found</p>
             <p>It could be <a href="#">in the sky</a> or <a href="#">on the roof</a>, but it&rsquo;s clearly not here.</p>
             <ul class="menu">
-              <li><a href="/">Home</a></li>
-              <li><a href="#search">Search</a></li>
+              <li><a href="/">Go back home</a></li>
+              <li class="mobile-only">
+                <span>,&nbsp;</span>
+                <a href="#" class="mobile-nav-toggler main-nav">use the navigation</a>
+              </li>
+              <li>
+                <span>&nbsp;or&nbsp;</span>
+                <a href="#search"><span class="desktop-only">use the&nbsp;</span>search bar</a>
+                <span>.</span>
+              </li>
             </ul>
           </div>
           <div class="container" id="search">
@@ -68,5 +76,6 @@
   <script src="/assets/js/jquery-1.8.3.min.js"></script>
   <script src="/assets/js/scripts.js"></script>
   <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/interiors.js"></script>
 </body>
 </html>
