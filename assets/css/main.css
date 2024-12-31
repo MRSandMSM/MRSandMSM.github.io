@@ -45,6 +45,11 @@ a:hover, a:focus {color: #9d1725}
 h1, h2, h3, h4, h5, h6 {font-weight: normal}
 p {margin: 0 0 9px 0}
 p:last-child {margin: 0}
+.lead {
+	font-size: 22.5px;
+	font-weight: 700;
+	margin: 0 0 13.5px 0;
+}
 .replace {
 	position: relative;
 	background-repeat: no-repeat;
@@ -64,6 +69,7 @@ p:last-child {margin: 0}
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.bg-on-the-roof {background-image: url("/assets/img/backgrounds/on-the-roof_bg.png")}
 .menu {
 	list-style-type: none;
 	padding: 0;
@@ -106,6 +112,11 @@ li.toaster, div.toaster {display: none}
 	position: absolute;
 	top: -9999px;
 	left: -9999px;
+}
+.flex {display: flex}
+.container {
+	display: block;
+	width: 100%;
 }
 .icon {
 	position: relative;
@@ -252,6 +263,51 @@ audio:not([controls]) {display: none !important}
 #footer .footer-inner #footerCopy p {float: left}
 
 /* III. Page-specific CSS */
+/* III.V. 404 page */
+.not-found #page {
+	background-color: #040404;
+	color: #f7f8fa;
+}
+.not-found .content {
+	min-height: calc(100vh - 59.16666793823242px);
+	position: relative;
+}
+.not-found .content .bg {opacity: .25}
+#text404 {
+	align-items: flex-end;
+	position: absolute;
+	left: 51.5px;
+	right: 51.5px;
+	bottom: 0;
+	max-width: 1920px;
+	margin: auto;
+}
+#text404 h2, #text404 .menu {font-family: 'itc-avant-garde-gothic-pro'}
+#text404 h2 {
+	margin: 0 36px -220.5px 0;
+	padding-top: 67.5px;
+	font-size: 270px;
+	font-weight: 300;
+	line-height: .5em;
+	letter-spacing: -6.75px;
+	transition: margin .75s linear;
+}
+.loaded #text404 h2 {margin: 0 36px 0 0}
+#text404 .container {
+	width: 100%;
+	max-width: 468px;
+	margin: 0 0 36px 0;
+	opacity: 0;
+	transition: opacity .375s .75s linear;
+}
+.loaded #text404 .container {opacity: 1}
+#text404 p, #text404 .menu {line-height: 1em;}
+#text404 p {margin: 0 0 27px 0}
+#text404 a {color: #92c4d3}
+#text404 a:hover {color: #428da3}
+#text404 .menu {margin: 0 0 -4.5px 0}
+#text404 .menu a, #text404 .menu span {font-size: 18px}
+#text404 .menu span {font-weight: 300}
 
 /* IV. Responsive CSS */
 /* IV.I. Equal or narrower than 939px */
