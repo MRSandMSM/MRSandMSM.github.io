@@ -45,9 +45,12 @@
           <div class="container toaster" id="search">
             <a href="#" class="close close-alt"><span class="visually-hidden">Close</span></a>
             <form method="get" action="/search">
-              <input type="search" placeholder="Search">
-              <input type="submit" value="Go">
-              <label>Search</label>
+              <div class="form-control">
+                <label for="term">Search</label>
+                <input type="text" name="term" id="term" class="field" placeholder="Search">
+                <a href="#" class="close close-alt clear"><span class="visually-hidden">Clear input</span></a>
+              </div>
+              <input type="submit" class="submit" value="Go">
             </form>
           </div>
         </div>
