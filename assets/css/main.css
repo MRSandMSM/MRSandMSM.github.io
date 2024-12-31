@@ -276,6 +276,7 @@ audio:not([controls]) {display: none !important}
 .not-found #pageContent .bg {opacity: .25}
 #text404 {
 	align-items: flex-end;
+	z-index: 1;
 	position: absolute;
 	left: 51.5px;
 	right: 51.5px;
