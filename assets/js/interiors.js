@@ -112,4 +112,18 @@ $(document).ready(function(){
       $("head").append("<style>.tabs .tabs-content ol li a.lyrics {display: none !important}</style>")
     }
   }
+
+  /* V. 404 page */
+  $(".not-found").addClass("loaded")
+  
+  // Do the redirects
+  if(location.href == "/discography" || location.href == "/discography/") {
+    discographyPage = true
+  } else {discographyPage = false}
+  
+  if(location.href.indexOf("/discography/") && !discographyPage) {
+    var releaseSlug = location.href.split("/discography/")[1]
+    var releaseURL = "/discography#/" + releaseSlug;
+    location.replace(releaseURL)
+  }
 })
