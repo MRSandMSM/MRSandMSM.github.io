@@ -90,6 +90,9 @@ li.toaster, div.toaster {display: none}
 	width: 15.75px;
 	height: 15.75px;
 	overflow: hidden;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 .close:before, .close:after {
 	content: "";
@@ -248,9 +251,6 @@ audio:not([controls]) {display: none !important}
 }
 #footer .footer-inner #footerCopy #siteCredits .close {
 	background-image: url("/assets/img/icons/close_icon.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
 	bottom: 4.5px;
 }
 #footer .footer-inner #footerCopy #siteCredits .close:before,
