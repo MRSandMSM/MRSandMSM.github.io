@@ -320,10 +320,12 @@ input:focus, datalist:focus, select:focus {outline: none}
 	width: 100%;
 	max-width: 468px;
 	margin: 0 0 36px 0;
+}
+#text404 .text404-inner {
 	opacity: 0;
 	transition: opacity .375s .75s linear;
 }
-.loaded #text404 .container {opacity: 1}
+.loaded #text404 .text404-inner {opacity: 1}
 #text404 p, #text404 .menu {line-height: 1em;}
 #text404 p {margin: 0 0 27px 0}
 #text404 a {color: #92c4d3}
