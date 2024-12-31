@@ -268,11 +268,12 @@ audio:not([controls]) {display: none !important}
 	background-color: #040404;
 	color: #f7f8fa;
 }
-.not-found .content {
+.not-found #pageContent {
 	min-height: calc(100vh - 59.16666793823242px);
 	position: relative;
+	overflow: hidden;
 }
-.not-found .content .bg {opacity: .25}
+.not-found #pageContent .bg {opacity: .25}
 #text404 {
 	align-items: flex-end;
 	position: absolute;
