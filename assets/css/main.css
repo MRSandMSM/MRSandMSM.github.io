@@ -69,7 +69,7 @@ p:last-child {margin: 0}
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.bg-on-the-roof {background-image: url("/assets/img/backgrounds/on-the-roof_bg.png")}
+.bg_on-the-roof {background-image: url("/assets/img/backgrounds/on-the-roof_bg.png")}
 .menu {
 	list-style-type: none;
 	padding: 0;
