@@ -135,7 +135,7 @@ audio:not([controls]) {display: none !important}
 input[type="text"], input[type="email"], input[type="search"], datalist, select {
 	display: block;
 	width: 100%;
-	border: 1px solid #000418;
+	border: none;
 	border-radius: 0;
 	margin: 0;
 	padding: 0;
@@ -277,6 +277,13 @@ input:focus, datalist:focus, select:focus {outline: none}
 #footer .footer-inner #footerCopy p {float: left}
 
 /* III. Page-specific CSS */
+/* III.LIV/XII. Search page */
+#search form {border: 1px solid #000418}
+#search .submit {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
 /* III.V. 404 page */
 .not-found #page {
 	background-color: #040404;
@@ -324,8 +331,15 @@ input:focus, datalist:focus, select:focus {outline: none}
 #text404 .menu {margin: 0 0 -4.5px 0}
 #text404 .menu a, #text404 .menu span {font-size: 18px}
 #text404 .menu li > span {font-weight: 300}
-.not-found #search {
-	
+.not-found #search form {border-color: #f7f8fa}
+.not-found #search input {
+	color: #f7f8fa;
+	padding: 9px 18px;
+	line-height: 27px;
+}
+.not-found #search .submit {
+	width: 45px;
+	height: 45px;
 }
 .not-found #search .close-alt {
 	position: absolute;
