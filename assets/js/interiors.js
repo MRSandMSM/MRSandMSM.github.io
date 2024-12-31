@@ -116,7 +116,7 @@ $(document).ready(function(){
   /* V. 404 page */
   $(".not-found").addClass("loaded")
   
-  // Do the redirects
+  /*// Do the redirects
   if(location.href == "/discography" || location.href == "/discography/") {
     discographyPage = true
   } else {discographyPage = false}
@@ -125,5 +125,5 @@ $(document).ready(function(){
     var releaseSlug = location.href.split("/discography/")[1]
     var releaseURL = "/discography#/" + releaseSlug;
     location.replace(releaseURL)
-  }
+  }*/
 })
