@@ -90,10 +90,12 @@ li.toaster, div.toaster {display: none}
 	width: 15.75px;
 	height: 15.75px;
 	overflow: hidden;
+	background-image: url("/assets/img/icons/close_icon.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
+.close-alt {background-image: url("/assets/img/icons/close-alt_icon.png")}
 .close:before, .close:after {
 	content: "";
 	position: absolute;
@@ -249,10 +251,7 @@ audio:not([controls]) {display: none !important}
 	text-align: right;
 	background-color: #f7f8fa;
 }
-#footer .footer-inner #footerCopy #siteCredits .close {
-	background-image: url("/assets/img/icons/close_icon.png");
-	bottom: 4.5px;
-}
+#footer .footer-inner #footerCopy #siteCredits .close {bottom: 4.5px}
 #footer .footer-inner #footerCopy #siteCredits .close:before,
 #footer .footer-inner #footerCopy #siteCredits .close:after {display: none}
 #footer .footer-inner #footerCopy #siteCredits span {
@@ -310,6 +309,10 @@ audio:not([controls]) {display: none !important}
 #text404 .menu {margin: 0 0 -4.5px 0}
 #text404 .menu a, #text404 .menu span {font-size: 18px}
 #text404 .menu span {font-weight: 300}
+.not-found #search {
+	
+}
+.not-found #search .close-alt {}
 
 /* IV. Responsive CSS */
 /* IV.I. Equal or narrower than 939px */
