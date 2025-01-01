@@ -122,12 +122,14 @@ $(document).ready(function(){
     $this.addClass("loaded").delay(1125).queue(function(){
       $this.find(".text404-inner").removeClass("pointer-disabled")
     })
+    
     $this.find('.text404-inner a.toaster[href="#search"]').toaster({
       delay: 375,
       after: function(){
         $(this).closest(".container").fadeOut(375, "linear")
       }
     })
+    
     $formControl.find(".clear").click(function(e){
       if(event.preventDefault){event.preventDefault()} else {event.returnValue = false}
       
@@ -139,7 +141,13 @@ $(document).ready(function(){
       $label.removeClass("floating-active").addClass("floating-inactive");
       $this.hide();
     })
-    $input.focus(function(){$(this).addClass("focus")}).blur(function(){$(this).removeClass("focus")})
+    
+    $input.focus(function(){
+      $(this).addClass("focus").siblings("label").removeClass("floating-inactive").addClass("floating-active")
+    }).blur(function(){
+      $(this).removeClass("focus").siblings("label").removeClass("floating-active").addClass("floating-inactive")
+    })
+    
     $input.on("input", function (){
       var $this = $(this);
       var $label = $this.siblings("label");
