@@ -370,6 +370,7 @@ select.field {
 	height: 45px;
 }
 .not-found #search .submit input {
+	z-index: 1;
 	top: 0;
 	left: 0;
 	padding: 0;
@@ -381,7 +382,7 @@ select.field {
 	right: 13.5px;
 	transition: color .375s linear;
 }
-.not-found #search .submit input + .icon-search {color: #92c4d3}
+.not-found #search .submit input:hover + .icon-search {color: #92c4d3}
 .not-found #search > .close-alt {
 	position: absolute;
 	top: 50%;
