@@ -30,6 +30,10 @@ $.fn.toaster = function(options) {
   $this.click(function(e){
     if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
     $(target).delay(settings.delay).fadeToggle(settings.duration, settings.easing)
+    
+    if (typeof settings.after === "function") {
+      settings.after.call(this); // Explicitly bind `this` to the plugin's element
+    }
   })
 
   $(target).find(settings.dismissSelector).not(settings.dismissException).dismiss({
@@ -37,10 +41,6 @@ $.fn.toaster = function(options) {
     easing: settings.easing,
     target: target,
   })
-
-  if (typeof settings.after === "function") {
-    settings.after.call(this); // Explicitly bind `this` to the plugin's element
-  }
 }
 
 /* Share plugin */
