@@ -134,22 +134,22 @@ li.toaster, div.toaster {display: none}
 }
 .pointer-disabled {pointer-events: none}
 audio:not([controls]) {display: none !important}
-input {
+input, datalist:focus, select:focus {
 	font-family: inherit;
 	font-size: inherit;
 	color: #000418;
 	background-color: transparent;
+	border: none;
+	border-radius: 0;
 }
+input:focus, datalist:focus, select:focus {outline: none}
 input[type="text"], input[type="email"], input[type="search"], datalist, select {
 	display: block;
 	width: 100%;
-	border: none;
-	border-radius: 0;
 	margin: 0;
 	padding: 0;
 }
 input[type="submit"], input[type="button"], input[type="radio"], input[type="checkbox"] {cursor: pointer}
-input:focus, datalist:focus, select:focus {outline: none}
 select.field {
 	-webkit-appearance: none;
 	-ms-appearance: none;
