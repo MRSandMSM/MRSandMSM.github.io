@@ -349,7 +349,17 @@ select.field {
 }
 #text404 .menu a, #text404 .menu li > span {padding-top: 4.5px}
 #text404 .menu li > span {font-weight: 300}
-.not-found #search form {border-color: #f7f8fa}
+.not-found #search form {
+	border-color: #f7f8fa;
+	position: relative;
+}
+.not-found #search .form-control {margin-right: 45px}
+.not-found #search .form-control label {
+	position: absolute;
+	top: 9px;
+	left: 18px;
+	line-height: 27px;
+}
 .not-found #search input {
 	color: #f7f8fa;
 	padding: 9px 18px;
@@ -358,6 +368,11 @@ select.field {
 .not-found #search .submit {
 	width: 45px;
 	height: 45px;
+}
+.not-found #search .submit .icon-search {
+	position: absolute;
+	top: 13.5px;
+	right: 13.5px;
 }
 .not-found #search .submit input {
 	top: 0;
