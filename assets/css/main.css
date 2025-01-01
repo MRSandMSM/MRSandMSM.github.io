@@ -320,7 +320,7 @@ select.field {
 #text404 h2, #text404 .menu {font-family: 'itc-avant-garde-gothic-pro'}
 #text404 h2 {
 	margin: 0 36px -220.5px 0;
-	padding-top: 67.5px;
+	padding: 67.5px 3.375px 0 0;
 	font-size: 270px;
 	font-weight: 300;
 	line-height: .5em;
@@ -333,9 +333,7 @@ select.field {
 	max-width: 468px;
 	margin: 0 0 36px 0;
 }
-#text404 .text404-inner {
-	opacity: 0;
-}
+#text404 .text404-inner {opacity: 0}
 #text404 .text404-inner.pointer-disabled {transition: opacity .375s .75s linear}
 .loaded #text404 .text404-inner {opacity: 1}
 #text404 p, #text404 .menu {line-height: 1em;}
@@ -361,19 +359,15 @@ select.field {
 	line-height: 27px;
 	animation: label .84375s linear forwards;
 }
-.not-found #search input {
+.not-found #search .field {
 	color: #f7f8fa;
 	padding: 9px 18px;
 	line-height: 27px;
 }
+.not-found #search .field::placeholder {color: transparent}
 .not-found #search .submit {
 	width: 45px;
 	height: 45px;
-}
-.not-found #search .submit .icon-search {
-	position: absolute;
-	top: 13.5px;
-	right: 13.5px;
 }
 .not-found #search .submit input {
 	top: 0;
@@ -381,7 +375,13 @@ select.field {
 	padding: 0;
 	background-color: transparent;
 }
-.not-found #search .submit input::placeholder {color: transparent}
+.not-found #search .submit .icon-search {
+	position: absolute;
+	top: 13.5px;
+	right: 13.5px;
+	transition: color .375s linear;
+}
+.not-found #search .submit input + .icon-search {color: #92c4d3}
 .not-found #search > .close-alt {
 	position: absolute;
 	top: 50%;
