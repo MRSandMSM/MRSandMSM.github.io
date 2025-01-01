@@ -19,6 +19,7 @@ $.fn.toaster = function(options) {
     duration: 500,
     easing: "linear",
     dismissSelector: ".close",
+    dismissException: ".clear"
   }, options)
 
   var $this = $(this)
@@ -29,7 +30,7 @@ $.fn.toaster = function(options) {
     $(target).fadeToggle(settings.duration, settings.easing)
   })
 
-  $(target).find(settings.dismissSelector).dismiss({
+  $(target).find(settings.dismissSelector).not(settings.dismissException).dismiss({
     duration: settings.duration,
     easing: settings.easing,
     target: target,
