@@ -131,6 +131,7 @@ li.toaster, div.toaster {display: none}
 	position: relative;
 	font-weight: normal !important;
 }
+.pointer-disabled {pointer-events: none}
 audio:not([controls]) {display: none !important}
 input[type="text"], input[type="email"], input[type="search"], datalist, select {
 	display: block;
