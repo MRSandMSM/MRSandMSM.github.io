@@ -116,7 +116,7 @@ $(document).ready(function(){
   /* V. 404 page */
   $(".not-found").each(function(){
     var $this = $(this);
-    $this.addClass("loaded").delay(375).find(".text404-inner").addClass("loaded")
+    $this.addClass("loaded").delay(375).find(".text404-inner").addClass("pointer-enabled")
     $this.find('.text404-inner a.toaster[href="#search"]').toaster({
       delay: 375,
       after: function(){
