@@ -123,15 +123,14 @@ $(document).ready(function(){
         $(this).closest(".container").fadeOut(375, "linear")
       }
     })
-    $(".form-control").each(function(){
-      var $this = $(this);
-      var $input = $this.find("input")
-      var $label = $this.find("label")
-
-      if($input.val().length > 0) {
-        $label.addClass("floating-active")
+    $this.find(".form-control input").on("input", function (){
+      var $input = $(this);
+      var $label = $input.siblings("label");
+      
+      if ($input.val().length > 0) {
+        $label.addClass("floating-active");
       } else {
-        $label.removeClass("floating-active")
+        $label.removeClass("floating-active");
       }
     })
   })
