@@ -20,7 +20,8 @@ $.fn.toaster = function(options) {
     delay: 0,
     easing: "linear",
     dismissSelector: ".close",
-    dismissException: ".clear"
+    dismissException: ".clear",
+    after: function(){}
   }, options)
 
   var $this = $(this)
@@ -36,6 +37,10 @@ $.fn.toaster = function(options) {
     easing: settings.easing,
     target: target,
   })
+
+  if (typeof settings.after === "function") {
+    settings.after.call(this); // Explicitly bind `this` to the plugin's element
+  }
 }
 
 /* Share plugin */
