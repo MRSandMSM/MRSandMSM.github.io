@@ -126,6 +126,7 @@ li.toaster, div.toaster {display: none}
 .flex {display: flex}
 .container {
 	display: block;
+	position: relative;
 	width: 100%;
 }
 .icon {
