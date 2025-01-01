@@ -324,8 +324,8 @@ input:focus, datalist:focus, select:focus {outline: none}
 }
 #text404 .text404-inner {
 	opacity: 0;
-	transition: opacity .375s .75s linear;
 }
+#text404 .text404-inner.pointer-disabled {transition: opacity .375s .75s linear}
 .loaded #text404 .text404-inner {opacity: 1}
 #text404 p, #text404 .menu {line-height: 1em;}
 #text404 p {margin: 0 0 27px 0}
