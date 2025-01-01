@@ -359,7 +359,7 @@ select.field {
 	top: 9px;
 	left: 18px;
 	line-height: 27px;
-	animation: label .84375s linear;
+	animation: label .84375s linear forwards;
 }
 .not-found #search input {
 	color: #f7f8fa;
