@@ -116,6 +116,9 @@ $(document).ready(function(){
   /* V. 404 page */
   $(".not-found").each(function(){
     var $this = $(this);
+    var $formControl = $this.find(".form-control");
+    var $input = $formControl.find("input");
+    
     $this.addClass("loaded").delay(1125).queue(function(){
       $this.find(".text404-inner").removeClass("pointer-disabled")
     })
@@ -125,7 +128,7 @@ $(document).ready(function(){
         $(this).closest(".container").fadeOut(375, "linear")
       }
     })
-    $this.find(".form-control .clear").click(function(e){
+    $formControl.find(".clear").click(function(e){
       if(event.preventDefault){event.preventDefault()} else {event.returnValue = false}
       
       var $this = $(this);
@@ -136,16 +139,16 @@ $(document).ready(function(){
       $label.removeClass("floating-active").addClass("floating-inactive");
       $this.hide();
     })
-    $this.find(".form-control input").on("input", function (){
-      var $input = $(this);
-      var $label = $input.siblings("label");
+    $input.on("input", function (){
+      var $this = $(this);
+      var $label = $this.siblings("label");
       
-      if ($input.val().length > 0) {
+      if ($this.val().length > 0) {
         $label.addClass("floating-active").removeClass("floating-inactive");
-        $input.siblings(".clear").show();
+        $this.siblings(".clear").show();
       } else {
         $label.removeClass("floating-active").addClass("floating-inactive");
-        $input.siblings(".clear").hide();
+        $this.siblings(".clear").hide();
       }
     })
   })
