@@ -139,6 +139,7 @@ $(document).ready(function(){
       $label.removeClass("floating-active").addClass("floating-inactive");
       $this.hide();
     })
+    $input.focus(function(){$(this).addClass("focus")}).blur(function(){$(this).removeClass("focus")})
     $input.on("input", function (){
       var $this = $(this);
       var $label = $this.siblings("label");
