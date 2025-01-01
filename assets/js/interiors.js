@@ -125,8 +125,16 @@ $(document).ready(function(){
         $(this).closest(".container").fadeOut(375, "linear")
       }
     })
-    $this.find(".form-control .clear").click(function(){
-      $(this).siblings("input").val("")
+    $this.find(".form-control .clear").click(function(e){
+      if(event.preventDefault){event.preventDefault()} else {event.returnValue = false}
+      
+      var $this = $(this);
+      var $input = $this.siblings("input");
+      var $label = $this.siblings("label");
+
+      $input.val("")
+      $label.removeClass("floating-active").addClass("floating-inactive");
+      $this.hide();
     })
     $this.find(".form-control input").on("input", function (){
       var $input = $(this);
