@@ -48,7 +48,7 @@ p:last-child {margin: 0}
 .lead {
 	font-size: 22.5px;
 	font-weight: 700;
-	margin: 0 0 13.5px 0;
+	margin: 0 0 13.5px 0 !important;
 }
 .replace {
 	position: relative;
