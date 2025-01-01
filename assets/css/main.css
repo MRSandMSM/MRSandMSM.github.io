@@ -357,7 +357,6 @@ select.field {
 	top: 9px;
 	left: 18px;
 	line-height: 27px;
-	animation: label .84375s linear forwards;
 }
 .not-found #search .field {
 	color: #f7f8fa;
@@ -365,6 +364,10 @@ select.field {
 	line-height: 27px;
 }
 .not-found #search .field::placeholder {color: transparent}
+.not-found #search .field:focus + .not-found #search label,
+.not-found #search .field + .not-found #search .floating-active {
+	animation: label .84375s linear forwards;
+}
 .not-found #search .submit {
 	width: 45px;
 	height: 45px;
