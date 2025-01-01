@@ -134,8 +134,10 @@ $(document).ready(function(){
       
       if ($input.val().length > 0) {
         $label.addClass("floating-active").removeClass("floating-inactive");
+        $input.siblings(".clear").show();
       } else {
         $label.removeClass("floating-active").addClass("floating-inactive");
+        $input.siblings(".clear").hide();
       }
     })
   })
