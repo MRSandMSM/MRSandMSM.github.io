@@ -123,6 +123,9 @@ $(document).ready(function(){
         $(this).closest(".container").fadeOut(375, "linear")
       }
     })
+    $this.find(".form-control .clear").click(function(){
+      $(this).siblings("input").val("")
+    })
     $this.find(".form-control input").on("input", function (){
       var $input = $(this);
       var $label = $input.siblings("label");
