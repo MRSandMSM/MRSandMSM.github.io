@@ -142,10 +142,17 @@ $(document).ready(function(){
       $this.hide();
     })
     
-    $input.focus(function(){
-      $(this).addClass("focus").siblings("label").removeClass("floating-inactive").addClass("floating-active")
-    }).blur(function(){
-      $(this).removeClass("focus").siblings("label").removeClass("floating-active").addClass("floating-inactive")
+    $input.each(function(){
+      var $this = $(this);
+      if($this.val().length > 0) {var emptyField = false} else {var emptyField = true}
+      
+      $this.focus(function(){
+        $this.addClass("focus").siblings("label");
+        if(emptyField) {$this.removeClass("floating-inactive").addClass("floating-active")}
+      }).blur(function(){
+        $this.removeClass("focus").siblings("label");
+        if(emptyField) {$this.removeClass("floating-active").addClass("floating-inactive")}
+      })
     })
     
     $input.on("input", function (){
