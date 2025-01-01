@@ -394,7 +394,6 @@ select.field {
 	}
 	55.55555555555556% {
 		opacity: 0;
-		position: absolute;
 		top: calc(100% + .6666666666666667em);
 		font-size: .6666666666666667em;
 		font-style: italic;
@@ -402,6 +401,10 @@ select.field {
 	}
 	100% {
 		opacity: 1;
+		top: calc(100% + .6666666666666667em);
+		font-size: .6666666666666667em;
+		font-style: italic;
+		line-height: 1em;
 	}
 }
 
