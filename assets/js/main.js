@@ -7,7 +7,7 @@ $(document).ready(function(){
   var $header = $("#header")
   var $share = $(".share")
   var $tabs = $(".tabs")
-  var $toaster = $("a.toaster")
+  var $toaster = $("a.toaster").not('a.toaster[href="#search"]')
 
   /* Run major plugins */
   $toaster.toaster({
