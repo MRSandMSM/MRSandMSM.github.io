@@ -114,7 +114,13 @@ $(document).ready(function(){
   }
 
   /* V. 404 page */
-  $(".not-found").addClass("loaded")
+  $(".not-found").each(function(){
+    var $this = $(this);
+    $this.addClass("loaded")
+    $this.find("a.toaster").click(function(){
+      $(this).closest(".container").fadeOut(375, "linear")
+    })
+  })
   
   /*// Do the redirects
   if(location.href == "/discography" || location.href == "/discography/") {
