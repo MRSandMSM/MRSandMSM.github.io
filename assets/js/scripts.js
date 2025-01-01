@@ -17,6 +17,7 @@ $.fn.dismiss = function(options) {
 $.fn.toaster = function(options) {
   var settings = $.extend({
     duration: 500,
+    delay: 0,
     easing: "linear",
     dismissSelector: ".close",
     dismissException: ".clear"
@@ -27,7 +28,7 @@ $.fn.toaster = function(options) {
   
   $this.click(function(e){
     if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
-    $(target).fadeToggle(settings.duration, settings.easing)
+    $(target).delay(settings.delay).fadeToggle(settings.duration, settings.easing)
   })
 
   $(target).find(settings.dismissSelector).not(settings.dismissException).dismiss({
