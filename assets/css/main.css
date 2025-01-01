@@ -332,10 +332,10 @@ input:focus, datalist:focus, select:focus {outline: none}
 #text404 a:hover {color: #428da3}
 #text404 .menu {margin: 0 0 -4.5px 0}
 #text404 .menu a, #text404 .menu span {
-	padding-top: 4.5px;
 	font-size: 18px;
 	line-height: 1em;
 }
+#text404 .menu a, #text404 .menu li > span {padding-top: 4.5px}
 #text404 .menu li > span {font-weight: 300}
 .not-found #search form {border-color: #f7f8fa}
 .not-found #search input {
