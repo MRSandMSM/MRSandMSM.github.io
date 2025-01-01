@@ -144,14 +144,13 @@ $(document).ready(function(){
     
     $input.each(function(){
       var $this = $(this);
-      if($this.val().length > 0) {var emptyField = false} else {var emptyField = true}
       
       $this.focus(function(){
         $this.addClass("focus").siblings("label");
-        if(emptyField) {$this.removeClass("floating-inactive").addClass("floating-active")}
+        if(!$this.val().length > 0) {$this.removeClass("floating-inactive").addClass("floating-active")}
       }).blur(function(){
         $this.removeClass("focus").siblings("label");
-        if(emptyField) {$this.removeClass("floating-active").addClass("floating-inactive")}
+        if(!$this.val().length > 0) {$this.removeClass("floating-active").addClass("floating-inactive")}
       })
     })
     
