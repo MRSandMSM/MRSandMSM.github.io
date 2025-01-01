@@ -123,6 +123,17 @@ $(document).ready(function(){
         $(this).closest(".container").fadeOut(375, "linear")
       }
     })
+    $this.find(".field").parent().each(function(){
+      var $this = $(this);
+      var $input = $this.find("input")
+      var $label = $this.find("label")
+
+      if($input.val().length > 0) {
+        $label.addClass("floating-active")
+      } else {
+        $label.removeClass("floating-active")
+      }
+    })
   })
   
   /*// Do the redirects
@@ -130,7 +141,7 @@ $(document).ready(function(){
     discographyPage = true
   } else {discographyPage = false}
   
-  if(location.href.indexOf("/discography/") && !discographyPage) {
+  if(location.href.indexOf("/discography/") !== -1 && !discographyPage) {
     var releaseSlug = location.href.split("/discography/")[1]
     var releaseURL = "/discography#/" + releaseSlug;
     location.replace(releaseURL)
