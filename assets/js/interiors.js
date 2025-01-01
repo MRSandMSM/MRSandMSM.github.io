@@ -118,9 +118,8 @@ $(document).ready(function(){
     var $this = $(this);
     $this.addClass("loaded")
     $this.find('.text404-inner a.toaster[href="#search"]').toaster({
-      delay: 3750
-    })
-    $this.find("a.toaster").click(function(){
+      delay: 375
+    }).click(function(){
       $(this).closest(".container").fadeOut(375, "linear")
     })
   })
