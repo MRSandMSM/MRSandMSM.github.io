@@ -144,16 +144,18 @@ $(document).ready(function(){
     
     $input.each(function(){
       var $this = $(this);
+      var emptyField;
+      if(!$this.val().length > 0) {emptyField = true} else {emptyField = false}
       
       $this.focus(function(){
         $this.addClass("focus");
-        if(!$this.val().length > 0) {
+        if(emptyField) {
           $this.siblings("label").removeClass("floating-inactive").addClass("floating-active")
           console.log("nothing");
         }
       }).blur(function(){
         $this.removeClass("focus").siblings("label");
-        if(!$this.val().length > 0) {
+        if(emptyField) {
           $this.siblings("label").removeClass("floating-active").addClass("floating-inactive")
           console.log("nothing... does this work?");
         }
