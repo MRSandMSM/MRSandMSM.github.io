@@ -365,6 +365,7 @@ select.field {
 .not-found #search .field:focus + label, .not-found #search .field + .floating-active {
 	animation: label .84375s linear forwards;
 }
+.not-found #search .clear {display: none}
 .not-found #search .submit {
 	width: 45px;
 	height: 45px;
