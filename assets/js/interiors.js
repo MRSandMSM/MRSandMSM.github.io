@@ -123,7 +123,7 @@ $(document).ready(function(){
         $(this).closest(".container").fadeOut(375, "linear")
       }
     })
-    $this.find(".field").parent().each(function(){
+    $(".form-control").each(function(){
       var $this = $(this);
       var $input = $this.find("input")
       var $label = $this.find("label")
