@@ -155,7 +155,7 @@ $(document).ready(function(){
         $this.removeClass("focus").siblings("label");
         if(!$this.val().length > 0) {
           $this.removeClass("floating-active").addClass("floating-inactive")
-          console.log("nothing");
+          console.log("nothing... does this work?");
         }
       })
     })
