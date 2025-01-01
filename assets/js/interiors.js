@@ -146,15 +146,15 @@ $(document).ready(function(){
       var $this = $(this);
       
       $this.focus(function(){
-        $this.addClass("focus").siblings("label");
+        $this.addClass("focus");
         if(!$this.val().length > 0) {
-          $this.removeClass("floating-inactive").addClass("floating-active")
+          $this.siblings("label").removeClass("floating-inactive").addClass("floating-active")
           console.log("nothing");
         }
       }).blur(function(){
         $this.removeClass("focus").siblings("label");
         if(!$this.val().length > 0) {
-          $this.removeClass("floating-active").addClass("floating-inactive")
+          $this.siblings("label").removeClass("floating-active").addClass("floating-inactive")
           console.log("nothing... does this work?");
         }
       })
