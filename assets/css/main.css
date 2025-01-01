@@ -347,7 +347,7 @@ input:focus, datalist:focus, select:focus {outline: none}
 	width: 45px;
 	height: 45px;
 }
-.not-found #search .close-alt {
+.not-found #search > .close-alt {
 	position: absolute;
 	top: 50%;
 	right: -29.25px;
