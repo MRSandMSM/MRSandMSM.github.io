@@ -416,26 +416,33 @@ select.field {
 	}
 }
 @keyframes labelBackwards {
-	100% {
-		opacity: 0;
-		top: .5em;
-		font-size: 1em;
-		font-style: normal;
-		line-height: 1.5em;
-	}
-	55.55555555555556% {
-		opacity: 0;
+	0% {
+		opacity: 1;
 		top: calc(100% + .75em);
 		font-size: .75em;
 		font-style: italic;
 		line-height: 1em;
 	}
 	44.44444444444444% {
-		opacity: 1;
+		opacity: 0;
 		top: calc(100% + .75em);
 		font-size: .75em;
 		font-style: italic;
 		line-height: 1em;
+	}
+	55.55555555555556% {
+		opacity: 0;
+		top: .5em;
+		font-size: 1em;
+		font-style: normal;
+		line-height: 1.5em;
+	}
+	100% {
+		opacity: 1;
+		top: .5em;
+		font-size: 1em;
+		font-style: normal;
+		line-height: 1.5em;
 	}
 }
 
