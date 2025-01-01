@@ -149,13 +149,13 @@ $(document).ready(function(){
         $this.addClass("focus").siblings("label");
         if(!$this.val().length > 0) {
           $this.removeClass("floating-inactive").addClass("floating-active")
-          alert("nothing");
+          console.log("nothing");
         }
       }).blur(function(){
         $this.removeClass("focus").siblings("label");
         if(!$this.val().length > 0) {
           $this.removeClass("floating-active").addClass("floating-inactive")
-          alert("nothing");
+          console.log("nothing");
         }
       })
     })
