@@ -133,9 +133,9 @@ $(document).ready(function(){
       var $label = $input.siblings("label");
       
       if ($input.val().length > 0) {
-        $label.addClass("floating-active");
+        $label.addClass("floating-active").removeClass("floating-inactive");
       } else {
-        $label.removeClass("floating-active");
+        $label.removeClass("floating-active").addClass("floating-inactive");
       }
     })
   })
