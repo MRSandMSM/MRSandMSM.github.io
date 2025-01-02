@@ -164,10 +164,10 @@ $(document).ready(function(){
       
       if ($this.val().length > 0) {
         $label.addClass("floating-active").removeClass("floating-inactive");
-        $this.siblings(".clear").show();
+        $this.siblings(".clear").fadeIn(375, "linear");
       } else {
         $label.removeClass("floating-active").addClass("floating-inactive");
-        $this.siblings(".clear").hide();
+        $this.siblings(".clear").hide(375, "linear");
       }
     })
   })
