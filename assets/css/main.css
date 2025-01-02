@@ -164,6 +164,7 @@ input[type="text"], input[type="email"], input[type="search"], datalist, select 
 	padding: 0;
 }
 input[type="submit"], input[type="button"], input[type="radio"], input[type="checkbox"] {cursor: pointer}
+::-ms-clear, ::-ms-reveal {display: none}
 select.field {
 	-webkit-appearance: none;
 	-ms-appearance: none;
