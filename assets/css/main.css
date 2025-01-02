@@ -100,6 +100,18 @@ li.toaster, div.toaster {display: none}
 	color: #f7f8fa;
 	background-image: url("/assets/img/icons/close-alt_icon.png");
 }
+.close-cyan {
+	color: #92c4d3;
+	background-image: url("/assets/img/icons/close-cyan_icon.png");
+}
+.close-magenta {
+	color: #c91e30;
+	background-image: url("/assets/img/icons/close-magenta_icon.png");
+}
+.close-navy {
+	color: #052d6a;
+	background-image: url("/assets/img/icons/close-navy_icon.png");
+}
 .close:before, .close:after {
 	content: "";
 	display: none;
