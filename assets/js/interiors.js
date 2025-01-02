@@ -147,9 +147,9 @@ $(document).ready(function(){
       
       $this.focus(function(){
         $this.closest(".form").addClass("focus");
-        if(!$this.val().length > 0) {
+        // if(!$this.val().length > 0) {
           $this.siblings("label").removeClass("floating-inactive").addClass("floating-active")
-        }
+        // }
       }).blur(function(){
         $this.closest(".form").removeClass("focus");
         if(!$this.val().length > 0) {
