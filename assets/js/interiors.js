@@ -166,7 +166,7 @@ $(document).ready(function(){
         $label.addClass("floating-active").removeClass("floating-inactive");
         $this.siblings(".clear").fadeIn(375, "linear");
       } else {
-        $label.removeClass("floating-active").addClass("floating-inactive");
+        // $label.removeClass("floating-active").addClass("floating-inactive");
         $this.siblings(".clear").fadeOut(375, "linear");
       }
     })
