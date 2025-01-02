@@ -147,9 +147,7 @@ $(document).ready(function(){
       
       $this.focus(function(){
         $this.closest(".form").addClass("focus");
-        // if(!$this.val().length > 0) {
-          $this.siblings("label").removeClass("floating-inactive").addClass("floating-active")
-        // }
+        $this.siblings("label").removeClass("floating-inactive").addClass("floating-active")
       }).blur(function(){
         $this.closest(".form").removeClass("focus");
         if(!$this.val().length > 0) {
@@ -165,10 +163,7 @@ $(document).ready(function(){
       if ($this.val().length > 0) {
         $label.addClass("floating-active").removeClass("floating-inactive");
         $this.siblings(".clear").fadeIn(375, "linear");
-      } else {
-        // $label.removeClass("floating-active").addClass("floating-inactive");
-        $this.siblings(".clear").fadeOut(375, "linear");
-      }
+      } else {$this.siblings(".clear").fadeOut(375, "linear")}
     })
   })
   
