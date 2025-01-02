@@ -146,12 +146,12 @@ $(document).ready(function(){
       var $this = $(this);
       
       $this.focus(function(){
-        $this.parent().addClass("focus");
+        $this.closest(".form").addClass("focus");
         if(!$this.val().length > 0) {
           $this.siblings("label").removeClass("floating-inactive").addClass("floating-active")
         }
       }).blur(function(){
-        $this.parent().removeClass("focus");
+        $this.closest(".form").removeClass("focus");
         if(!$this.val().length > 0) {
           $this.siblings("label").removeClass("floating-active").addClass("floating-inactive")
         }
