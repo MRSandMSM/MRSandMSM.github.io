@@ -345,7 +345,7 @@ select.field {
 #text404 .container {
 	width: 100%;
 	max-width: 468px;
-	margin: 0 0 36px 0;
+	margin: 0 0 51.75px 0;
 }
 #text404 .text404-inner {opacity: 0}
 #text404 .text404-inner.pointer-disabled {transition: opacity .375s .75s linear}
@@ -550,8 +550,11 @@ select.field {
 	.has-secondary-nav #pageContent {margin-top: 40.5px}
 
 	/* IV.III.III. Page-specific CSS */
-	#text404 h2 {font-size: 162px}
-	#text404 .container {margin: 0 0 18px 0}
+	#text404 {
+		flex-directioN: column-reverse;
+		align-items: center;
+	}
+	#text404 h2 {font-size: 202.5px}
 }
 /* IV.IV. Equal or narrower than 639px */
 @media screen and (max-width: 639px) {
