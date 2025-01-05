@@ -125,12 +125,8 @@ $(document).ready(function(){
     
     $this.find('.text404-inner a.toaster[href="#search"]').toaster({
       delay: 750,
-      after: function(){
-        $(this).closest(".container").fadeOut(375, "linear")
-        $("#search").children(".close").click(function(){
-          $('.text404-inner').delay(750).fadeIn(375, "linear")
-        })
-      }
+      after: function(){$(this).closest(".container").fadeOut(375, "linear")},
+      afterDismiss: function(){alert("It should work.")}
     })
     
     $formControl.find(".clear").click(function(e){
