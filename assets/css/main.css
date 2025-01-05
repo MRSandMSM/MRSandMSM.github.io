@@ -469,7 +469,7 @@ select.field {
 /* IV.I. Narrower than 1024px */
 @media screen and (max-width: 1023.98px) {
 	/* IV.I.IV.V. 404 page */
-	#text404 h2 {font-size: 202.5px}
+	#text404 h2 {font-size: 191.25px}
 }
 /* IV.II. Narrower than 939px */
 @media screen and (max-width: 938.98px) {
