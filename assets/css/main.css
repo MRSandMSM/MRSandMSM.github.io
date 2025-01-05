@@ -551,10 +551,13 @@ select.field {
 
 	/* IV.III.III. Page-specific CSS */
 	#text404 {
-		flex-directioN: column-reverse;
+		flex-direction: column-reverse;
 		align-items: center;
+		right: 27px;
+		left: 27px;
 	}
 	#text404 h2 {font-size: 202.5px}
+	.loaded #text404 h2 {margin: 36px 0 0 0}
 }
 /* IV.IV. Equal or narrower than 639px */
 @media screen and (max-width: 639px) {
