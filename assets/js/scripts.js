@@ -17,7 +17,7 @@ $.fn.dismiss = function(options) {
 $.fn.toaster = function(options) {
   var settings = $.extend({
     duration: 500,
-    delay: 0,
+    delay: {in: 0, out: 0},
     easing: "linear",
     dismissSelector: ".close",
     dismissException: ".clear",
@@ -29,17 +29,19 @@ $.fn.toaster = function(options) {
   
   $this.click(function(e){
     if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
-    $(target).delay(settings.delay).fadeToggle(settings.duration, settings.easing)
+    $(target).delay(settings.delay.in).fadeToggle(settings.duration, settings.easing)
     
     if (typeof settings.after === "function") {
       settings.after.call(this); // Explicitly bind `this` to the plugin's element
     }
   })
 
-  $(target).find(settings.dismissSelector).not(settings.dismissException).dismiss({
-    duration: settings.duration,
-    easing: settings.easing,
-    target: target,
+  $(target).find(settings.dismissSelector).not(settings.dismissException).delay(settings.delay.out).queue(function(){
+    $(this).dismiss({
+      duration: settings.duration,
+      easing: settings.easing,
+      target: target,
+    })
   })
 }
 
