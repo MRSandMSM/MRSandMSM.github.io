@@ -4,12 +4,17 @@ $.fn.dismiss = function(options) {
     duration: 500,
     easing: "linear",
     target: "",
+    after: function(){}
   }, options)
 
   var $this = $(this);
   $(this).click(function(e){
     if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
-    $(settings.target).fadeOut(settings.duration, settings.easing)
+    $(settings.target).fadeOut(settings.duration, settings.easing, function(){
+      if (typeof settings.after === "function") {
+        settings.after.call(this); // Explicitly bind `this` to the plugin's element
+      }
+    })
   })
 }
 
@@ -21,7 +26,8 @@ $.fn.toaster = function(options) {
     easing: "linear",
     dismissSelector: ".close",
     dismissException: ".clear",
-    after: function(){}
+    after: function(){},
+    afterDismiss: function(){}
   }, options)
 
   var $this = $(this)
@@ -40,6 +46,7 @@ $.fn.toaster = function(options) {
     duration: settings.duration,
     easing: settings.easing,
     target: target,
+    after: settings.afterDismiss
   })
 }
 
