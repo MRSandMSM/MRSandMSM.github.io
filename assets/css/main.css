@@ -555,6 +555,7 @@ select.field {
 		align-items: center;
 		right: 27px;
 		left: 27px;
+		text-align: center;
 	}
 	#text404 h2 {font-size: 202.5px}
 	.loaded #text404 h2 {margin: 36px 0 0 0}
