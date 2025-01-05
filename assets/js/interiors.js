@@ -124,7 +124,7 @@ $(document).ready(function(){
     })
     
     $this.find('.text404-inner a.toaster[href="#search"]').toaster({
-      delay: 375,
+      delay: {in: 375, out: 0},
       after: function(){
         $(this).closest(".container").fadeOut(375, "linear")
         $("#search").children(".close").click(function(){
