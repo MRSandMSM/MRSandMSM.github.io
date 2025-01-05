@@ -466,9 +466,14 @@ select.field {
 }
 
 /* IV. Responsive CSS */
-/* IV.I. Equal or narrower than 939px */
+/* IV.I. Narrower than 1024px */
+@media screen and (max-width: 1023.98px) {
+	/* IV.I.IV.V. 404 page */
+	#text404 h2 {font-size: 202.5px}
+}
+/* IV.II. Narrower than 939px */
 @media screen and (max-width: 938.98px) {
-	/* IV.III.I. Footer */
+	/* IV.II.III.I. Footer */
 	#footer .footer-inner #footerCopy {position: relative}
 	#footer .footer-inner #footerCopy .menu {position: static}
 	#footer .footer-inner #footerCopy #siteCredits {
@@ -483,19 +488,19 @@ select.field {
 	}
 }
 
-/* IV.II. Equal or narrower than 767px */
+/* IV.III. Equal or narrower than 767px */
 @media screen and (max-width: 767px) {
-	/* IV.II.I. CSS Essentials */
-	/* IV.II.I.I. Common CSS */
+	/* IV.III.I. CSS Essentials */
+	/* IV.III.I.I. Common CSS */
 	.mobile-nav-toggler {display: block}
 	.mobile-only {display: block !important}
 	.desktop-only {display: none !important}
 
-	/* IV.II.II. Site-specific CSS */ 
-	/* IV.I.II.I. Layout */
+	/* IV.III.II. Site-specific CSS */ 
+	/* IV.III.II.I. Layout */
 	#header .header-content, .secondary-nav .clearfix, #footer .footer-inner {padding: 0 27px}
 	
-	/* IV.II.II.II. Header */
+	/* IV.III.II.II. Header */
 	#header .header-content .logo {
 		width: 236.9166717529297px;
 		height: 24.75px;
@@ -503,7 +508,7 @@ select.field {
 	#header .header-content .navigation {display: none}
 	#header .header-content .navigation .nav-item {display: block}
 
-	/* IV.II.II.III. Main content */
+	/* IV.III.II.III. Main content */
 	#page {margin-top: 52.41666793823242px}
 	.secondary-nav {
 		top: 52.41666793823242px;
@@ -540,11 +545,11 @@ select.field {
 	.secondary-nav .menu li a {padding: 9px 27px}
 	.has-secondary-nav #pageContent {margin-top: 40.5px}
 
-	/* IV.II.III. Page-specific CSS */
+	/* IV.III.III. Page-specific CSS */
 }
-/* IV.III. Equal or narrower than 639px */
+/* IV.IV. Equal or narrower than 639px */
 @media screen and (max-width: 639px) {
-	/* IV.III.I. Footer */
+	/* IV.IV.III.I. Footer */
 	#footer .footer-inner #footerCopy > * {float: none !important}
 	#footer .footer-inner #footerCopy .menu {margin: 0 0 9px 0}
 }
