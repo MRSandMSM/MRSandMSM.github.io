@@ -469,7 +469,11 @@ select.field {
 /* IV.I. Narrower than 1024px */
 @media screen and (max-width: 1023.98px) {
 	/* IV.I.IV.V. 404 page */
-	#text404 h2 {font-size: 191.25px}
+	#text404 h2 {
+		font-size: 202.5px;
+		padding: 50.625px 3.375px 0 0;
+	}
+	#text404 .container {margin: 0 0 22.5px 0}
 }
 /* IV.II. Narrower than 939px */
 @media screen and (max-width: 938.98px) {
@@ -546,6 +550,8 @@ select.field {
 	.has-secondary-nav #pageContent {margin-top: 40.5px}
 
 	/* IV.III.III. Page-specific CSS */
+	#text404 h2 {font-size: 162px}
+	#text404 .container {margin: 0 0 18px 0}
 }
 /* IV.IV. Equal or narrower than 639px */
 @media screen and (max-width: 639px) {
