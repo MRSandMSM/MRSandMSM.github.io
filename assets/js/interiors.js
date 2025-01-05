@@ -127,6 +127,9 @@ $(document).ready(function(){
       delay: 375,
       after: function(){
         $(this).closest(".container").fadeOut(375, "linear")
+        $("#search").children(".close").click(function(){
+          $('.text404-inner a.toaster[href="#search"]').closest(".container").delay(375).fadeIn(375, "linear")
+        })
       }
     })
     
