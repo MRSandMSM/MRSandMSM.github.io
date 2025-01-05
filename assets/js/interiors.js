@@ -124,11 +124,11 @@ $(document).ready(function(){
     })
     
     $this.find('.text404-inner a.toaster[href="#search"]').toaster({
-      delay: {in: 375, out: 0},
+      delay: 750,
       after: function(){
         $(this).closest(".container").fadeOut(375, "linear")
         $("#search").children(".close").click(function(){
-          $('.text404-inner').fadeIn(375, "linear")
+          $('.text404-inner').delay(375).fadeIn(375, "linear")
         })
       }
     })
