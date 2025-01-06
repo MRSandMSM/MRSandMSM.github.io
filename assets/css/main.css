@@ -375,7 +375,7 @@ select.field {
 }
 .not-found #search .field {
 	color: #f7f8fa;
-	padding: 9px 42.75px 9px 18px;
+	padding: 9px 0 9px 18px;
 	line-height: 27px;
 }
 .not-found #search .field::placeholder {color: transparent}
@@ -383,7 +383,7 @@ select.field {
 .not-found #search .field + .floating-inactive {animation: labelBackwards .84375s linear forwards}
 .not-found #search .clear {display: none}
 .not-found #search .submit {
-	width: 45px;
+	width: 49.5px;
 	height: 45px;
 }
 .not-found #search .submit input {
@@ -396,7 +396,7 @@ select.field {
 .not-found #search .submit .icon-search {
 	position: absolute;
 	top: 13.5px;
-	right: 13.5px;
+	left: 13.5px;
 	transition: color .375s linear;
 }
 .not-found #search .submit input:hover + .icon-search {color: #92c4d3}
@@ -408,7 +408,7 @@ select.field {
 .not-found #search > .close-alt, .not-found #search .clear span {transition: opacity .375s linear}
 .not-found #search > .close-alt {right: -29.25px}
 .not-found #search > .close-alt:hover {opacity: .5}
-.not-found #search .clear {right: 18px}
+.not-found #search .clear {right: 0}
 .not-found #search .clear span {opacity: 0}
 .not-found #search .clear:hover span {opacity: 1}
 @keyframes label {
