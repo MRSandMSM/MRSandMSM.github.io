@@ -124,12 +124,13 @@ $(document).ready(function(){
       var text404h2 = $("#text404").children("h2");
       
       if(winW <= 767) {
-        var containerW = winW - 54;
+        var containerW = $(window).outerWidth(true) - 54;
         var letterSpacing = -6.75;
+        var lineHeight = .5;
         var characterCount = text404h2.text().length;
         var maxFontSize = $(window).innerHeight() - 223.41666793823242;
 
-        var displaySize = ((containerW + letterSpacing * characterCount) * characterCount) * 2
+        var displaySize = ((containerW + letterSpacing * characterCount) / characterCount) / lineHeight
         console.log(displaySize)
         
         //var fontSize = Math.min(displaySize, maxFontSize)
