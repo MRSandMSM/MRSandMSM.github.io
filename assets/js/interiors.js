@@ -125,7 +125,7 @@ $(document).ready(function(){
       
       if(winW <= 767) {
         var containerW = winW - 54;
-        var letterSpacing = -6.75px;
+        var letterSpacing = -6.75;
         var lineHeight = .5;
         var characterCount = text404h2.text().length;
         var maxFontSize = $(window).innerHeight() - 223.41666793823242;
