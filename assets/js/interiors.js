@@ -122,8 +122,8 @@ $(document).ready(function(){
     $(window).on("load resize", function(){
       var winW = $(window).innerWidth()
       if(winW <= 767) {
-        alert("Logic for devices <= 767px")
-      } else {alert("Logic for devices > 767px")}
+        console.log("Logic for devices <= 767px")
+      } else {console.log("Logic for devices > 767px")}
     })
     
     $this.addClass("loaded").delay(1125).queue(function(){
