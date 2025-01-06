@@ -131,8 +131,7 @@ $(document).ready(function(){
 
         var contentMargin = $(".text404-inner").css("margin-bottom").split("px")[0]
         var contentHeight = $(".text404-inner").outerHeight() + parseFloat(contentMargin) * 2;
-        console.log(contentMargin + ", " + contentHeight)
-        var maxFontSize = parseFloat($(window).innerHeight() - 223.41666793823242);
+        var maxFontSize = parseFloat($(window).innerHeight() - (contentHeight + 52.41666793823242));
 
         var displaySize = ((containerW + letterSpacing * characterCount) / characterCount) / lineHeight
         var fontSize = Math.min(displaySize, maxFontSize) + 'px'
