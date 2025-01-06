@@ -559,7 +559,10 @@ select.field {
 		margin: 36px 0 -169.875px 0;
 		font-size: 202.5px;
 	}
-	.loaded #text404 h2 {margin: 36px 0 0 0}
+	.loaded #text404 h2 {margin: 0}
+	#text404 .container {margin: 0 0 72px 0}
+	.not-found #search {padding: 0 29.25px 0 0}
+	.not-found #search > .close-alt {right: 0}
 	#text404 .menu .mobile-only {display: inline-block !important}
 }
 /* IV.IV. Equal or narrower than 639px */
