@@ -120,10 +120,13 @@ $(document).ready(function(){
     var $input = $formControl.find("input");
 
     $(window).on("load resize", function(){
-      var winW = $(window).innerWidth()
+      var winW = $(window).innerWidth();
+      var text404h2 = $("#text404").children("h2");
+      
       if(winW <= 767) {
-        console.log("Logic for devices <= 767px")
-      } else {console.log("Logic for devices > 767px")}
+        var h2Aspect = text404h2.outerWidth(true)
+        console.log(h2Aspect)
+      } else {text404h2.removeAttr("style")}
     })
     
     $this.addClass("loaded").delay(1125).queue(function(){
