@@ -130,11 +130,12 @@ $(document).ready(function(){
         var maxFontSize = $(window).innerHeight() - 223.41666793823242;
 
         var displaySize = ((containerW + letterSpacing * characterCount) * characterCount) * 2
+        
         //var fontSize = Math.min(displaySize, maxFontSize)
 
-        text404h2.css({
-          'font-size': displaySize
-        })
+        //text404h2.css({
+        //  'font-size': displaySize
+        // })
       } else {text404h2.removeAttr("style")}
     })
     
