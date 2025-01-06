@@ -130,7 +130,7 @@ $(document).ready(function(){
         var characterCount = text404h2.text().length;
 
         var contentMargin = $(".text404-inner").css("margin-bottom").split("px")[0]
-        var contentHeight = $(".text404-inner").outerHeight() + parseFloat(contentMargin);
+        var contentHeight = $(".text404-inner").outerHeight() + parseFloat(contentMargin) * 2;
         console.log(contentMargin + ", " + contentHeight)
         var maxFontSize = parseFloat($(window).innerHeight() - 223.41666793823242);
 
