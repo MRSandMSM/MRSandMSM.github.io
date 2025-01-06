@@ -120,7 +120,7 @@ $(document).ready(function(){
     var $input = $formControl.find("input");
 
     $(window).on("load resize", function(){
-      var winW = $(window).outerWidth(true);
+      var winW = $(window).innerWidth();
       var text404h2 = $("#text404").children("h2");
       
       if(winW <= 767) {
