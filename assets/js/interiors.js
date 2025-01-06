@@ -130,6 +130,7 @@ $(document).ready(function(){
         var maxFontSize = $(window).innerHeight() - 223.41666793823242;
 
         var displaySize = ((containerW + letterSpacing * characterCount) * characterCount) * 2
+        console.log(displaySize)
         
         //var fontSize = Math.min(displaySize, maxFontSize)
 
