@@ -130,7 +130,7 @@ $(document).ready(function(){
 
         // var fontSize = (containerWidth - letterSpacing) / text404h2.text().length;
 
-        console.log(text404h2.text().length)
+        console.log(containerWidth / text404h2.text().length)
         // fontSize = Math.min(fontSize, maxFontSize);
 
         /* text404h2.css({
