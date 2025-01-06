@@ -547,6 +547,7 @@ select.field {
 	.has-secondary-nav #pageContent {margin-top: 40.5px}
 
 	/* IV.III.III. Page-specific CSS */
+	.not-found #pageContent {min-height: calc(100vh - 52.41666793823242px)}
 	#text404 {
 		flex-direction: column-reverse;
 		align-items: center;
