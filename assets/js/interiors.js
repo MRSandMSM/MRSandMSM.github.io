@@ -122,6 +122,7 @@ $(document).ready(function(){
     $(window).on("load resize", function(){
       var winW = $(window).innerWidth() - $.scrollbarWidth();
       var text404h2 = $("#text404").children("h2");
+      console.log($.scrollbarWidth())
       
       if(winW <= 767) {
         var containerW = $(window).outerWidth(true) - 54;
