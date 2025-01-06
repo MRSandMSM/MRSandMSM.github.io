@@ -134,9 +134,9 @@ $(document).ready(function(){
         var fontSize = Math.min(displaySize, maxFontSize) + 'px'
 
         console.log(fontSize)
-        text404h2.css({
+        /* text404h2.css({
           'font-size': fontSize
-        })
+        })*/        
       } else {text404h2.removeAttr("style")}
     })
     
