@@ -125,7 +125,9 @@ $(document).ready(function(){
       
       if(winW <= 767) {
         var h2Aspect = parseFloat(151.875 / 319.6875)
-        console.log(h2Aspect)
+        text404h2.css({
+          "font-size": (winW - 54) * h2Aspect
+        })
       } else {text404h2.removeAttr("style")}
     })
     
