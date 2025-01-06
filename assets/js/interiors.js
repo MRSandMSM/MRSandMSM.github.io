@@ -123,11 +123,19 @@ $(document).ready(function(){
       var winW = $(window).outerWidth(true);
       var text404h2 = $("#text404").children("h2");
       
-      if(winW <= 767) {        
-        var textAspect = parseFloat(319.6875 / 151.875)
+      if(winW <= 767) {
         var containerW = winW - 54;
+        var letterSpacing = -6.75px;
+        var lineHeight = .5;
+        var characterCount = text404h2.text().length;
+        var maxFontSize = $(window).innerHeight() - 223.41666793823242;
 
-        console.log(containerW / textAspect)
+        var displaySize = ((containerW + letterSpacing * characterCount) * characterCount) / lineHeight
+        var fontSize = Math.min(displaySize, maxFontSize)
+
+        text404h2.css({
+          'font-size': fontSize
+        })
       } else {text404h2.removeAttr("style")}
     })
     
