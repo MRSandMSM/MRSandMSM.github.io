@@ -133,11 +133,7 @@ $(document).ready(function(){
         var displaySize = ((containerW + letterSpacing * characterCount) / characterCount) / lineHeight
         var fontSize = Math.min(displaySize, maxFontSize) + 'px'
 
-        console.log(fontSize)
-        document.querySelector("#text404 h2").style.fontSize = fontSize;
-        /* text404h2.css({
-          'font-size': fontSize
-        })*/        
+        text404h2.css({'font-size': fontSize})        
       } else {text404h2.removeAttr("style")}
     })
     
