@@ -123,24 +123,19 @@ $(document).ready(function(){
       var winW = $(window).outerWidth(true);
       var text404h2 = $("#text404").children("h2");
       
-      if(winW <= 767) {
-        /*var h2Aspect = parseFloat(151.875 / 319.6875)
-        text404h2.css({
-          "font-size": (winW - 54) * h2Aspect
-        })*/
-        
+      if(winW <= 767) {        
         var containerWidth = $('#text404').outerWidth(true);
         var letterSpacing = -6.75;
         var maxFontSize = winW - (171 + parseFloat($("header").outerHeight(true)));
 
-        var fontSize = (containerWidth - letterSpacing) / text404h2.text().length;
+        // var fontSize = (containerWidth - letterSpacing) / text404h2.text().length;
 
-        console.log(text404h2.text().length;)
-        fontSize = Math.min(fontSize, maxFontSize);
+        console.log(text404h2.text().length)
+        // fontSize = Math.min(fontSize, maxFontSize);
 
-        text404h2.css({
+        /* text404h2.css({
           'font-size': fontSize
-        });
+        }); */
       } else {text404h2.removeAttr("style")}
     })
     
