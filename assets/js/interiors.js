@@ -134,6 +134,11 @@ $(document).ready(function(){
         var maxFontSize = winW - (171 + parseFloat($("header").outerHeight(true)));
 
         var fontSize = (containerWidth - letterSpacing) / text404h2.text().length;
+        fontSize = Math.min(fontSize, maxFontSize);
+
+        text404h2.css({
+          'font-size': fontSize
+        });
       } else {text404h2.removeAttr("style")}
     })
     
