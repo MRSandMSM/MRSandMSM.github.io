@@ -124,7 +124,7 @@ $(document).ready(function(){
       var text404h2 = $("#text404").children("h2");
       
       if(winW <= 767) {
-        var h2Aspect = parseFloat(text404h2.outerWidth(true))
+        var h2Aspect = parseFloat(151.875 / 319.6875)
         console.log(h2Aspect)
       } else {text404h2.removeAttr("style")}
     })
