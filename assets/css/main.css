@@ -466,8 +466,8 @@ select.field {
 }
 
 /* IV. Responsive CSS */
-/* IV.I. Narrower than 1024px */
-@media screen and (max-width: 1023.98px) {
+/* IV.I. Narrower than 1080px */
+@media screen and (max-width: 1079.98px) {
 	/* IV.I.IV.V. 404 page */
 	#text404 h2 {font-size: 191.25px}
 	#text404 .container {margin: 0 0 22.5px 0}
