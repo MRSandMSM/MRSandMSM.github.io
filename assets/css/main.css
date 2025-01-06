@@ -320,7 +320,7 @@ select.field {
 	position: relative;
 	overflow: hidden;
 }
-.not-found #pageContent .bg {opacity: .25}
+.not-found #pageContent .bg {opacity: .125}
 #text404 {
 	align-items: flex-end;
 	z-index: 1;
