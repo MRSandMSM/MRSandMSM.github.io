@@ -122,13 +122,16 @@ $(document).ready(function(){
     $(window).on("load resize", function(){
       var winW = $(window).innerWidth() + $.scrollbarWidth();
       var text404h2 = $("#text404").children("h2");
-      console.log($.scrollbarWidth())
       
       if(winW <= 767) {
         var containerW = $(window).outerWidth(true) - 54;
         var letterSpacing = -6.75;
         var lineHeight = .5;
         var characterCount = text404h2.text().length;
+
+        var contentMargin = $(".text404-inner").css("margin-bottom").split("px")[0]
+        var contentHeight = $(".text404-inner").outerHeight() + contentMargin;
+        console.log(contentMargin + ", " + contentHeight)
         var maxFontSize = parseFloat($(window).innerHeight() - 223.41666793823242);
 
         var displaySize = ((containerW + letterSpacing * characterCount) / characterCount) / lineHeight
