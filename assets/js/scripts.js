@@ -1,3 +1,19 @@
+/* Scrollbar width */
+$.scrollbarWidth = function() {
+  var a;
+  var b;
+  var c;
+  
+  if(c === undefined){
+    a = $('<div style="width:50px;height:50px;overflow:auto"><div></div></div>').appendTo('body');
+    b = a.children();
+    c = b.innerWidth() - b.height(99).innerWidth();
+    a.remove()
+  }
+  
+  return c;
+}
+
 /* Dismiss plugin */
 $.fn.dismiss = function(options) {
   var settings = $.extend({
