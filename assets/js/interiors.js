@@ -134,6 +134,7 @@ $(document).ready(function(){
         var fontSize = Math.min(displaySize, maxFontSize) + 'px'
 
         console.log(fontSize)
+        document.querySelectorAll("#text404 h2").style.fontSize = fontSize;
         /* text404h2.css({
           'font-size': fontSize
         })*/        
