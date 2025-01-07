@@ -1,7 +1,7 @@
 /* II.IV. Selection */
-.release-type #inTheSky ::selection {
-	background-color: #e0eaf5;
-	color: #000;
+#inTheSky ::selection, #inTheSky ::-moz-selection, #inTheSky ::-webkit-selection {
+	background-color: #000;
+	color: #e0eaf5;
 }
 /* III.III. Discography */
 .release-type, .release-type .production {
