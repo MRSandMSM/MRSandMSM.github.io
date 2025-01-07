@@ -1,8 +1,11 @@
 /* II.IV. Selection */
-.release-type #inTheSky ::selection, .release-type #inTheSky ::-moz-selection {
+.release-type #inTheSky ::-moz-selection {
 	background-color: #000;
 	color: #e0eaf5;
-	color: red;
+}
+.release-type #inTheSky ::selection {
+	background-color: #000;
+	color: #e0eaf5;
 }
 /* III.III. Discography */
 .release-type, .release-type .production {
