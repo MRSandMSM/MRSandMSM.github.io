@@ -536,6 +536,7 @@ select.field {
 		margin: 0 0 13.5px 0 !important;
 		font-size: 22.5px;
 	}
+	#text404 .menu .show-830 {display: inline-block !important}
 	.not-found #search {padding: 0 33.75px 0 0}
 	.not-found #search > .close-alt {right: 0}
 }
@@ -606,7 +607,7 @@ select.field {
 	#footer .footer-inner #footerCopy > * {float: none !important}
 	#footer .footer-inner #footerCopy .menu {margin: 0 0 9px 0}
 }
-/* IV.V. Equal or narrower than 528px */
+/* IV.VI. Equal or narrower than 528px */
 @media screen and (max-width: 528px) {
-	#text404 p {line-height: 1.125em}
+	#text404 p {line-height: 1.1875em}
 }
