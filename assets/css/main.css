@@ -514,20 +514,44 @@ select.field {
 		font-size: 19.125px;
 	}
 }
-
-/* IV.III. Equal or narrower than 767px */
+/* IV.III. Equal or narrower than 830px */
+@media screen and (max-width: 830px) {
+	#text404 {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		right: 27px;
+		left: 27px;
+	}
+	#text404 h2 {
+		margin: 0 0 -169.875px 0;
+		font-size: 202.5px;
+	}
+	.loaded #text404 h2 {margin: 0}
+	#text404 .container {
+		margin: 0 0 72px 0;
+		max-width: 486px;
+	}
+	#text404 p {margin: 0 0 27px 0}
+	#text404 p.lead {
+		margin: 0 0 13.5px 0 !important;
+		font-size: 22.5px;
+	}
+	.not-found #search {padding: 0 33.75px 0 0}
+	.not-found #search > .close-alt {right: 0}
+}
+/* IV.IV. Equal or narrower than 767px */
 @media screen and (max-width: 767px) {
-	/* IV.III.I. CSS Essentials */
-	/* IV.III.I.I. Common CSS */
+	/* IV.IV.I. CSS Essentials */
+	/* IV.IV.I.I. Common CSS */
 	.mobile-nav-toggler {display: block}
 	.mobile-only {display: block !important}
 	.desktop-only {display: none !important}
 
-	/* IV.III.II. Site-specific CSS */ 
-	/* IV.III.II.I. Layout */
+	/* IV.IV.II. Site-specific CSS */ 
+	/* IV.IV.II.I. Layout */
 	#header .header-content, .secondary-nav .clearfix, #footer .footer-inner {padding: 0 27px}
 	
-	/* IV.III.II.II. Header */
+	/* IV.IV.II.II. Header */
 	#header .header-content .logo {
 		width: 236.9166717529297px;
 		height: 24.75px;
@@ -535,7 +559,7 @@ select.field {
 	#header .header-content .navigation {display: none}
 	#header .header-content .navigation .nav-item {display: block}
 
-	/* IV.III.II.III. Main content */
+	/* IV.IV.II.III. Main content */
 	#page {margin-top: 52.41666793823242px}
 	.secondary-nav {
 		top: 52.41666793823242px;
@@ -572,35 +596,13 @@ select.field {
 	.secondary-nav .menu li a {padding: 9px 27px}
 	.has-secondary-nav #pageContent {margin-top: 40.5px}
 
-	/* IV.III.III. Page-specific CSS */
+	/* IV.IV.III. Page-specific CSS */
 	.not-found #pageContent {min-height: calc(100vh - 52.41666793823242px)}
-	#text404 {
-		flex-direction: column-reverse;
-		align-items: flex-start;
-		right: 27px;
-		left: 27px;
-	}
-	#text404 h2 {
-		margin: 0 0 -169.875px 0;
-		font-size: 202.5px;
-	}
-	.loaded #text404 h2 {margin: 0}
-	#text404 .container {
-		margin: 0 0 72px 0;
-		max-width: 486px;
-	}
-	#text404 p {margin: 0 0 27px 0}
-	#text404 p.lead {
-		margin: 0 0 13.5px 0 !important;
-		font-size: 22.5px;
-	}
-	.not-found #search {padding: 0 33.75px 0 0}
-	.not-found #search > .close-alt {right: 0}
 	#text404 .menu .mobile-only {display: inline-block !important}
 }
-/* IV.IV. Equal or narrower than 639px */
+/* IV.V. Equal or narrower than 639px */
 @media screen and (max-width: 639px) {
-	/* IV.IV.III.I. Footer */
+	/* IV.V.III.I. Footer */
 	#footer .footer-inner #footerCopy > * {float: none !important}
 	#footer .footer-inner #footerCopy .menu {margin: 0 0 9px 0}
 }
