@@ -301,6 +301,14 @@ select.field {
 }
 #footer .footer-inner #footerCopy #siteCredits span:last-child {margin: 0}
 #footer .footer-inner #footerCopy p {float: left}
+/* II.IV. Selection */
+::selection {
+	background-color: #000418;
+	color: #f7f8fa;
+}
+.secondary-nav ::selection, .not-found #page ::selection {color: #000418}
+.secondary-nav ::selection {background-color: #f7f8fa}
+.not-found #page ::selection {background-color: #92c4d3}
 
 /* III. Page-specific CSS */
 /* III.LIV/XII. Search page */
