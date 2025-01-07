@@ -415,7 +415,10 @@ select.field {
 .not-found #search > .close-alt {right: -33.75px}
 .not-found #search > .close-alt:hover {opacity: .5}
 .not-found #search .clear {right: 0}
-.not-found #search .clear span {opacity: 0}
+.not-found #search .clear span {
+	background-position: center;
+	opacity: 0;
+}
 .not-found #search .clear:hover span {opacity: 1}
 @keyframes label {
 	44.44444444444444% {
