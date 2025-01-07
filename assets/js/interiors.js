@@ -159,7 +159,7 @@ $(document).ready(function(){
 
       $input.val("")
       $label.removeClass("floating-active").addClass("floating-inactive");
-      $this.fadeOut(375, linear);
+      // $this.fadeOut(375, linear);
     })
     
     $input.each(function(){
