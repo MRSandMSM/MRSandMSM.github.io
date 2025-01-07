@@ -383,7 +383,7 @@ select.field {
 .not-found #search .field + .floating-inactive {animation: labelBackwards .84375s linear forwards}
 .not-found #search .clear {display: none}
 .not-found #search .submit {
-	width: 49.5px;
+	width: 45px;
 	height: 45px;
 }
 .not-found #search .submit input {
@@ -396,7 +396,7 @@ select.field {
 .not-found #search .submit .icon-search {
 	position: absolute;
 	top: 13.5px;
-	left: 13.5px;
+	right: 13.5px;
 	transition: color .375s linear;
 }
 .not-found #search .submit input:hover + .icon-search {color: #92c4d3}
