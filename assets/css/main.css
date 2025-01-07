@@ -545,10 +545,9 @@ select.field {
 	.not-found #pageContent {min-height: calc(100vh - 52.41666793823242px)}
 	#text404 {
 		flex-direction: column-reverse;
-		align-items: center;
+		align-items: flex-start;
 		right: 27px;
 		left: 27px;
-		text-align: center;
 	}
 	#text404 h2 {
 		margin: 0 0 -169.875px 0;
@@ -565,8 +564,4 @@ select.field {
 	/* IV.IV.III.I. Footer */
 	#footer .footer-inner #footerCopy > * {float: none !important}
 	#footer .footer-inner #footerCopy .menu {margin: 0 0 9px 0}
-}
-/* IV.V. Equal or narrower than 522px */
-@media screen and (max-width: 522px) {
-	#text404 {text-align: left}
 }
