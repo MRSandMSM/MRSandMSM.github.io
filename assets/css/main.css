@@ -562,8 +562,24 @@ select.field {
 		position: fixed;
 		top: 0;
 		left: -100%;
+		background-color: #92c4d3;
 	}
-	#header .header-content .navigation .nav-item {display: block}
+	/*.mobile-nav-open */#header .header-content .navigation {left: 0}
+	#header .header-content .navigation .menu {
+		max-width: 639px;
+		position: absolute;
+		top: 50%;
+		right: 27px;
+		left: 27px;
+	}
+	#header .header-content .navigation .nav-item {
+		display: block;
+		margin: 0 0 13.5px 0;
+	}
+	#header .header-content .navigation .nav-item a {
+		font-size: 36px;
+		line-height: 1em;
+	}
 
 	/* IV.IV.II.III. Main content */
 	#page {margin-top: 52.41666793823242px}
