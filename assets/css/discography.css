@@ -2,6 +2,7 @@
 #inTheSky ::selection, #inTheSky ::-moz-selection {
 	background-color: #000;
 	color: #e0eaf5;
+	color: red;
 }
 /* III.III. Discography */
 .release-type, .release-type .production {
