@@ -606,3 +606,7 @@ select.field {
 	#footer .footer-inner #footerCopy > * {float: none !important}
 	#footer .footer-inner #footerCopy .menu {margin: 0 0 9px 0}
 }
+/* IV.V. Equal or narrower than 528px */
+@media screen and (max-width: 528px) {
+	#text404 p {line-height: 1.125em}
+}
