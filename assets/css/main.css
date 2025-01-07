@@ -478,11 +478,16 @@ select.field {
 /* IV.I. Narrower than 1080px */
 @media screen and (max-width: 1079.98px) {
 	/* IV.I.IV.V. 404 page */
-	#text404 h2 {font-size: 191.25px}
-	#text404 .container {margin: 0 0 22.5px 0}
+	#text404 h2 {
+		margin: 0 27px 0 0;
+		font-size: 191.25px;
+	}
+	#text404 .container {margin: 0 0 27.3px 0}
+	#text404 p {margin: 0 0 20.25px 0}
+	#text404 p.lead {margin: 0 0 10.125px 0 !important}
 }
 /* IV.II. Narrower than 939px */
-@media screen and (max-width: 938.98px) {
+@media screen and (max-width: 938.98px) {	
 	/* IV.II.III.I. Footer */
 	#footer .footer-inner #footerCopy {position: relative}
 	#footer .footer-inner #footerCopy .menu {position: static}
@@ -495,6 +500,18 @@ select.field {
 	#footer .footer-inner #footerCopy #siteCredits .close {
 		right: auto;
 		left: 0;
+	}
+
+	/* IV.II.IV.V. 404 page */
+	#text404 h2 {
+		margin: 0 22.5px 0 0;
+		font-size: 157.5px;
+	}
+	#text404 .container {margin: 0 0 22.5px 0}
+	#text404 p {margin: 0 0 18px 0}
+	#text404 p.lead {
+		margin: 0 0 9px 0 !important;
+		font-size: 19.125px;
 	}
 }
 
@@ -568,7 +585,10 @@ select.field {
 		font-size: 202.5px;
 	}
 	.loaded #text404 h2 {margin: 0}
-	#text404 .container {margin: 0 0 72px 0}
+	#text404 .container {
+		margin: 0 0 72px 0;
+		max-width: 486px;
+	}
 	.not-found #search {padding: 0 33.75px 0 0}
 	.not-found #search > .close-alt {right: 0}
 	#text404 .menu .mobile-only {display: inline-block !important}
