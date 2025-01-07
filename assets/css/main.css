@@ -80,7 +80,7 @@ p:last-child {margin: 0}
 .menu li, .menu li a, .menu li span {display: inline-block}
 .menu li.last {margin: 0 -.25px 0 0 !important}
 .mobile-nav-toggler {display: none}
-.mobile-only, .show-830 {display: none !important}
+.mobile-only {display: none !important}
 .clearfix:after, .section:after {
 	content: "";
 	clear: both;
@@ -536,7 +536,6 @@ select.field {
 		margin: 0 0 13.5px 0 !important;
 		font-size: 22.5px;
 	}
-	#text404 .menu .show-830 {display: inline-block !important}
 	.not-found #search {padding: 0 33.75px 0 0}
 	.not-found #search > .close-alt {right: 0}
 }
