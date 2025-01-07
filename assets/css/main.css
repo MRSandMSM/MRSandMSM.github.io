@@ -306,8 +306,11 @@ select.field {
 	background-color: #000418;
 	color: #f7f8fa;
 }
+.secondary-nav ::-moz-selection, .not-found #page ::-moz-selection {color: #000418}
 .secondary-nav ::selection, .not-found #page ::selection {color: #000418}
+.secondary-nav ::-moz-selection {background-color: #f7f8fa}
 .secondary-nav ::selection {background-color: #f7f8fa}
+.not-found #page ::-moz-selection {background-color: #92c4d3}
 .not-found #page ::selection {background-color: #92c4d3}
 
 /* III. Page-specific CSS */
