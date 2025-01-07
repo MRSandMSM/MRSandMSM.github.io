@@ -123,7 +123,7 @@ $(document).ready(function(){
       var winW = $(window).innerWidth() + $.scrollbarWidth();
       var text404h2 = $("#text404").children("h2");
       
-      if(winW <= 767) {
+      if(winW <= 830) {
         var containerW = $(window).outerWidth(true) - 54;
         var letterSpacing = -6.75;
         var lineHeight = .5;
