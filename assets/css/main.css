@@ -589,6 +589,11 @@ select.field {
 		margin: 0 0 72px 0;
 		max-width: 486px;
 	}
+	#text404 p {margin: 0 0 27px 0}
+	#text404 p.lead {
+		margin: 0 0 13.5px 0 !important;
+		font-size: 22.5px;
+	}
 	.not-found #search {padding: 0 33.75px 0 0}
 	.not-found #search > .close-alt {right: 0}
 	#text404 .menu .mobile-only {display: inline-block !important}
