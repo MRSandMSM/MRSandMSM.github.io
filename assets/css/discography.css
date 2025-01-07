@@ -1,5 +1,5 @@
 /* II.IV. Selection */
-#inTheSky ::selection, #inTheSky ::-moz-selection {
+.release-type #inTheSky ::selection, .release-type #inTheSky ::-moz-selection {
 	background-color: #000;
 	color: #e0eaf5;
 	color: red;
