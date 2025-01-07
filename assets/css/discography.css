@@ -1,10 +1,18 @@
+/* II.IV. Selection */
+.release-type #inTheSky ::selection {
+	background-color: #000;
+	color: #e0eaf5;
+}
 /* III.III. Discography */
 .release-type, .release-type .production {
 	list-style-type: none;
 	padding: 0;
 }
 .release-type .release {position: relative}
-.release-type #inTheSky {background-color: #e0eaf5}
+.release-type #inTheSky {
+	background-color: #e0eaf5;
+	color: #000;
+}
 .release .bg {opacity: .125}
 .release#inTheSky .bg {background-image: url("/assets/img/discography/release_bgs/in-the-sky_bg.jpg")}
 .release .fg {
@@ -119,7 +127,8 @@
 	line-height: 1em;
 }
 .release .tracklist li a {color: inherit}
-.release .tracklist li a:hover, .release .tracklist li a:focus {color: #000418}
+.release .tracklist li a:hover, .release .tracklist li a:focus, .release .tracklist li span {color: #000418}
+.release-alt .tracklist li a:hover, .release-alt .tracklist li a:focus, .release-alt .tracklist li span {color: #f7f8fa}
 .release .tracklist li a.play {
 	float: left;
 	width: 0;
@@ -136,7 +145,7 @@
 	height: 17.33333396911621px;
 	border-width: 0 5.625px;
 }
-.release .tracklist li span {color: #000418}
+.release#inTheSky .tracklist li span {color: #000}
 .release .tracklist .track, .release .tracklist .title,
 .release .tracklist .lyrics {
 	display: inline-block;
