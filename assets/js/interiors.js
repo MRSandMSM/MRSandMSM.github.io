@@ -159,7 +159,7 @@ $(document).ready(function(){
 
       $input.val("")
       $label.removeClass("floating-active").addClass("floating-inactive");
-      $this.stop(true, true).fadeOut(375, linear);
+      $this.fadeOut(375, "linear");
     })
     
     $input.each(function(){
@@ -183,7 +183,7 @@ $(document).ready(function(){
       if ($this.val().length > 0) {
         $label.addClass("floating-active").removeClass("floating-inactive");
         $this.siblings(".clear").fadeIn(375, "linear");
-      } else {$this.siblings(".clear").stop(true, true).fadeOut(375, "linear")}
+      } else {$this.siblings(".clear").fadeOut(375, "linear")}
     })
   })
   
