@@ -615,7 +615,7 @@ select.field {
 	#header .mobile-nav-toggler .bar-top {top: -7.875px}
 	#header .mobile-nav-toggler .bar-middle {
 		top: 0;
-		transition: opacity 0s 1.5s linear;
+		transition: opacity 0s 1.5s linear, background-color .375s 1.5s linear;
 	}
 	#header .mobile-nav-toggler .bar-bottom {top: 7.875px}
 	.mobile-nav-open #header .mobile-nav-toggler .bar {background-color: #f7f8fa}
