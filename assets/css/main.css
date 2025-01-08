@@ -618,10 +618,7 @@ select.field {
 		transition: opacity 0s 1.5s linear;
 	}
 	#header .mobile-nav-toggler .bar-bottom {top: 7.875px}
-	.mobile-nav-open #header .mobile-nav-toggler .bar {
-		background-color: #f7f8fa;
-		transition: background-color .375s linear;
-	}
+	.mobile-nav-open #header .mobile-nav-toggler .bar {background-color: #f7f8fa}
 	.mobile-nav-open #header .mobile-nav-toggler .bar-top,
 	.mobile-nav-open #header .mobile-nav-toggler .bar-bottom {
 		top: 0;
@@ -630,7 +627,7 @@ select.field {
 	.mobile-nav-open #header .mobile-nav-toggler .bar-top {transform: rotate(-45deg)}
 	.mobile-nav-open #header .mobile-nav-toggler .bar-middle {
 		opacity: 0;
-		transition: opacity 0s .375s linear;
+		transition: opacity 0s .375s linear, background-color .375s linear;
 	}
 	.mobile-nav-open #header .mobile-nav-toggler .bar-bottom {transform: rotate(45deg)}
 	#header .header-content .navigation .menu {
@@ -638,19 +635,19 @@ select.field {
 		top: 50%;
 		right: 27px;
 		left: 27px;
+		transform: translateY(-50%);
 		margin-top: 26.20833396911621px;
 		max-width: 639px;
-		transform: translateY(-50%);
+		opacity: 0;
+		transition: opacity .375s linear;
+	}
+	.mobile-nav-open #header .header-content .navigation .menu {
+		opacity: 1;
+		transition: opacity .375s 1.5s linear;
 	}
 	#header .header-content .navigation .nav-item {
 		display: block;
 		margin: 0 -.25px 13.5px 0;
-		opacity: 0;
-		transition: opacity .375s linear;
-	}
-	.mobile-nav-open #header .header-content .navigation .nav-item {
-		opacity: 1;
-		transition: opacity .375s 1.5s linear;
 	}
 	#header .header-content .navigation .nav-item a {
 		color: #f7f8fa;
