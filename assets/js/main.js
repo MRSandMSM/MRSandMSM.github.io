@@ -25,12 +25,38 @@ $(document).ready(function(){
     var $winWidth = $(this).innerWidth() + $.scrollbarWidth()
 
     if($winWidth <= 767) {
-      var navBg = '<div class="nav-bg fill" id="navbarBg"></div>';
-      /*$.ajax({
-        type: 'GET'
-      })*/
+      var $navBgs = $('<div>', {
+        class: "nav-bg fill",
+        attr: {
+          id: "navbarBg"
+        }
+      });
       
-      $headerNav.prepend(navBg)
+      $.ajax({
+        url: '/assets/json/nav_backgrounds.json',
+        type: 'GET',
+        dataType: 'json',
+        success: function(data){
+          var $navBgs = $(".nav-bg")
+
+          $.each(data.navigation.items, function(index, item){
+            var $navBG = $('<div>', {
+              class: 'bg',
+              css: {
+                'background-image': 'url(' + item.image + ')'
+              }
+            })
+
+            var navBGAlt = '<span class="visually-hidden">' + item.alt + '</span>'
+            $navBG.html(navBGAlt)
+
+            $navBgs.append($navBG)
+          })
+        },
+        error: function() {console.error("Data could not be fetched from nav_backgrounds.json. So not fetch...")}
+      })
+      
+      $headerNav.prepend($navBgs)
     } else {
       $headerNav.find(".nav-bg").remove()
     }
