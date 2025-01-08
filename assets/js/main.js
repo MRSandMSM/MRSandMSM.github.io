@@ -25,6 +25,18 @@ $(document).ready(function(){
     var $winWidth = $(this).innerWidth() + $.scrollbarWidth()
 
     if($winWidth <= 767) {
+      if($(".logo-alt").length === 0 && !$header.hasClass("hero")) {
+        var $logoAlt = $('<a>', {
+          class: "logo logo-alt fill replace",
+          attr: {
+            href: "/"
+          },
+          text: "MR S and MS M"
+        })
+
+        $("h1.logo").append($logoAlt)
+      }
+      
       if($("#navbarBg").length === 0) {
         var $navBgs = $('<div>', {
           class: "nav-bg fill",
@@ -60,6 +72,7 @@ $(document).ready(function(){
         $headerNav.prepend($navBgs)
       }
     } else {
+      $header.not(".hero").find(".logo-alt").remove()
       $headerNav.find(".nav-bg").remove()
     }
   })
