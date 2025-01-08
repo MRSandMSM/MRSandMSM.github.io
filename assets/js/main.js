@@ -65,7 +65,7 @@ $(document).ready(function(){
 
               $navBgs.append($navBG)
 
-              $(".nav-item").hover(function(){
+              $(".nav-item a").hover(function(){
                 var itemIndex = $(this).index()
                 console.log(itemIndex)
                 $navBG.eq(itemIndex).addClass("bg-active").siblings(".bg").removeClass("bg-active")
