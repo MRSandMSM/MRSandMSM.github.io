@@ -97,7 +97,7 @@ $(document).ready(function(){
     var $this = $(this);
 
     /* Main nav */
-    if($this.siblings(".navigation").length || $this.hasClass(".main-nav")) {$container.toggleClass("mobile-nav-open")}
+    if($this.siblings(".navigation").length || $this.hasClass("main-nav")) {$container.toggleClass("mobile-nav-open")}
 
     /* Secondary nav */
     if($this.closest(".secondary-nav").length) {$page.toggleClass("secondary-nav-open")}
