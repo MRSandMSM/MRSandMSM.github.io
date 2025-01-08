@@ -567,11 +567,13 @@ select.field {
 	}
 	/*.mobile-nav-open */#header .header-content .navigation {left: 0}
 	#header .header-content .navigation .menu {
-		max-width: 639px;
 		position: absolute;
 		top: 50%;
 		right: 27px;
 		left: 27px;
+		margin-top: 26.20833396911621px;
+		max-width: 639px;
+		transform: translateY(-50%);
 	}
 	#header .header-content .navigation .nav-item {
 		display: block;
