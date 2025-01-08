@@ -573,12 +573,12 @@ select.field {
 		left: -100%;
 		background-color: #000418;
 	}
-	/*.mobile-nav-open */#header .header-content .navigation {left: 0}
+	.mobile-nav-open #header .header-content .navigation {left: 0}
 	#header .header-content .navigation .nav-bg {
-		transform: translateY(-125%) skew(-5.625deg);
+		transform: translateX(-125%) skew(-5.625deg);
 		transition: transform 1.125s cubic-bezier(0.16, 1, 0.3, 1);
 	}
-	.mobile-nav-open #header .header-content .navigation .nav-bg {transform: translateY(0)}
+	.mobile-nav-open #header .header-content .navigation .nav-bg {transform: translateX(0)}
 	#header .header-content .navigation .bg {
 		opacity: 0;
 		transition: opacity .375s linear;
