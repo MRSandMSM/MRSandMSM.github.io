@@ -608,7 +608,7 @@ select.field {
 	}
 	.mobile-nav-open #header .header-content .navigation .nav-item {
 		opacity: 1;
-		transition: opacity 1.5s linear;
+		transition: opacity .375s 1.5s linear;
 	}
 	#header .header-content .navigation .nav-item a {
 		color: #f7f8fa;
