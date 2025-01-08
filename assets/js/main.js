@@ -28,22 +28,19 @@ $(document).ready(function(){
     if($winWidth <= 767) {
       if($(".logo-alt").length === 0 && !$header.hasClass("hero")) {
         var $logoAlt = $('<a>', {
-          attr: {
-            href: "/"
-          },
+          attr: {href: "/"},
           class: "logo logo-alt fill replace",
           text: "MR S and MS M"
         })
 
-        $("h1.logo").append($logoAlt)
+        var $logo = $("h1.logo");
+        $logo.append($logoAlt).find("a").first().addClass("logo-standard")
       }
       
       if($("#navbarBg").length === 0) {
         var $navBgs = $('<div>', {
           class: "nav-bg fill",
-          attr: {
-            id: "navbarBg"
-          }
+          attr: {id: "navbarBg"}
         });
       
         $.ajax({
@@ -56,9 +53,7 @@ $(document).ready(function(){
             $.each(data.navigation.items, function(index, item){
               var $navBG = $('<div>', {
                 class: 'bg',
-                css: {
-                  'background-image': 'url(' + item.image + ')'
-                }
+                css: {'background-image': 'url(' + item.image + ')'}
               })
 
               var navBGAlt = '<span class="visually-hidden">' + item.alt + '</span>'
@@ -88,6 +83,7 @@ $(document).ready(function(){
     } else {
       $header.not(".hero").find(".logo-alt").remove()
       $headerNav.find(".nav-bg").remove()
+      $("h1.logo").find("a").first().removeClass("logo-standard")
     }
   })
 
