@@ -6,6 +6,7 @@ $(document).ready(function(){
   var $container = $("#pageContainer")
   var $header = $("#header")
   var $headerNav = $header.find(".navigation")
+  var $page = $("#page")
   var $share = $(".share")
   var $tabs = $(".tabs")
   var $toaster = $("a.toaster").not('a.toaster[href="#search"]')
@@ -92,10 +93,13 @@ $(document).ready(function(){
 
   /* Nav togglers */
   $(".mobile-nav-toggler").click(function(e){
-    var $this = $(this);
     if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
+    var $this = $(this);
+
+    /* Main nav */
+    if($this.siblings(".navigation").length || $this.hasClass(".main-nav")) {$container.toggleClass("mobile-nav-open")}
 
     /* Secondary nav */
-    if($this.closest(".secondary-nav").length) {$("#page").toggleClass("secondary-nav-open")}
+    if($this.closest(".secondary-nav").length) {$page.toggleClass("secondary-nav-open")}
   })
 })
