@@ -26,6 +26,10 @@ $(document).ready(function(){
 
     if($winWidth <= 767) {
       var navBg = '<div class="nav-bg fill" id="navbarBg"></div>';
+      /*$.ajax({
+        type: 'GET'
+      })*/
+      
       $headerNav.prepend(navBg)
     } else {
       $headerNav.find(".nav-bg").remove()
