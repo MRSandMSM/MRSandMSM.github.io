@@ -25,38 +25,40 @@ $(document).ready(function(){
     var $winWidth = $(this).innerWidth() + $.scrollbarWidth()
 
     if($winWidth <= 767) {
-      var $navBgs = $('<div>', {
-        class: "nav-bg fill",
-        attr: {
-          id: "navbarBg"
-        }
-      });
+      if($("#navbarBg").length === 0) {
+        var $navBgs = $('<div>', {
+          class: "nav-bg fill",
+          attr: {
+            id: "navbarBg"
+          }
+        });
       
-      $.ajax({
-        url: '/assets/json/nav_backgrounds.json',
-        type: 'GET',
-        dataType: 'json',
-        success: function(data){
-          var $navBgs = $(".nav-bg")
+        $.ajax({
+          url: '/assets/json/nav_backgrounds.json',
+          type: 'GET',
+          dataType: 'json',
+          success: function(data){
+            var $navBgs = $(".nav-bg")
 
-          $.each(data.navigation.items, function(index, item){
-            var $navBG = $('<div>', {
-              class: 'bg',
-              css: {
-                'background-image': 'url(' + item.image + ')'
-              }
+            $.each(data.navigation.items, function(index, item){
+              var $navBG = $('<div>', {
+                class: 'bg',
+                css: {
+                  'background-image': 'url(' + item.image + ')'
+                }
+              })
+
+              var navBGAlt = '<span class="visually-hidden">' + item.alt + '</span>'
+              $navBG.html(navBGAlt)
+
+              $navBgs.append($navBG)
             })
-
-            var navBGAlt = '<span class="visually-hidden">' + item.alt + '</span>'
-            $navBG.html(navBGAlt)
-
-            $navBgs.append($navBG)
-          })
-        },
-        error: function() {console.error("Data could not be fetched from nav_backgrounds.json. So not fetch...")}
-      })
+          },
+          error: function() {console.error("Data could not be fetched from nav_backgrounds.json. So not fetch...")}
+        })
       
-      $headerNav.prepend($navBgs)
+        $headerNav.prepend($navBgs)
+      }
     } else {
       $headerNav.find(".nav-bg").remove()
     }
