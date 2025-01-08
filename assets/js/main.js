@@ -73,7 +73,7 @@ $(document).ready(function(){
               $navBG.eq(itemIndex).addClass("bg-active").siblings(".bg").removeClass("bg-active")
             })
 
-            $(".navigation .is-active").find("a").trigger("hover")
+            $(".navigation .is-active a").trigger("mouseenter")
           },
           error: function() {console.error("Data could not be fetched from nav_backgrounds.json. So not fetch...")}
         })
