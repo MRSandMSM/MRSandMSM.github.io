@@ -27,10 +27,10 @@ $(document).ready(function(){
     if($winWidth <= 767) {
       if($(".logo-alt").length === 0 && !$header.hasClass("hero")) {
         var $logoAlt = $('<a>', {
-          class: "logo logo-alt fill replace",
           attr: {
             href: "/"
           },
+          class: "logo logo-alt fill replace",
           text: "MR S and MS M"
         })
 
