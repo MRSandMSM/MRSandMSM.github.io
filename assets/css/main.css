@@ -609,7 +609,7 @@ select.field {
 	}
 	#header .mobile-nav-toggler .bar-top,
 	#header .mobile-nav-toggler .bar-bottom {
-		transition: top .375s 1.5s linear, background-color .375s 1.5s linear;
+		transition: top .375s 1.5s linear, transform .375s 1.125s linear, background-color .375s 1.5s linear;
 	}
 	#header .mobile-nav-toggler .bar-top {top: -7.875px}
 	#header .mobile-nav-toggler .bar-middle {top: 0}
@@ -621,7 +621,7 @@ select.field {
 	.mobile-nav-open #header .mobile-nav-toggler .bar-top,
 	.mobile-nav-open #header .mobile-nav-toggler .bar-bottom {
 		top: 0;
-		transition: top .375s linear, transform .375s .375s, background-color .375s linear;
+		transition: top .375s linear, transform .375s .375s linear, background-color .375s linear;
 	}
 	.mobile-nav-open #header .mobile-nav-toggler .bar-top {transform: rotate(-45deg)}
 	.mobile-nav-open #header .mobile-nav-toggler .bar-bottom {transform: rotate(-45deg)}
