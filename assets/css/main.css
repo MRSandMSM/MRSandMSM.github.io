@@ -572,6 +572,7 @@ select.field {
 		top: 0;
 		left: -100%;
 		background-color: #000418;
+		transition: left .375s linear;
 	}
 	.mobile-nav-open #header .header-content .navigation {left: 0}
 	#header .header-content .navigation .nav-bg {
@@ -596,7 +597,10 @@ select.field {
 	#header .header-content .navigation .nav-item {
 		display: block;
 		margin: 0 0 13.5px 0;
+		opacity: 0;
+		transition: opacity .375s linear;
 	}
+	.mobile-nav-open #header .header-content .navigation .nav-item {opacity: 1}
 	#header .header-content .navigation .nav-item a {
 		color: #f7f8fa;
 		font-size: 36px;
