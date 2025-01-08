@@ -615,7 +615,7 @@ select.field {
 	#header .mobile-nav-toggler .bar-top {top: -7.875px}
 	#header .mobile-nav-toggler .bar-middle {
 		top: 0;
-		transition: opacity 0s .375s linear;
+		transition: opacity 0s 1.5s linear;
 	}
 	#header .mobile-nav-toggler .bar-bottom {top: 7.875px}
 	.mobile-nav-open #header .mobile-nav-toggler .bar {
@@ -628,8 +628,11 @@ select.field {
 		transition: top .375s linear, transform .375s .375s linear, background-color .375s linear;
 	}
 	.mobile-nav-open #header .mobile-nav-toggler .bar-top {transform: rotate(-45deg)}
-	.mobile-nav-open #header .mobile-nav-toggler .bar-middle {opacity: 0}
-	.mobile-nav-open #header .mobile-nav-toggler .bar-bottom {transform: rotate(-45deg)}
+	.mobile-nav-open #header .mobile-nav-toggler .bar-middle {
+		opacity: 0;
+		transition: opacity 0s .375s linear;
+	}
+	.mobile-nav-open #header .mobile-nav-toggler .bar-bottom {transform: rotate(45deg)}
 	#header .header-content .navigation .menu {
 		position: absolute;
 		top: 50%;
