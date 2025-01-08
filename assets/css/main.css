@@ -587,7 +587,7 @@ select.field {
 	}
 	.mobile-nav-open #header .header-content .navigation .nav-bg {
 		transform: translateX(0);
-		transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+		transition: transform 1.5s .375s cubic-bezier(0.16, 1, 0.3, 1);
 	}
 	#header .header-content .navigation .bg {
 		opacity: 0;
@@ -621,8 +621,10 @@ select.field {
 	.mobile-nav-open #header .mobile-nav-toggler .bar-top,
 	.mobile-nav-open #header .mobile-nav-toggler .bar-bottom {
 		top: 0;
-		transition: top .375s linear, background-color .375s linear;
+		transition: top .375s linear, transform .375s .375s, background-color .375s linear;
 	}
+	.mobile-nav-open #header .mobile-nav-toggler .bar-top {transform: rotate(-45deg)}
+	.mobile-nav-open #header .mobile-nav-toggler .bar-bottom {transform: rotate(-45deg)}
 	#header .header-content .navigation .menu {
 		position: absolute;
 		top: 50%;
@@ -634,7 +636,7 @@ select.field {
 	}
 	#header .header-content .navigation .nav-item {
 		display: block;
-		margin: 0 0 13.5px 0;
+		margin: 0 -.25px 13.5px 0;
 		opacity: 0;
 		transition: opacity .375s linear;
 	}
