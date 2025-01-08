@@ -64,12 +64,11 @@ $(document).ready(function(){
               $navBG.html(navBGAlt)
 
               $navBgs.append($navBG)
+            })
 
-              $(".nav-item a").hover(function(){
-                var itemIndex = $(this).index()
-                console.log(itemIndex)
-                $navBG.eq(itemIndex).addClass("bg-active").siblings(".bg").removeClass("bg-active")
-              })
+            $(".nav-item a").hover(function(){
+              var itemIndex = $(this).index()
+              $navBG.eq(itemIndex).addClass("bg-active").siblings(".bg").removeClass("bg-active")
             })
           },
           error: function() {console.error("Data could not be fetched from nav_backgrounds.json. So not fetch...")}
