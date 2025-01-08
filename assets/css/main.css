@@ -599,6 +599,7 @@ select.field {
 		height: 2.25px;
 		position: relative;
 	}
+	#header .mobile-nav-toggler:focus {outline: none}
 	#header .mobile-nav-toggler .bar {
 		position: absolute;
 		left: 0;
@@ -627,6 +628,7 @@ select.field {
 		transition: top .375s linear, transform .375s .375s linear, background-color .375s linear;
 	}
 	.mobile-nav-open #header .mobile-nav-toggler .bar-top {transform: rotate(-45deg)}
+	.mobile-nav-open #header .mobile-nav-toggler .bar-middle {opacity: 0}
 	.mobile-nav-open #header .mobile-nav-toggler .bar-bottom {transform: rotate(-45deg)}
 	#header .header-content .navigation .menu {
 		position: absolute;
