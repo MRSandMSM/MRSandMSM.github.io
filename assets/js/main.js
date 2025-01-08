@@ -68,6 +68,8 @@ $(document).ready(function(){
 
             $(".nav-item a").hover(function(){
               var itemIndex = $(this).index()
+              var $navBG = $navBgs.find(".bg")
+              
               $navBG.eq(itemIndex).addClass("bg-active").siblings(".bg").removeClass("bg-active")
             })
           },
