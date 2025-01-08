@@ -70,7 +70,7 @@ $(document).ready(function(){
               var itemIndex = $(this).index()
               var $navBG = $(".nav-bg .bg")
               
-              $navBG.eq(itemIndex).addClass("bg-active").siblings(".bg").removeClass("bg-active")
+              $navBG.eq(itemIndex).addClass("bg-active").siblings().removeClass("bg-active")
             })
           },
           error: function() {console.error("Data could not be fetched from nav_backgrounds.json. So not fetch...")}
