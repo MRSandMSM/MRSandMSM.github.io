@@ -572,14 +572,20 @@ select.field {
 		top: 0;
 		left: -100%;
 		background-color: #000418;
+		transition: left .375s 1.5s linear;
+	}
+	.mobile-nav-open #header .header-content .navigation {
+		left: 0;
 		transition: left .375s linear;
 	}
-	.mobile-nav-open #header .header-content .navigation {left: 0}
 	#header .header-content .navigation .nav-bg {
 		transform: translateX(-125%) skew(-5.625deg);
-		transition: transform 1.125s cubic-bezier(0.16, 1, 0.3, 1);
+		transition: transform 1.5s cubic-bezier(0.7, 0, 0.84, 0);
 	}
-	.mobile-nav-open #header .header-content .navigation .nav-bg {transform: translateX(0)}
+	.mobile-nav-open #header .header-content .navigation .nav-bg {
+		transform: translateX(0);
+		transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+	}
 	#header .header-content .navigation .bg {
 		opacity: 0;
 		transition: opacity .375s linear;
@@ -600,7 +606,10 @@ select.field {
 		opacity: 0;
 		transition: opacity .375s linear;
 	}
-	.mobile-nav-open #header .header-content .navigation .nav-item {opacity: 1}
+	.mobile-nav-open #header .header-content .navigation .nav-item {
+		opacity: 1;
+		transition: opacity 1.5s linear;
+	}
 	#header .header-content .navigation .nav-item a {
 		color: #f7f8fa;
 		font-size: 36px;
