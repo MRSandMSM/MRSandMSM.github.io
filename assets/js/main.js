@@ -73,7 +73,11 @@ $(document).ready(function(){
               $navBG.eq(itemIndex).addClass("bg-active").siblings(".bg").removeClass("bg-active")
             })
 
-            $(".navigation .is-active a").trigger("mouseenter")
+            if($(".navigation .is-active").length) {
+              $(".navigation .is-active a").trigger("mouseenter")
+            } else {
+              console.log("No active length. We'll have to apply the logic for when that happens.")
+            }
           },
           error: function() {console.error("Data could not be fetched from nav_backgrounds.json. So not fetch...")}
         })
