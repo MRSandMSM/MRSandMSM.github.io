@@ -1,0 +1,22 @@
+{
+  "navigation": {
+    "items": [
+      {
+        "image": "/assets/img/nav_bg/news_bg.png",
+        "alt": "News",
+      },
+      {
+        "image": "/assets/img/nav_bg/events_bg.png",
+        "alt": "Events",
+      },
+      {
+        "image": "/assets/img/nav_bg/discography_bg.png",
+        "alt": "Discography",
+      },
+      {
+        "image": "/assets/img/nav_bg/store_bg.png",
+        "alt": "Store",
+      }
+    ]
+  }
+}
