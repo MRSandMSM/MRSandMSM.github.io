@@ -67,10 +67,10 @@ $(document).ready(function(){
             })
 
             $(".nav-item a").hover(function(){
-              var itemIndex = $(this).index()
-              var $navBG = $(".nav-bg .bg")
+              var itemIndex = $(this).parent().index()
+              var $navBG = $navBgs.find(".bg")
               
-              console.log(itemIndex)
+              $navBG.eq(itemIndex).addClass("bg-active").siblings(".bg").removeClass("bg-active")
             })
           },
           error: function() {console.error("Data could not be fetched from nav_backgrounds.json. So not fetch...")}
