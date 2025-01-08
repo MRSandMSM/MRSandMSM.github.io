@@ -607,6 +607,10 @@ select.field {
 		background-color: #000418;
 		transition: background-color .375s 1.5s linear;
 	}
+	#header .mobile-nav-toggler .bar-top,
+	#header .mobile-nav-toggler .bar-bottom {
+		transition: top .375s 1.5s linear, background-color .375s 1.5s linear;
+	}
 	#header .mobile-nav-toggler .bar-top {top: -7.875px}
 	#header .mobile-nav-toggler .bar-middle {top: 0}
 	#header .mobile-nav-toggler .bar-bottom {top: 7.875px}
@@ -614,7 +618,8 @@ select.field {
 		background-color: #f7f8fa;
 		transition: background-color .375s linear;
 	}
-	.mobile-nav-open #header .mobile-nav-toggler .bar-top {
+	.mobile-nav-open #header .mobile-nav-toggler .bar-top,
+	.mobile-nav-open #header .mobile-nav-toggler .bar-bottom {
 		top: 0;
 		transition: top .375s linear, background-color .375s linear;
 	}
