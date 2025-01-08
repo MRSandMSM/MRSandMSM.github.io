@@ -559,14 +559,11 @@ select.field {
 		width: 236.9166717529297px;
 		height: 24.75px;
 	}
-	#header .header-content .logo-alt {
-		opacity: 0;
-		transition: opacity .375s 1.5s linear;
-	}
-	.mobile-nav-open #header .header-content .logo-alt {
-		opacity: 1;
-		transition: opacity .375s linear;
-	}
+	#header .header-content .logo a {transition: opacity .375s 1.5s linear}
+	.mobile-nav-open #header .header-content .logo a {transition: opacity .375s linear}
+	.mobile-nav-open #header .header-content .logo .logo-standard,
+	#header .header-content .logo-alt {opacity: 0}
+	.mobile-nav-open #header .header-content .logo .logo-alt {opacity: 1}
 	#header .header-content .navigation {
 		width: 100%;
 		height: 100%;
