@@ -571,7 +571,7 @@ select.field {
 		position: fixed;
 		top: 0;
 		left: -100%;
-		background-color: #052d6a;
+		background-color: #000418;
 	}
 	/*.mobile-nav-open */#header .header-content .navigation {left: 0}
 	#header .header-content .navigation .nav-bg {
