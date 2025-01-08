@@ -5,6 +5,7 @@ $(document).ready(function(){
   var $body = $("body")
   var $container = $("#pageContainer")
   var $header = $("#header")
+  var $headerNav = $header.find(".navigation")
   var $share = $(".share")
   var $tabs = $(".tabs")
   var $toaster = $("a.toaster").not('a.toaster[href="#search"]')
@@ -18,6 +19,18 @@ $(document).ready(function(){
     platforms: "facebook x linkedin2 email"
   })
   $tabs.tabs()
+
+  /* Generate backgrounds for each nav item if viewport is narrower or equal to 767px) */
+  $window.on("load resize", function(){
+    var $winWidth = $(this).innerWidth() + $.scrollbarWidth()
+
+    if($winWidth <= 767) {
+      var navBg = '<div class="nav-bg fill" id="navbarBg"></div>';
+      $headerNav.prepend(navBg)
+    } else {
+      $headerNav.find(".nav-bg").remove()
+    }
+  })
 
   /* Nav togglers */
   $(".mobile-nav-toggler").click(function(e){
