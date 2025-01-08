@@ -614,6 +614,10 @@ select.field {
 		background-color: #f7f8fa;
 		transition: background-color .375s linear;
 	}
+	.mobile-nav-open #header .mobile-nav-toggler .bar-top {
+		top: 0;
+		transition: top .375s linear, background-color .375s linear;
+	}
 	#header .header-content .navigation .menu {
 		position: absolute;
 		top: 50%;
