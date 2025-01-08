@@ -633,7 +633,7 @@ select.field {
 		right: 27px;
 		left: 27px;
 		transform: translateY(-50%);
-		margin-top: 26.20833396911621px;
+		margin: 26.20833396911621px 0 0 auto;
 		max-width: 639px;
 		opacity: 0;
 		transition: opacity .375s linear;
