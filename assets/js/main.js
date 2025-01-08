@@ -76,7 +76,7 @@ $(document).ready(function(){
             if($(".navigation .is-active").length) {
               $(".navigation .is-active a").trigger("mouseenter")
             } else {
-              console.log("No active length. We'll have to apply the logic for when that happens.")
+              $(".navigation .menu li").first().find("a").trigger("mouseenter")
             }
           },
           error: function() {console.error("Data could not be fetched from nav_backgrounds.json. So not fetch...")}
