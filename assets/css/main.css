@@ -564,6 +564,7 @@ select.field {
 		top: 0;
 		left: -100%;
 		text-align: left;
+		background-color: #052d6a;
 	}
 	/*.mobile-nav-open */#header .header-content .navigation {left: 0}
 	#header .header-content .navigation .menu {
@@ -580,9 +581,13 @@ select.field {
 		margin: 0 0 13.5px 0;
 	}
 	#header .header-content .navigation .nav-item a {
+		color: #f7f8fa;
 		font-size: 36px;
 		line-height: 1em;
 	}
+	#header .header-content .navigation .nav-link:hover,
+	#header .header-content .navigation .nav-link:focus,
+	#header .header-content .navigation .is-active .nav-link {color: #92c4d3}
 
 	/* IV.IV.II.III. Main content */
 	#page {margin-top: 52.41666793823242px}
