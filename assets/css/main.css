@@ -654,6 +654,12 @@ select.field {
 	#header .header-content .navigation .nav-link:hover,
 	#header .header-content .navigation .nav-link:focus,
 	#header .header-content .navigation .is-active .nav-link {color: #92c4d3}
+	
+	/* IV.IV.II.IV. Selection */
+	#header .header-content .navigation ::selection {
+		color: #000418;
+		background-color: #f7f8fa;
+	}
 
 	/* IV.IV.II.III. Main content */
 	#page {margin-top: 52.41666793823242px}
