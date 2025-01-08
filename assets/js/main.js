@@ -67,7 +67,8 @@ $(document).ready(function(){
 
               $(".nav-item").hover(function(){
                 var itemIndex = $(this).index()
-                $navBG.eq(itemIndex).addClass("bg-active").siblings().removeClass("bg-active")
+                console.log(itemIndex)
+                $navBG.eq(itemIndex).addClass("bg-active").siblings(".bg").removeClass("bg-active")
               })
             })
           },
