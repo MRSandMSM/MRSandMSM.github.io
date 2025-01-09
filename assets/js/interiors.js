@@ -202,10 +202,10 @@ $(document).ready(function(){
         
         var $playBtns = $("<div>", {class: "playlist-controls"}).append(playButton("previous2"), playButton("play3"), playButton("next2"))
         var $trackInfo = $("<div>", {class: "track-info"}).append('<h2 class="track-name lead">In The Sky</h2>','<p class="track-info"></p>');
-        var $playlist = $("<div>", {class: "playlist"}).append('<div class="playlist-inner"></div>')
+        var $playlist = $("<div>", {class: "playlist"})
         
         $player404.append($playlist)
-        $playlist.find(".playlist-inner").append($playBtns, $trackInfo)
+        $playlist.append($playBtns, $trackInfo)
       },
       error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
     })
