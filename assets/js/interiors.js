@@ -218,7 +218,7 @@ $(document).ready(function(){
           var $track = $("<li>").append($trackLink)
           $audioList.append($track)
         })
-        var $audio = $("<div>", {class: "playlist-audio"}).append($audioEl, $audio)
+        var $audio = $("<div>", {class: "playlist-audio"}).append($audioEl, $audioList)
         
         $player404.append($audio, $playlist)
       },
