@@ -245,7 +245,8 @@ $(document).ready(function(){
           }
 
           if(!$(".playlist-btn .icon-play3").hasClass("icon-pause2")) {
-            $(".playlist-btn .icon-play3").addClass("icon-pause2")
+            alert("has no class");
+            // $(".playlist-btn .icon-play3").addClass("icon-pause2")
           }
         })
 
