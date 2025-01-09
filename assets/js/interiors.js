@@ -257,7 +257,7 @@ $(document).ready(function(){
           if($this.hasClass("icon-previous2")) {
             if($(".playlist-list li").first().hasClass("track-active")) {
               $activeTrack.removeClass("track-active");
-              $activeTrack.last().addClass("track-active").find("a").trigger("click")
+              $(".playlist-list li").last().addClass("track-active").find("a").trigger("click")
             } else {
               $activeTrack.removeClass("track-active").prev().addClass("track-active").find("a").trigger("click")
             }
