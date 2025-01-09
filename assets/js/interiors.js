@@ -204,7 +204,7 @@ $(document).ready(function(){
         var $trackInfo = $("<div>", {class: "track-info"}).append('<h2 class="track-name lead">In The Sky</h2>','<p class="track-info"></p>');
         var $playlist = $("<div>", {class: "playlist"})
         
-        $player404.append($playlist)
+        $player404.append($playlist[0])
         $playlist.append($playBtns, $trackInfo)
       },
       error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
