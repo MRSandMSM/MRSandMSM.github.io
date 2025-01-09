@@ -211,7 +211,7 @@ $(document).ready(function(){
           var $trackLink = $("<a>", {
             attr: {href: track.track},
             text: track.title
-          }
+          })
           if(!track.notes === "") {
             $trackLink.data("notes", track.notes)
           }
