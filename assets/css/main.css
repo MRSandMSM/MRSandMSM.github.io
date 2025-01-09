@@ -423,6 +423,38 @@ select.field {
 	opacity: 0;
 }
 .not-found #search .clear:hover span {opacity: 1}
+#player404 {
+	position: absolute;
+	top: 27px;
+	right: 51.75px;
+	left: 51.75px;
+	margin: 0 auto;
+	max-width: 1920px;
+	overflow: hidden;
+}
+#player404 .player {
+	margin: 0 0 0 -13.25px;
+	overflow: auto;
+}
+#player404 .player-controls, #player404 .track-info {float: left}
+#player404 .player-controls {
+	height: 1em;
+	overflow: hidden;
+	font-size: 54px;
+}
+#player404 .player-controls a {
+	color: #f7f8fa;
+	display: inline-block;
+}
+#player404 .player-controls a:hover {color: #92c4d3}
+#player404 .track-name {
+	margin: 0 0 4.5px 0 !important;
+	line-height: 1em;
+}
+#player404 .track-notes {
+	font-style: italic;
+	line-height: 1.25em;
+}
 @keyframes label {
 	44.44444444444444% {
 		opacity: 0;
