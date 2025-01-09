@@ -188,13 +188,15 @@ $(document).ready(function(){
   })
 
   var $player404 = $("#player404")
-  /* $.ajax({
-    url: "/assets/json/playlist.json"
-    type: "GET"
-    dataType: 'json'
-    success: function(){}
-    error: function(){}
-  }) */
+  $.ajax({
+    url: "/assets/json/playlist.json",
+    type: "GET",
+    dataType: 'json',
+    success: function(data){
+      console.log("REQUEST WAS SUCCESSFUL")
+    },
+    error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
+  })
   
   /*// Do the redirects
   if(location.href == "/discography" || location.href == "/discography/") {
