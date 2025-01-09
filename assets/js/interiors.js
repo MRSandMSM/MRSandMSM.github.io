@@ -248,6 +248,21 @@ $(document).ready(function(){
           $(".icon-play3").trigger("click")
         })
 
+        $(".playlist-btn").click(function(e){
+          if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
+
+          var $this = $(this);
+          var $activeTrack = $(".playlist-list li.track-active");
+          
+          if($this.hasClass("icon-previous2")) {
+            if($(".playlist-list li").first().hasClass("track-active")) {
+              $activeTrack.removeClass("track-active");
+              $activeTrack.last().addClass("track-active").find("a").trigger("click")
+            } else {
+              $activeTrack.removeClass("track-active").previous().addClass("track-active").find("a").trigger("click")
+            }
+          }
+        })
         /*$(".icon-play3").click(function(e){
           var $this = $(this);
           
