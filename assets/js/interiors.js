@@ -228,18 +228,16 @@ $(document).ready(function(){
           
           var $this = $(this)
           $this.parent("li").addClass("track-active").siblings().removeClass("track-active")
-          $audio.find("audio").attr("src", $this.attr("href"))
+          $audio.find("audio").attr("src", $this.attr("href")).trigger("play")
         })
 
-        $(".icon-play3").click(function(e){
+        /*$(".icon-play3").click(function(e){
           var $this = $(this);
           
-          $this.toggleClass("icon-pause2", function(){
-            if($this.hasClass("icon-pause2")) {
-              $this.closest(".playlist-audio").find("audio").trigger("play")
-            } else {$this.closest(".playlist-audio").find("audio").trigger("pause")}
-          })
-        })
+          if($this.hasClass("icon-pause2")) {
+            $this.closest(".playlist-audio").find("audio").trigger("play")
+          } else {$this.closest(".playlist-audio").find("audio").trigger("pause")}
+        }) */
       },
       error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
     })
