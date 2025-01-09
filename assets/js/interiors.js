@@ -264,14 +264,14 @@ $(document).ready(function(){
             }
           } else if($this.hasClass("icon-play3")) {
             var $this = $(this);
-            $(".playlist-list li.track-active a").trigger("click", function(){
-              if($this.hasClass("icon-pause2")){
-                $this.removeClass("icon-pause2")
-                $(".playlist-audio audio").trigger("pause")
-              } else {
-                $activeTrack.find("a").trigger("click")
-              }
-            })
+            $(".playlist-list li.track-active a").trigger("click")  
+            
+            if($this.hasClass("icon-pause2")){
+              $this.removeClass("icon-pause2")
+              $(".playlist-audio audio").trigger("pause")
+            } else {
+              $activeTrack.find("a").trigger("click")
+            }
           } else if($this.hasClass("icon-next2")) {
             if($(".playlist-list li").last().hasClass("track-active")) {
               $activeTrack.removeClass("track-active");
