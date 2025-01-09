@@ -205,6 +205,18 @@ $(document).ready(function(){
         var $playlist = $("<div>", {class: "playlist"}).append($playBtns, $trackInfo)
 
         var $audioEl = $("<audio>")
+        var $audioList = $("<ul>", {class: "playlist-list"})
+
+        $.each(data.playlist.tracks, function(index, track){
+          var $trackLink = $("<a>", {
+            attr: {href: track.track},
+            text: track.title
+          }
+          if(!track.notes === "") {
+            $trackLink.data("notes", track.notes)
+          }
+          var $track = $("<li>").append($trackLink)
+        })
         var $audio = $("<div>", {class: "playlist-audio"}).append($audioEl)
         
         $player404.append($audio, $playlist)
