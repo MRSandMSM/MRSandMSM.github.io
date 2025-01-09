@@ -45,7 +45,7 @@ a:hover, a:active {outline: none}
 a:hover, a:focus {color: #9d1725}
 h1, h2, h3, h4, h5, h6 {font-weight: normal}
 p {margin: 0 0 9px 0}
-p:last-child {margin: 0}
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child {margin: 0}
 .lead {
 	font-size: 22.5px;
 	font-weight: 700;
@@ -432,7 +432,7 @@ select.field {
 	max-width: 1920px;
 	overflow: hidden;
 }
-#player404 .player {
+#player404 .playlist {
 	margin: 0 0 0 -13.25px;
 	overflow: auto;
 }
@@ -446,8 +446,9 @@ select.field {
 	color: #f7f8fa;
 	display: inline-block;
 }
+#player404 .playlist-controls .icon-next2 {width: 40.75px}
 #player404 .playlist-controls a:hover {color: #92c4d3}
-#player404 .track-info {margin: 2.25px 0}
+#player404 .track-info {margin: 2.25px 0 2.25px 36px}
 #player404 .track-name {
 	margin: 0 0 4.5px 0 !important;
 	line-height: 1em;
