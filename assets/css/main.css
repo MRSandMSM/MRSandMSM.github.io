@@ -441,6 +441,7 @@ select.field {
 	height: 1em;
 	overflow: hidden;
 	font-size: 54px;
+	line-height: 1em;
 }
 #player404 .playlist-controls a {
 	color: #f7f8fa;
