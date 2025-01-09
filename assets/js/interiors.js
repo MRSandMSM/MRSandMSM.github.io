@@ -241,7 +241,7 @@ $(document).ready(function(){
                 text: $this.data("notes")
               })
               $trackInfo.append($trackNotes)
-            } else {$trackInfo.find("<p>").text($this.data("notes"))}
+            } else {$trackInfo.find("p").text($this.data("notes"))}
           }
 
           $(".icon-play3").trigger("click")
