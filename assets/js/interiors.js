@@ -244,9 +244,8 @@ $(document).ready(function(){
             } else {$trackInfo.find("p").text($this.data("notes"))}
           }
 
-          if(!$(".playlist-btn .icon-play3").hasClass("icon-pause2")) {
-            console.log("has no class");
-            // $(".playlist-btn .icon-play3").addClass("icon-pause2")
+          if(!$(".icon-play3").hasClass("icon-pause2")) {
+            $(".icon-play3").addClass("icon-pause2")
           }
         })
 
