@@ -234,10 +234,11 @@ $(document).ready(function(){
             $trackInfo.find("p.track-notes").remove()
           } else {
             if(!$trackInfo.find("p.track-notes").length) {
-              $trackInfo.append("<p>", {
+              var $trackNotes = $("<p>", {
                 class: "track-notes",
                 text: $this.data("notes")
               })
+              $trackInfo.append($trackNotes)
             } else {$trackInfo.find("<p>").text($this.data("notes"))}
           }
 
