@@ -229,6 +229,8 @@ $(document).ready(function(){
           $audio.find("audio").attr("src", $this.attr("href")).trigger("play")
           
           $trackInfo.find("h2").text($this.text())
+          console.log($this.data("notes"))
+          
           if($this.data("notes") == "undefined") {
             $trackInfo.addClass("notes-empty")
             $trackInfo.find("p.track-notes").remove()
