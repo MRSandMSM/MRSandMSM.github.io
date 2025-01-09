@@ -225,6 +225,10 @@ $(document).ready(function(){
           if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
 
           $(".icon-play3").trigger("click")
+          
+          var $this = $(this)
+          $this.parent("li").addClass("track-active").siblings().removeClass("track-active")
+          $audio.find("audio").attr("src", $this.attr("href"))
         })
 
         $(".icon-play3").click(function(e){
