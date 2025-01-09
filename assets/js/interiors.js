@@ -186,6 +186,15 @@ $(document).ready(function(){
       } else {$this.siblings(".clear").fadeOut(375, "linear")}
     })
   })
+
+  var $player404 = $("#player404")
+  /* $.ajax({
+    url: "/assets/json/playlist.json"
+    type: "GET"
+    dataType: 'json'
+    success: function(){}
+    error: function(){}
+  }) */
   
   /*// Do the redirects
   if(location.href == "/discography" || location.href == "/discography/") {
