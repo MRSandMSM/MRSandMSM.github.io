@@ -264,7 +264,6 @@ $(document).ready(function(){
             }
           } else if($this.hasClass("icon-play3")) {
             var $this = $(this);
-            $(".playlist-list li.track-active a").trigger("click")  
             
             if($this.hasClass("icon-pause2")){
               $this.removeClass("icon-pause2")
