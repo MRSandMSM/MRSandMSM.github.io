@@ -456,7 +456,7 @@ select.field {
 	margin: 0 0 4.5px 0 !important;
 	line-height: 1em;
 }
-#player404 .track-name h2:last-child {margin: 0 !important}
+#player404 .track-name:last-child {margin: 0 !important}
 #player404 .track-notes {
 	font-style: italic;
 	line-height: 1.25em;
