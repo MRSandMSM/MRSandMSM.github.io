@@ -185,17 +185,17 @@ $(document).ready(function(){
         $this.siblings(".clear").fadeIn(375, "linear");
       } else {$this.siblings(".clear").fadeOut(375, "linear")}
     })
-  })
 
-  var $player404 = $("#player404")
-  $.ajax({
-    url: "/assets/json/playlist.json",
-    type: "GET",
-    dataType: 'json',
-    success: function(data){
-      console.log("REQUEST WAS SUCCESSFUL")
-    },
-    error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
+    var $player404 = $("#player404");
+    $.ajax({
+      url: "/assets/json/playlist.json",
+      type: "GET",
+      dataType: 'json',
+      success: function(data){
+        console.log("REQUEST WAS SUCCESSFUL")
+      },
+      error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
+    })
   })
   
   /*// Do the redirects
