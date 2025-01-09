@@ -193,10 +193,27 @@ $(document).ready(function(){
       dataType: 'json',
       success: function(data){
         function playButton(icon){
-          var playBtn = '<a href="#" class="playlist-btn icon-' + icon + '"></a>'
+          var $playBtn = $("<a>", {
+            attr: {href: "#"},
+            class: "playlist-btn icon-' + icon,
+          })
           return playBtn;
         }
-        $player404.append(playButton("previous2") + playButton("play3") + playButton("next2"))
+        
+        var $playBtns = $("<div>", {
+          class: "playlist-controls",
+          html: playButton("previous2") + playButton("play3") + playButton("next2")
+        })
+        var $trackInfo = $("<div>", {
+          class: "track-info",
+          html: '<h2 class="track-name lead">In The Sky</h2><p class="track-info"></p>'
+        })
+        
+        var $playlist = $("<div>", {
+          class: "playlist",
+          html: '<div class="playlist-inner">' + $playBtns + $trackInfo + '</div>'
+        })
+        $player404.append(playlistCode)
       },
       error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
     })
