@@ -262,6 +262,7 @@ $(document).ready(function(){
               $activeTrack.removeClass("track-active").prev().addClass("track-active").find("a").trigger("click")
             }
           } else if($this.hasClass("icon-next2")) {
+            console.log("Next track button clicked")
             if($(".playlist-list li").last().hasClass("track-active")) {
               $activeTrack.removeClass("track-active");
               $(".playlist-list li").first().addClass("track-active").find("a").trigger("click")
