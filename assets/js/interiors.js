@@ -261,6 +261,13 @@ $(document).ready(function(){
             } else {
               $activeTrack.removeClass("track-active").prev().addClass("track-active").find("a").trigger("click")
             }
+          } else if($this.hasClass("icon-next2")) {
+            if($(".playlist-list li").last().hasClass("track-active")) {
+              $activeTrack.removeClass("track-active");
+              $(".playlist-list li").first().addClass("track-active").find("a").trigger("click")
+            } else {
+              $activeTrack.removeClass("track-active").next().addClass("track-active").find("a").trigger("click")
+            }
           }
         })
         /*$(".icon-play3").click(function(e){
