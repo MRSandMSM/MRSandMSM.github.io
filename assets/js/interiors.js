@@ -235,6 +235,7 @@ $(document).ready(function(){
             $trackInfo.addClass("notes-empty")
             $trackInfo.find("p.track-notes").remove()
           } else {
+            $trackInfo.removeClass("notes-empty");
             if(!$trackInfo.find("p.track-notes").length) {
               var $trackNotes = $("<p>", {
                 class: "track-notes",
