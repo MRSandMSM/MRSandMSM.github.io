@@ -213,7 +213,7 @@ $(document).ready(function(){
             text: track.title
           })
           if(!track.notes === "") {
-            $trackLink.data("notes", track.notes)
+            $trackLink.attr("data-notes", track.notes)
           }
           var $track = $("<li>").append($trackLink)
           $audioList.append($track)
