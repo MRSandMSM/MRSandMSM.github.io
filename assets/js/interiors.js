@@ -229,7 +229,6 @@ $(document).ready(function(){
           $audio.find("audio").attr("src", $this.attr("href")).trigger("play")
           
           $trackInfo.find("h2").text($this.text())
-          console.log($this.data("notes"))
           
           if($this.data("notes") == undefined) {
             $trackInfo.addClass("notes-empty")
@@ -261,6 +260,8 @@ $(document).ready(function(){
             } else {
               $activeTrack.removeClass("track-active").prev().addClass("track-active").find("a").trigger("click")
             }
+          } else if($this.hasClass("icon-play3")) {
+            console.log("Play button clicked")
           } else if($this.hasClass("icon-next2")) {
             if($(".playlist-list li").last().hasClass("track-active")) {
               $activeTrack.removeClass("track-active");
@@ -271,9 +272,7 @@ $(document).ready(function(){
           }
         })
 
-        $(".playlist-audio audio").on("ended", function(){
-          $(".icon-next2").trigger("click")
-        }
+        $(".playlist-audio audio").on("ended", function(){$(".icon-next2").trigger("click")})
         /*$(".icon-play3").click(function(e){
           var $this = $(this);
           
