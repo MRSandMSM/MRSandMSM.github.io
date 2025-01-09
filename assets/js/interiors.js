@@ -223,12 +223,24 @@ $(document).ready(function(){
 
         $audioList.find("a").click(function(e){
           if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
-
-          $(".icon-play3").trigger("click")
           
           var $this = $(this)
           $this.parent("li").addClass("track-active").siblings().removeClass("track-active")
           $audio.find("audio").attr("src", $this.attr("href")).trigger("play")
+          
+          $trackInfo.find("h2").text($this.text())
+          if($this.data("notes") == "undefined") {
+            $trackInfo.addClass("notes-empty")
+          } else {
+            if(!$trackInfo.find("p.track-notes").length) {
+              $trackInfo.append("<p>", {
+                class: "track-notes",
+                text: $this.data("notes")
+              }
+            } else {$trackInfo.find("<p>").text($this.data("notes"))}
+          }
+
+          $(".icon-play3").trigger("click")
         })
 
         /*$(".icon-play3").click(function(e){
