@@ -236,8 +236,8 @@ $(document).ready(function(){
           
           $this.toggleClass("icon-pause2", function(){
             if($this.hasClass("icon-pause2")) {
-              $this.closest(".playlist-controls").find("audio").trigger("play")
-            } else {$this.closest(".playlist-controls").find("audio").trigger("pause")}
+              $this.closest(".playlist-audio").find("audio").trigger("play")
+            } else {$this.closest(".playlist-audio").find("audio").trigger("pause")}
           })
         })
       },
