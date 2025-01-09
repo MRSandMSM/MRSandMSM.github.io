@@ -195,7 +195,7 @@ $(document).ready(function(){
         function playButton(icon){
           var $playBtn = $("<a>", {
             attr: {href: "#"},
-            class: "playlist-btn icon-' + icon
+            class: "playlist-btn icon-" + icon
           })
           return $playBtn;
         }
