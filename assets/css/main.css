@@ -436,17 +436,18 @@ select.field {
 	margin: 0 0 0 -13.25px;
 	overflow: auto;
 }
-#player404 .player-controls, #player404 .track-info {float: left}
-#player404 .player-controls {
+#player404 .playlist-controls, #player404 .track-info {float: left}
+#player404 .playlist-controls {
 	height: 1em;
 	overflow: hidden;
 	font-size: 54px;
 }
-#player404 .player-controls a {
+#player404 .playlist-controls a {
 	color: #f7f8fa;
 	display: inline-block;
 }
-#player404 .player-controls a:hover {color: #92c4d3}
+#player404 .playlist-controls a:hover {color: #92c4d3}
+#player404 .track-info {margin: 2.25px 0}
 #player404 .track-name {
 	margin: 0 0 4.5px 0 !important;
 	line-height: 1em;
