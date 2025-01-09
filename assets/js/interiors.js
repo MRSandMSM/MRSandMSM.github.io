@@ -200,10 +200,7 @@ $(document).ready(function(){
           return $playBtn;
         }
         
-        var $playBtns = $("<div>", {
-          class: "playlist-controls",
-          html: playButton("previous2") + playButton("play3") + playButton("next2")
-        })
+        var $playBtns = $("<div>", {class: "playlist-controls"}).append(playButton("previous2"), playButton("play3"), playButton("next2"))
         var $trackInfo = $("<div>", {
           class: "track-info",
           html: '<h2 class="track-name lead">In The Sky</h2><p class="track-info"></p>'
