@@ -212,7 +212,7 @@ $(document).ready(function(){
             attr: {href: track.track},
             text: track.title
           })
-          if(!track.notes === "") {
+          if(!track.notes == "") {
             $trackLink.attr("data-notes", track.notes)
           }
           var $track = $("<li>").append($trackLink)
