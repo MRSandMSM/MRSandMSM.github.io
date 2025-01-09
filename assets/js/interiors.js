@@ -259,7 +259,7 @@ $(document).ready(function(){
               $activeTrack.removeClass("track-active");
               $activeTrack.last().addClass("track-active").find("a").trigger("click")
             } else {
-              $activeTrack.removeClass("track-active").previous().addClass("track-active").find("a").trigger("click")
+              $activeTrack.removeClass("track-active").prev().addClass("track-active").find("a").trigger("click")
             }
           }
         })
