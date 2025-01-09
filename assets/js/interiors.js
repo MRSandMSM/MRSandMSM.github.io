@@ -244,7 +244,9 @@ $(document).ready(function(){
             } else {$trackInfo.find("p").text($this.data("notes"))}
           }
 
-          $(".icon-play3").trigger("click")
+          if(!$(".playlist-btn .icon-play3").hasClass("icon-pause2")) {
+            $(".playlist-btn .icon-play3").addClass("icon-pause2")
+          }
         })
 
         $(".playlist-btn").click(function(e){
@@ -261,7 +263,15 @@ $(document).ready(function(){
               $activeTrack.removeClass("track-active").prev().addClass("track-active").find("a").trigger("click")
             }
           } else if($this.hasClass("icon-play3")) {
-            console.log("Play button clicked")
+            var $this = $(this);
+            $(".playlist-list li.track-active a").trigger("click", function(){
+              if($this.hasClass("icon-pause2")){
+                $this.removeClass("icon-pause2")
+                $(".playlist-audio audio").trigger("pause")
+              } else {
+                $activeTrack.find("a").trigger("click")
+              }
+            })
           } else if($this.hasClass("icon-next2")) {
             if($(".playlist-list li").last().hasClass("track-active")) {
               $activeTrack.removeClass("track-active");
