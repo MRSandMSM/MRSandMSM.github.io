@@ -214,7 +214,7 @@ $(document).ready(function(){
         })
         
         $player404.append($playlist)
-        $playlist.find(".playlist-inner").append($playBtns + $trackInfo)
+        $playlist.find(".playlist-inner").append($playBtns, $trackInfo)
       },
       error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
     })
