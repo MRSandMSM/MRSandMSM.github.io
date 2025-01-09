@@ -208,12 +208,13 @@ $(document).ready(function(){
           class: "track-info",
           html: '<h2 class="track-name lead">In The Sky</h2><p class="track-info"></p>'
         })
-        
         var $playlist = $("<div>", {
           class: "playlist",
-          html: '<div class="playlist-inner">' + $playBtns + $trackInfo + '</div>'
+          html: '<div class="playlist-inner"></div>'
         })
+        
         $player404.append($playlist)
+        $playlist.find("playlist-inner").html($playBtns + $trackInfo)
       },
       error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
     })
