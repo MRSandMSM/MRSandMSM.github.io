@@ -213,7 +213,7 @@ $(document).ready(function(){
           class: "playlist",
           html: '<div class="playlist-inner">' + $playBtns + $trackInfo + '</div>'
         })
-        $player404.append(playlistCode)
+        $player404.append($playlist)
       },
       error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
     })
