@@ -192,7 +192,11 @@ $(document).ready(function(){
       type: "GET",
       dataType: 'json',
       success: function(data){
-        console.log("REQUEST WAS SUCCESSFUL")
+        function playButton(icon){
+          var playBtn = '<a href="#" class="playlist-btn icon-' + icon + '"></a>'
+          return playBtn;
+        }
+        $player404.append(playButton("previous2") + playButton("play3") + playButton("next2"))
       },
       error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
     })
