@@ -283,7 +283,7 @@ $(document).ready(function(){
 
         $(".playlist-audio audio").on("ended", function(){$(".icon-next2").trigger("click")})
         
-        $(".playlist-audio .playlist-list li").addClass("track-active")
+        $(".playlist-audio .playlist-list li").first().addClass("track-active")
         /*$(".icon-play3").click(function(e){
           var $this = $(this);
           
