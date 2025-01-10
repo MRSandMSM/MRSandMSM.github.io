@@ -192,6 +192,7 @@ $(document).ready(function(){
       type: "GET",
       dataType: 'json',
       success: function(data){
+        /* Generate play buttons */
         function playButton(icon){
           var $playBtn = $("<a>", {
             attr: {href: "#"},
@@ -199,14 +200,17 @@ $(document).ready(function(){
           })
           return $playBtn;
         }
-        
+
+        /* Generate playlist UI */
         var $playBtns = $("<div>", {class: "playlist-controls"}).append(playButton("previous2"), playButton("play3"), playButton("next2"))
         var $trackInfo = $("<div>", {class: "track-info"}).append($('<h2>', {class: 'track-name lead'}));
         var $playlist = $("<div>", {class: "playlist"}).append($playBtns, $trackInfo)
 
+        /* Generate playlist functionality */
         var $audioEl = $("<audio>")
         var $audioList = $("<ul>", {class: "playlist-list"})
 
+        /* Generate playlist links */
         $.each(data.playlist.tracks, function(index, track){
           var $trackLink = $("<a>", {
             attr: {href: track.track},
@@ -218,9 +222,12 @@ $(document).ready(function(){
           var $track = $("<li>").append($trackLink)
           $audioList.append($track)
         })
+
+        /* Append functionality to the player */
         var $audio = $("<div>", {class: "playlist-audio"}).append($audioEl, $audioList)
         $player404.append($audio, $playlist)
 
+        /* Click on the playlist tracks */
         $audioList.find("a").click(function(e){
           if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
           
@@ -249,16 +256,19 @@ $(document).ready(function(){
           }
         })
 
+        /* Click on the playlist buttons */
         $(".playlist-btn").click(function(e){
           if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
 
           var $this = $(this);
           var $activeTrack = $(".playlist-list li.track-active");
-          
+          var $firstTrack = $(".playlist-list li").first();
+          var $lastTrack = $(".playlist-list li").last();
+
           if($this.hasClass("icon-previous2")) {
-            if($(".playlist-list li").first().hasClass("track-active")) {
+            if($firstTrack.hasClass("track-active")) {
               $activeTrack.removeClass("track-active");
-              $(".playlist-list li").last().addClass("track-active").find("a").trigger("click")
+              $lastTrack.addClass("track-active").find("a").trigger("click")
             } else {
               $activeTrack.removeClass("track-active").prev().addClass("track-active").find("a").trigger("click")
             }
@@ -267,30 +277,22 @@ $(document).ready(function(){
             
             if($this.hasClass("icon-pause2")){
               $this.removeClass("icon-pause2")
-              $(".playlist-audio audio").trigger("pause")
+              $audioEl.trigger("pause")
             } else {
               $activeTrack.find("a").trigger("click")
             }
           } else if($this.hasClass("icon-next2")) {
-            if($(".playlist-list li").last().hasClass("track-active")) {
+            if($lastTrack.hasClass("track-active")) {
               $activeTrack.removeClass("track-active");
-              $(".playlist-list li").first().addClass("track-active").find("a").trigger("click")
+              $firstTrack.addClass("track-active").find("a").trigger("click")
             } else {
               $activeTrack.removeClass("track-active").next().addClass("track-active").find("a").trigger("click")
             }
           }
         })
 
-        $(".playlist-audio audio").on("ended", function(){$(".icon-next2").trigger("click")})
-        
-        $(".playlist-audio .playlist-list li").first().addClass("track-active")
-        /*$(".icon-play3").click(function(e){
-          var $this = $(this);
-          
-          if($this.hasClass("icon-pause2")) {
-            $this.closest(".playlist-audio").find("audio").trigger("play")
-          } else {$this.closest(".playlist-audio").find("audio").trigger("pause")}
-        }) */
+        $audioEl.on("ended", function(){$(".icon-next2").trigger("click")})
+        $audioList.find("li").first().addClass("track-active")
       },
       error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
     })
