@@ -202,7 +202,6 @@ $(document).ready(function(){
         
         var $playBtns = $("<div>", {class: "playlist-controls"}).append(playButton("previous2"), playButton("play3"), playButton("next2"));
         var $trackInfo = $("<div>", {class: "track-info"}).append($('<h2>', {class: 'track-name lead'}));
-        var $trackNotes = $trackInfo.find("p.notes");
         var $playlist = $("<div>", {class: "playlist"}).append($playBtns, $trackInfo)
 
         var $audioEl = $("<audio>");
@@ -227,6 +226,7 @@ $(document).ready(function(){
           
           var $this = $(this);
           var $playIcon = $(".icon-play3");
+          var $trackNotes = $trackInfo.find("p.notes");
           
           if($this.attr("href") !== $audioEl.attr("src")) {
             $audioEl.attr("src", $this.attr("href")).trigger("play")
