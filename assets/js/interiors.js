@@ -197,66 +197,55 @@ $(document).ready(function(){
             attr: {href: "#"},
             class: "playlist-btn icon-" + icon
           })
-          return $playBtn
+          return $playBtn;
         }
         
-        var $playBtns = $("<div>", {class: "playlist-controls"}).append(playButton("previous2"), playButton("play3"), playButton("next2"));
+        var $playBtns = $("<div>", {class: "playlist-controls"}).append(playButton("previous2"), playButton("play3"), playButton("next2"))
         var $trackInfo = $("<div>", {class: "track-info"}).append($('<h2>', {class: 'track-name lead'}));
         var $playlist = $("<div>", {class: "playlist"}).append($playBtns, $trackInfo)
 
-        var $audioEl = $("<audio>");
+        var $audioEl = $("<audio>")
         var $audioList = $("<ul>", {class: "playlist-list"})
 
         $.each(data.playlist.tracks, function(index, track){
           var $trackLink = $("<a>", {
             attr: {href: track.track},
             text: track.title
-          });
-          if(!track.notes == "") {$trackLink.data("notes", track.notes)}
-          
-          var $track = $("<li>").append($trackLink);
+          })
+          if(!track.notes == "") {
+            $trackLink.data("notes", track.notes)
+          }
+          var $track = $("<li>").append($trackLink)
           $audioList.append($track)
         })
-
-        var $audio = $("<div>", {class: "playlist-audio"}).append($audioEl, $audioList);
+        var $audio = $("<div>", {class: "playlist-audio"}).append($audioEl, $audioList)
         $player404.append($audio, $playlist)
 
         $audioList.find("a").click(function(e){
           if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
           
-          var $this = $(this);
-          var $playIcon = $(".icon-play3");
+          var $this = $(this)
+          $this.parent("li").addClass("track-active").siblings().removeClass("track-active")
+          $audio.find("audio").attr("src", $this.attr("href")).trigger("play")
           
-          if($this.attr("href") !== $audioEl.attr("src")) {
-            $audioEl.attr("src", $this.attr("href")).trigger("play")
-            $this.parent("li").addClass("track-active").siblings().removeClass("track-active");
-            $trackInfo.find("h2").text($this.text())
+          $trackInfo.find("h2").text($this.text())
           
-            var $trackNotes = $trackInfo.find("p.notes");
-            if($this.data("notes") == undefined) {
-              $trackInfo.addClass("notes-empty").find("p.notes").remove()
-            } else {
-              $trackInfo.removeClass("notes-empty");
-              if(!$trackNotes.length) {
-                var $trackNotes = $("<p>", {
-                  class: "track-notes",
-                  text: $this.data("notes")
-                });
-                $trackInfo.append($trackNotes)
-              } else {$trackNotes.text($this.data("notes"))}
-            }
-
-            if(!$playIcon.hasClass("icon-pause2")) {
-              $playIcon.addClass("icon-pause2")
-            }
+          if($this.data("notes") == undefined) {
+            $trackInfo.addClass("notes-empty")
+            $trackInfo.find("p.track-notes").remove()
           } else {
-            if(!$playIcon.hasClass("icon-pause2")) {
-              $audioEl.trigger("play");
-              $playIcon.addClass("icon-pause2")
-            } else {
-              $audioEl.trigger("pause");
-              $playIcon.removeClass("icon-pause2");
-            }
+            $trackInfo.removeClass("notes-empty");
+            if(!$trackInfo.find("p.track-notes").length) {
+              var $trackNotes = $("<p>", {
+                class: "track-notes",
+                text: $this.data("notes")
+              })
+              $trackInfo.append($trackNotes)
+            } else {$trackInfo.find("p").text($this.data("notes"))}
+          }
+
+          if(!$(".icon-play3").hasClass("icon-pause2")) {
+            $(".icon-play3").addClass("icon-pause2")
           }
         })
 
@@ -265,35 +254,43 @@ $(document).ready(function(){
 
           var $this = $(this);
           var $activeTrack = $(".playlist-list li.track-active");
-          var $firstTrack = $(".playlist-list li").first();
-          var $lastTrack = $(".playlist-list li").last();
           
           if($this.hasClass("icon-previous2")) {
-            if($firstTrack.hasClass("track-active")) {
+            if($(".playlist-list li").first().hasClass("track-active")) {
               $activeTrack.removeClass("track-active");
-              $lastTrack.addClass("track-active").find("a").trigger("click")
+              $(".playlist-list li").last().addClass("track-active").find("a").trigger("click")
             } else {
               $activeTrack.removeClass("track-active").prev().addClass("track-active").find("a").trigger("click")
             }
           } else if($this.hasClass("icon-play3")) {
+            var $this = $(this);
+            
             if($this.hasClass("icon-pause2")){
-              $this.removeClass("icon-pause2");
-              $audioEl.trigger("pause")
+              $this.removeClass("icon-pause2")
+              $(".playlist-audio audio").trigger("pause")
             } else {
               $activeTrack.find("a").trigger("click")
             }
           } else if($this.hasClass("icon-next2")) {
-            if($lastTrack.hasClass("track-active")) {
+            if($(".playlist-list li").last().hasClass("track-active")) {
               $activeTrack.removeClass("track-active");
-              $firstTrack.addClass("track-active").find("a").trigger("click")
+              $(".playlist-list li").first().addClass("track-active").find("a").trigger("click")
             } else {
               $activeTrack.removeClass("track-active").next().addClass("track-active").find("a").trigger("click")
             }
           }
         })
 
-        $audioEl.on("ended", function(){$(".icon-next2").trigger("click")});
-        $audioList.find("li").first().addClass("track-active")
+        $(".playlist-audio audio").on("ended", function(){$(".icon-next2").trigger("click")})
+        
+        $(".playlist-audio .playlist-list li").first().addClass("track-active")
+        /*$(".icon-play3").click(function(e){
+          var $this = $(this);
+          
+          if($this.hasClass("icon-pause2")) {
+            $this.closest(".playlist-audio").find("audio").trigger("play")
+          } else {$this.closest(".playlist-audio").find("audio").trigger("pause")}
+        }) */
       },
       error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
     })
