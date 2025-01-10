@@ -234,8 +234,7 @@ $(document).ready(function(){
           
             var $trackNotes = $trackInfo.find("p.notes");
             if($this.data("notes") == undefined) {
-              $trackInfo.addClass("notes-empty");
-              $trackNotes.remove()
+              $trackInfo.addClass("notes-empty").find("p.notes").remove()
             } else {
               $trackInfo.removeClass("notes-empty");
               if(!$trackNotes.length) {
