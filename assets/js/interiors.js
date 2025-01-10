@@ -233,7 +233,9 @@ $(document).ready(function(){
           
           var $this = $(this)
           $this.parent("li").addClass("track-active").siblings().removeClass("track-active")
-          $audio.find("audio").attr("src", $this.attr("href")).trigger("play")
+          if($audioEl.attr("src") !== $this.attr("href")){
+            $audioEl.attr("src", $this.attr("href")).trigger("play")
+          } else {$audioEl.trigger("play")}
           
           $trackInfo.find("h2").text($this.text())
           
