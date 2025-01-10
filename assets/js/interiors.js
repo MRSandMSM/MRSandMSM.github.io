@@ -300,7 +300,13 @@ $(document).ready(function(){
         $("#text404 p a").click(function(e){
           if(event.preventDefault){event.preventDefault()} else {event.returnValue = false}
 
-          var 
+          var linkText = $(this).text().toLowerCase();
+          var $matchedTrack = $audioList.find("a").filter(function(){
+            return $(this).text().toLowerCase() === linkText;
+          }).first();
+          if($matchedTrack.length) {
+            $matchedTrack.trigger("click");
+          }
         })
       },
       error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
