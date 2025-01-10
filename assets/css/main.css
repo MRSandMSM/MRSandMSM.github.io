@@ -447,9 +447,9 @@ select.field {
 	color: #f7f8fa;
 	display: inline-block;
 }
-#player404 .playlist-controls .icon-next2 {width: 40.75px}
-#player404 .playlist-controls a:hover {color: #92c4d3}
+#player404 .playlist-controls a:hover {color: #a9b3c9}
 #player404 .playlist-controls a:focus {outline: none}
+#player404 .playlist-controls .icon-next2 {width: 40.75px}
 #player404 .track-info {margin: 2.25px 0 2.25px 36px}
 #player404 .notes-empty {margin: 15.75px 0 15.75px 36px}
 #player404 .track-name {
