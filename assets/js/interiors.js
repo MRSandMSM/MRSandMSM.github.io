@@ -295,6 +295,13 @@ $(document).ready(function(){
 
         $audioEl.on("ended", function(){$(".icon-next2").trigger("click")})
         $audioList.find("li").first().addClass("track-active")
+
+        /* Finally, the links should work */
+        $("#text404 p a").click(function(e){
+          if(event.preventDefault){event.preventDefault()} else {event.returnValue = false}
+
+          var 
+        })
       },
       error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
     })
