@@ -424,6 +424,7 @@ select.field {
 }
 .not-found #search .clear:hover span {opacity: 1}
 #player404 {
+	display: none;
 	position: absolute;
 	top: 27px;
 	right: 51.75px;
@@ -436,6 +437,7 @@ select.field {
 	margin: 0 0 0 -13.25px;
 	overflow: auto;
 }
+#player404 .playlist-list {display: none}
 #player404 .playlist-controls, #player404 .track-info {float: left}
 #player404 .playlist-controls {
 	height: 1em;
