@@ -226,13 +226,13 @@ $(document).ready(function(){
           
           var $this = $(this);
           var $playIcon = $(".icon-play3");
-          var $trackNotes = $trackInfo.find("p.notes");
           
           if($this.attr("href") !== $audioEl.attr("src")) {
             $audioEl.attr("src", $this.attr("href")).trigger("play")
             $this.parent("li").addClass("track-active").siblings().removeClass("track-active");
             $trackInfo.find("h2").text($this.text())
           
+            var $trackNotes = $trackInfo.find("p.notes");
             if($this.data("notes") == undefined) {
               $trackInfo.addClass("notes-empty");
               $trackNotes.remove()
