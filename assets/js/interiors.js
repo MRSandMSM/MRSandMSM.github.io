@@ -294,9 +294,17 @@ $(document).ready(function(){
         })
 
         $audioEl.on("ended", function(){$(".icon-next2").trigger("click")})
-        $audioList.find("li").first().addClass("track-active").find("a").trigger("click", function(){
-          $(".icon-play3").removeClass("icon-pause2")
-        })
+
+        /* Default behavior */
+        var $defaultTrack = $audioList.find("li").first();
+        var defaultTitle = $defaultTrack.text();
+        var defaultNotes = $defaultTrack.data("notes")
+        
+        $defaultTrack.addClass("track-active")
+        $trackInfo.find("h2").text(defaultTitle)
+        if(defaultNotes == undefined) {
+          $trackInfo.addClass("notes-empty")
+        }
 
         /* Finally, the links should work */
         $("#text404 p a").click(function(e){
