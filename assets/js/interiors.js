@@ -294,11 +294,8 @@ $(document).ready(function(){
         })
 
         $audioEl.on("ended", function(){$(".icon-next2").trigger("click")})
-        $audioList.find("li").first().addClass("track-active")
-        $trackInfo.find("h2").text($(".track-active").text(), function(){
-          if(!$(".track-active").data("notes") == undefined) {
-            $trackInfo.addClass("notes-empty")
-          }
+        $audioList.find("li").first().addClass("track-active").find("a").trigger("click", function(){
+          $audioEl.trigger("pause")
         })
 
         /* Finally, the links should work */
