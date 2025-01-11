@@ -424,7 +424,6 @@ select.field {
 }
 .not-found #search .clear:hover span {opacity: 1}
 #player404 {
-	display: none;
 	position: absolute;
 	top: 27px;
 	right: 51.75px;
@@ -432,7 +431,10 @@ select.field {
 	margin: 0 auto;
 	max-width: 1920px;
 	overflow: hidden;
+	opacity: 0;
+	transition: opacity .375s 1.125s linear;
 }
+.loaded #player404 {opacity: 1}
 #player404 .playlist {
 	margin: 0 0 0 -13.25px;
 	overflow: auto;
