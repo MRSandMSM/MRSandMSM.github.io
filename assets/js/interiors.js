@@ -294,14 +294,13 @@ $(document).ready(function(){
         })
 
         $audioEl.on("ended", function(){$(".icon-next2").trigger("click")})
-        $audioList.find("li").first().addClass("track-active").find("a").trigger("click")
-        $(".icon-play3").trigger("click")
+        $audioList.find("li").first().addClass("track-active").find("a").trigger("click", function(){
+          $(".icon-play3").removeClass("icon-pause2")
+        })
 
         /* Finally, the links should work */
         $("#text404 p a").click(function(e){
           if(event.preventDefault){event.preventDefault()} else {event.returnValue = false}
-
-          $("#player404").fadeIn(375, "linear");
           
           var linkText = $(this).text().toLowerCase();
           var $matchedTrack = $audioList.find("a").filter(function(){
