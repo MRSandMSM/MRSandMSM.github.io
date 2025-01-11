@@ -335,15 +335,18 @@ select.field {
 	overflow: hidden;
 }
 .not-found #pageContent .bg {opacity: .125}
+#text404, #player404 {
+	position: absolute;
+	z-index: 1;
+	left: 51.75px;
+	right: 51.75px;
+	margin: 0 auto;
+	max-width: 1920px;
+	overflow: hidden;
+}
 #text404 {
 	align-items: flex-end;
-	z-index: 1;
-	position: absolute;
-	left: 51.5px;
-	right: 51.5px;
 	bottom: 0;
-	max-width: 1920px;
-	margin: auto;
 }
 #text404 h2, #text404 .menu {font-family: 'itc-avant-garde-gothic-pro'}
 #text404 h2 {
@@ -424,13 +427,7 @@ select.field {
 }
 .not-found #search .clear:hover span {opacity: 1}
 #player404 {
-	position: absolute;
 	top: 27px;
-	right: 51.75px;
-	left: 51.75px;
-	margin: 0 auto;
-	max-width: 1920px;
-	overflow: hidden;
 	opacity: 0;
 	transition: opacity .375s 1.125s linear;
 }
