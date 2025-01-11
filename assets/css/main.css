@@ -561,11 +561,13 @@ select.field {
 }
 /* IV.III. Equal or narrower than 830px */
 @media screen and (max-width: 830px) {
+	#text404, #player404 {
+		right: 27px;
+		left: 27px;
+	}
 	#text404 {
 		flex-direction: column-reverse;
 		align-items: flex-start;
-		right: 27px;
-		left: 27px;
 	}
 	#text404 h2 {
 		margin: 0 0 -169.875px 0;
