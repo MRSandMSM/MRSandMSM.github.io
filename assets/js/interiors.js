@@ -295,7 +295,7 @@ $(document).ready(function(){
 
         $audioEl.on("ended", function(){$(".icon-next2").trigger("click")})
         $audioList.find("li").first().addClass("track-active").find("a").trigger("click", function(){
-          $audioEl.trigger("pause")
+          $("icon-play3").trigger("click")
         })
 
         /* Finally, the links should work */
