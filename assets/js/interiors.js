@@ -294,9 +294,8 @@ $(document).ready(function(){
         })
 
         $audioEl.on("ended", function(){$(".icon-next2").trigger("click")})
-        $audioList.find("li").first().addClass("track-active").find("a").trigger("click", function(){
-          $(".icon-play3").trigger("click")
-        })
+        $audioList.find("li").first().addClass("track-active").find("a").trigger("click")
+        $(".icon-play3").trigger("click")
 
         /* Finally, the links should work */
         $("#text404 p a").click(function(e){
