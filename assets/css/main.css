@@ -428,6 +428,7 @@ select.field {
 .not-found #search .clear:hover span {opacity: 1}
 #player404 {
 	top: 27px;
+	width: auto;
 	opacity: 0;
 	transition: opacity .375s 1.125s linear;
 }
