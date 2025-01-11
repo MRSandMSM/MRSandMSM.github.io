@@ -295,6 +295,11 @@ $(document).ready(function(){
 
         $audioEl.on("ended", function(){$(".icon-next2").trigger("click")})
         $audioList.find("li").first().addClass("track-active")
+        $trackInfo.find("h2").text($(".track-active").text(), function(){
+          if(!$(".track-active").data("notes") == undefined) {
+            $trackInfo.addClass("notes-empty")
+          }
+        })
 
         /* Finally, the links should work */
         $("#text404 p a").click(function(e){
