@@ -91,9 +91,18 @@ $(document).ready(function(){
   $(".mobile-nav-toggler").click(function(e){
     if(event.preventDefault) {event.preventDefault()} else {event.returnValue = false}
     var $this = $(this);
+    var toggleMode = $this.data("toggle");
 
     /* Main nav */
-    if($this.siblings(".navigation").length || $this.hasClass("main-nav")) {$container.toggleClass("mobile-nav-open")}
+    if($this.siblings(".navigation").length || $this.hasClass("main-nav")) {
+      if(toggleMode == "open") {
+        $container.addClass("mobile-nav-open")
+      } else if(toggleMode == "close") {
+        $container.removeClass("mobile-nav-open")
+      } else {
+        $container.toggleClass("mobile-nav-open")
+      }
+    }
 
     /* Secondary nav */
     if($this.closest(".secondary-nav").length) {$page.toggleClass("secondary-nav-open")}
