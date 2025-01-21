@@ -322,11 +322,16 @@ $(document).ready(function(){
       error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
     })
 
-    var pageWidth = $("#pageContent").outerWidth(true);
-    var pageHeight = $("#pageContent").outerHeight(true);
-    var pageAspect = (pageWidth / pageHeight)
+    $(window).on("load resize", function(){
+      var pageContent = $("#pageContent");
+      var pageWidth = pageContent.outerWidth(true);
+      var pageHeight = pageContent.outerHeight(true);
+      var pageAspect = (pageWidth / pageHeight)
 
-    console.log("Page aspect ratio is: " + pageAspect)
+      if(pageAspect > 13520 / 3353 || pageWidth > 2023.5) {
+        pageContent.addClass("ultra-wide")
+      } else {pageContent.removeClass("ultra-wide")}
+    }
   })
   
   /*// Do the redirects
