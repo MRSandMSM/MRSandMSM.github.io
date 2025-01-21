@@ -321,6 +321,12 @@ $(document).ready(function(){
       },
       error: function(){console.error("Data could not be fetched for the playlist. So not fetch...")}
     })
+
+    var pageWidth = $("#pageContent").outerWidth(true);
+    var pageHeight = $("#pageContent").outerHeight(true);
+    var pageAspect = (pageWidth / pageHeight)
+
+    console.log("Page aspect ratio is: " + pageAspect)
   })
   
   /*// Do the redirects
